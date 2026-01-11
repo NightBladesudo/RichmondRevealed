@@ -22,7 +22,7 @@ const universities = [
     type: 'Private HBCU',
     description: 'A historic HBCU founded in 1865, offering undergraduate and graduate programs in a nurturing environment.',
     students: '1,500+',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800'
+    image: 'https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800'
   }
 ];
 
