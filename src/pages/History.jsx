@@ -145,7 +145,7 @@ export default function History() {
                 title: 'Civil War',
                 period: '1861-1865',
                 description: 'As the Confederate capital, Richmond was central to the Civil War. The city fell in 1865, ending the conflict.',
-                image: 'https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=600'
+                image: 'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=600'
               },
               {
                 title: 'Modern Renaissance',
