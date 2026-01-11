@@ -170,11 +170,11 @@ export default function Layout({ children, currentPageName }) {
               <ul className="space-y-4">
                 <li className="flex items-center space-x-3 text-sm text-gray-300">
                   <Mail className="w-4 h-4 text-[#2d7d7d]" />
-                  <span>info@richmondrevealed.com</span>
+                  <span>anshjain0503@gmail.com</span>
                 </li>
                 <li className="flex items-center space-x-3 text-sm text-gray-300">
                   <Phone className="w-4 h-4 text-[#2d7d7d]" />
-                  <span>(804) 555-0123</span>
+                  <span>804-728-9265</span>
                 </li>
               </ul>
               <div className="flex space-x-4 mt-6">
