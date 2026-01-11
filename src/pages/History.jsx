@@ -17,7 +17,7 @@ export default function History() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=1920&q=80)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=1920&q=80)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/80" />
