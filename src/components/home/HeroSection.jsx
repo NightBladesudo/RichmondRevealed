@@ -42,19 +42,30 @@ export default function HeroSection() {
             vibrant arts scene, and welcoming neighborhoods of Virginia's capital.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-2">
             <Link
               to={createPageUrl('Attractions')}
-              className="inline-flex items-center px-8 py-4 bg-[#a63d2f] text-white font-semibold rounded-lg hover:bg-[#8b3426] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center px-4 py-3 bg-[#a63d2f] text-white font-semibold rounded-lg hover:bg-[#8b3426] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm"
             >
-              Explore Richmond
-              <ArrowRight className="ml-2 w-5 h-5" />
+              Attractions
             </Link>
             <Link
               to={createPageUrl('Events')}
-              className="inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
+              className="inline-flex items-center justify-center px-4 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 text-sm"
             >
-              View Events
+              Events
+            </Link>
+            <Link
+              to={createPageUrl('History')}
+              className="inline-flex items-center justify-center px-4 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 text-sm"
+            >
+              History
+            </Link>
+            <Link
+              to={createPageUrl('Business')}
+              className="inline-flex items-center justify-center px-4 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 text-sm"
+            >
+              Businesses
             </Link>
           </div>
         </motion.div>
