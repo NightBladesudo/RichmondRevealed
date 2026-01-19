@@ -38,6 +38,24 @@ const neighborhoods = [
     description: 'Close-knit community near VCU and the river, known for Hollywood Cemetery and stunning views of the James River rapids.',
     highlights: ['River Access', 'Historic Cemetery', 'Community'],
     image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800'
+  },
+  {
+    name: 'Museum District',
+    description: 'Home to Virginia Museum of Fine Arts and Science Museum. Beautiful tree-lined streets with elegant early 20th-century homes.',
+    highlights: ['Museums', 'Architecture', 'Family-Friendly'],
+    image: 'https://images.unsplash.com/photo-1566127444026-86e8d00d29c5?w=800'
+  },
+  {
+    name: 'Manchester',
+    description: 'Revitalized neighborhood on the south side of the James River with stunning city skyline views and a growing arts scene.',
+    highlights: ['River Views', 'Arts', 'Affordable'],
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800'
+  },
+  {
+    name: 'Libbie & Grove',
+    description: 'Upscale shopping and dining corridor known for boutiques, specialty shops, and award-winning restaurants.',
+    highlights: ['Shopping', 'Fine Dining', 'Upscale'],
+    image: 'https://images.unsplash.com/photo-1567696911980-2eed69a46042?w=800'
   }
 ];
 
