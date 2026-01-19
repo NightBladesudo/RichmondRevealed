@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, MapPin } from 'lucide-react';
+import { Users, MapPin, Map } from 'lucide-react';
+import InteractiveMap from '../components/neighborhoods/InteractiveMap';
 
 const neighborhoods = [
   {
@@ -89,6 +90,31 @@ export default function Neighborhoods() {
               Explore Richmond's diverse communities, each with its own character, history, and charm.
             </p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Interactive Map */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <div className="flex items-center justify-center space-x-2 mb-4">
+              <Map className="w-6 h-6 text-[#a63d2f]" />
+              <h2 className="font-display text-3xl text-[#1e3a5f] font-bold">
+                Explore Richmond Map
+              </h2>
+            </div>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Navigate through neighborhoods, parks, restaurants, and historical landmarks. 
+              Click on markers for more information.
+            </p>
+          </motion.div>
+          
+          <InteractiveMap />
         </div>
       </section>
 
