@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, TreePine, Home, Coffee, MapPin } from 'lucide-react';
+import { Users, MapPin } from 'lucide-react';
 
 const neighborhoods = [
   {
@@ -41,29 +41,6 @@ const neighborhoods = [
   }
 ];
 
-const communityValues = [
-  {
-    icon: Users,
-    title: 'Welcoming Community',
-    description: 'Richmond neighborhoods are known for their friendly, inclusive atmosphere where newcomers quickly feel at home.'
-  },
-  {
-    icon: TreePine,
-    title: 'Green Spaces',
-    description: 'From urban parks to the James River, outdoor recreation is never far away in any Richmond neighborhood.'
-  },
-  {
-    icon: Home,
-    title: 'Historic Character',
-    description: 'Each neighborhood preserves its unique architectural heritage while embracing modern vitality.'
-  },
-  {
-    icon: Coffee,
-    title: 'Local Businesses',
-    description: 'Small businesses thrive throughout Richmond, from corner coffee shops to family-owned restaurants.'
-  }
-];
-
 export default function Neighborhoods() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -94,34 +71,6 @@ export default function Neighborhoods() {
               Explore Richmond's diverse communities, each with its own character, history, and charm.
             </p>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Community Values */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {communityValues.map((value, index) => (
-              <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="w-14 h-14 bg-[#2d7d7d]/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-7 h-7 text-[#2d7d7d]" />
-                </div>
-                <h3 className="font-display text-lg text-[#1e3a5f] font-semibold mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {value.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
