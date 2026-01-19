@@ -2,18 +2,11 @@ import React, { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, ExternalLink, Check } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-
-const officialLinks = [
-  { name: 'City of Richmond Official Website', url: 'https://www.rva.gov' },
-  { name: 'Richmond Tourism', url: 'https://www.visitrichmondva.com' },
-  { name: 'Richmond Parks & Recreation', url: 'https://www.rva.gov/parks-recreation' },
-  { name: 'Richmond Public Library', url: 'https://www.rvalibrary.org' },
-];
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -222,32 +215,6 @@ export default function Contact() {
                       <p className="text-gray-600">Richmond, Virginia</p>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Official Resources */}
-              <div>
-                <h2 className="font-display text-2xl text-[#1e3a5f] font-bold mb-6">
-                  Official City Resources
-                </h2>
-                <div className="bg-white rounded-2xl p-6 shadow-sm">
-                  <ul className="space-y-4">
-                    {officialLinks.map((link) => (
-                      <li key={link.name}>
-                        <a
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors group"
-                        >
-                          <span className="text-[#1e3a5f] group-hover:text-[#a63d2f] transition-colors">
-                            {link.name}
-                          </span>
-                          <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-[#a63d2f] transition-colors" />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             </motion.div>
