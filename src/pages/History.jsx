@@ -3,7 +3,6 @@ import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
 import { Clock, BookOpen } from 'lucide-react';
-import Timeline from '@/components/history/Timeline';
 
 export default function History() {
   const { data: historyEvents = [], isLoading } = useQuery({
@@ -122,24 +121,6 @@ export default function History() {
           </div>
           </section>
 
-          {/* Timeline */}
-          <section className="py-20 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="font-display text-3xl text-[#1e3a5f] font-bold mb-4">
-              Timeline of Events
-            </h2>
-            <p className="text-gray-600">Key moments that shaped Richmond's history</p>
-          </motion.div>
-
-          <Timeline events={historyEvents} isLoading={isLoading} />
-          </div>
-          </section>
           </div>
           );
           }
