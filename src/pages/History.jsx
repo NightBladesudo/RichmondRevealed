@@ -56,73 +56,7 @@ export default function History() {
         </div>
       </section>
 
-      {/* Historical Eras */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="font-display text-3xl text-[#1e3a5f] font-bold mb-4">
-              Explore Historical Eras
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Colonial Era',
-                period: '1607-1780',
-                description: 'From Jamestown\'s founding to becoming the state capital, Richmond grew as a vital trading post on the James River.',
-                image: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=600'
-              },
-              {
-                title: 'Civil War',
-                period: '1861-1865',
-                description: 'As the Confederate capital, Richmond was central to the Civil War. The city fell in 1865, ending the conflict.',
-                image: 'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=600'
-              },
-              {
-                title: 'Modern Renaissance',
-                period: '1960-Present',
-                description: 'Today Richmond is a thriving, diverse city embracing its complex history while building an inclusive future.',
-                image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600'
-              }
-            ].map((era, index) => (
-              <motion.div
-                key={era.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group"
-              >
-                <div className="relative h-64 rounded-2xl overflow-hidden mb-5">
-                  <img
-                    src={era.image}
-                    alt={era.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent" />
-                  <div className="absolute bottom-4 left-4">
-                    <span className="text-[#c9a227] text-sm font-medium">{era.period}</span>
-                  </div>
-                </div>
-                <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-3">
-                  {era.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {era.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-          </div>
-          </section>
-
-          {/* Timeline */}
+      {/* Timeline */}
           <section className="py-20 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
