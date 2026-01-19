@@ -52,17 +52,27 @@ const pointsOfInterest = [
 ];
 
 const categories = [
-  { id: 'all', label: 'All', icon: MapPin },
-  { id: 'neighborhood', label: 'Neighborhoods', icon: MapPin },
-  { id: 'park', label: 'Parks', icon: TreePine },
-  { id: 'historical', label: 'Historical Sites', icon: Landmark },
-  { id: 'restaurant', label: 'Restaurants', icon: Utensils },
-  { id: 'shopping', label: 'Shopping', icon: ShoppingBag },
-  { id: 'education', label: 'Education', icon: GraduationCap },
-];
+        { id: 'all', label: 'All', icon: MapPin, color: 'bg-slate-600 hover:bg-slate-700' },
+        { id: 'neighborhood', label: 'Neighborhoods', icon: MapPin, color: 'bg-indigo-600 hover:bg-indigo-700' },
+        { id: 'park', label: 'Parks', icon: TreePine, color: 'bg-green-600 hover:bg-green-700' },
+        { id: 'historical', label: 'Historical Sites', icon: Landmark, color: 'bg-amber-600 hover:bg-amber-700' },
+        { id: 'restaurant', label: 'Restaurants', icon: Utensils, color: 'bg-red-600 hover:bg-red-700' },
+        { id: 'shopping', label: 'Shopping', icon: ShoppingBag, color: 'bg-pink-600 hover:bg-pink-700' },
+        { id: 'education', label: 'Education', icon: GraduationCap, color: 'bg-purple-600 hover:bg-purple-700' },
+      ];
 
-export default function InteractiveMap() {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+      const categoryColors = {
+        neighborhood: { marker: '#4F46E5', text: 'indigo' },
+        park: { marker: '#16A34A', text: 'green' },
+        historical: { marker: '#D97706', text: 'amber' },
+        restaurant: { marker: '#DC2626', text: 'red' },
+        shopping: { marker: '#EC4899', text: 'pink' },
+        education: { marker: '#A855F7', text: 'purple' },
+      };
+
+      export default function InteractiveMap() {
+        const [selectedCategory, setSelectedCategory] = useState('all');
+        const [searchQuery, setSearchQuery] = useState('');
 
   const filteredPoints = selectedCategory === 'all' 
     ? pointsOfInterest 
