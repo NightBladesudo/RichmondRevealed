@@ -93,82 +93,20 @@ export default function Layout({ children, currentPageName }) {
       {/* Footer */}
       <footer className="bg-[#1e3a5f] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="max-w-md">
             {/* Brand */}
-            <div>
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-[#a63d2f] rounded-full flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="font-display text-xl font-semibold">Richmond</span>
-                  <span className="text-[#c9a227] font-display text-xl ml-1">Revealed</span>
-                </div>
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-[#a63d2f] rounded-full flex items-center justify-center">
+                <MapPin className="w-5 h-5 text-white" />
               </div>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                History, Culture, and Community in One City. Your comprehensive guide to exploring Richmond, Virginia.
-              </p>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-display text-lg font-semibold mb-6 text-[#c9a227]">Explore</h4>
-              <ul className="space-y-3">
-                {['Attractions', 'Events', 'Neighborhoods', 'Gallery'].map((item) => (
-                  <li key={item}>
-                    <Link
-                      to={createPageUrl(item)}
-                      className="text-gray-300 hover:text-[#2d7d7d] transition-colors text-sm"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h4 className="font-display text-lg font-semibold mb-6 text-[#c9a227]">Resources</h4>
-              <ul className="space-y-3">
-                {['History', 'Education', 'Business', 'Store'].map((item) => (
-                  <li key={item}>
-                    <Link
-                      to={createPageUrl(item)}
-                      className="text-gray-300 hover:text-[#2d7d7d] transition-colors text-sm"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="font-display text-lg font-semibold mb-6 text-[#c9a227]">Connect</h4>
-              <ul className="space-y-3">
-                <li className="flex items-center space-x-2 text-xs text-gray-300">
-                  <Mail className="w-3 h-3 text-[#2d7d7d]" />
-                  <span>anshjain0503@gmail.com</span>
-                </li>
-                <li className="flex items-center space-x-2 text-xs text-gray-300">
-                  <Phone className="w-3 h-3 text-[#2d7d7d]" />
-                  <span>804-728-9265</span>
-                </li>
-              </ul>
-              <div className="flex space-x-3 mt-5">
-                <a href="#" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
-                  <Facebook className="w-3 h-3" />
-                </a>
-                <a href="#" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
-                  <Instagram className="w-3 h-3" />
-                </a>
-                <a href="#" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
-                  <Twitter className="w-3 h-3" />
-                </a>
+              <div>
+                <span className="font-display text-xl font-semibold">Richmond</span>
+                <span className="text-[#c9a227] font-display text-xl ml-1">Revealed</span>
               </div>
             </div>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              History, Culture, and Community in One City. Your comprehensive guide to exploring Richmond, Virginia.
+            </p>
           </div>
 
           <div className="border-t border-white/10 mt-12 pt-8 text-center">
