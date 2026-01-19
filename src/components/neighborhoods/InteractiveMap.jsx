@@ -126,13 +126,13 @@ const categories = [
 
       {/* Map */}
       <div className="relative">
-        <div className="absolute top-4 left-4 z-10 bg-white px-3 py-2 rounded-lg shadow-md flex items-center gap-2 text-sm text-gray-700">
+        <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur px-4 py-3 rounded-lg shadow-lg flex items-center gap-2 text-sm text-gray-700 border border-slate-200">
           <svg className="w-4 h-4 text-[#a63d2f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
           Drag to explore Virginia
         </div>
-        <div className="h-[600px] rounded-2xl overflow-hidden shadow-lg border-4 border-white relative z-0">
+        <div className="h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-lg border-4 border-white relative z-0">
           <MapContainer
             center={[37.8, -78.5]}
             zoom={7}
