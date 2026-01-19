@@ -48,10 +48,8 @@ export default function History() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 leading-relaxed text-lg">
-              Richmond, Virginia stands at the confluence of history and progress. As the capital 
-              of the Commonwealth and former capital of the Confederacy, our city has witnessed 
-              some of the most pivotal moments in American history. Today, Richmond embraces its 
-              complex past while forging a vibrant, inclusive future.
+              Richmond, Virginia's capital, has played a key role in American history. Today, 
+              the city honors its past while building a vibrant and inclusive future.
             </p>
           </div>
         </div>
