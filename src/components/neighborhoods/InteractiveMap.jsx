@@ -97,11 +97,13 @@ export default function InteractiveMap() {
         </div>
         <div className="h-[600px] rounded-2xl overflow-hidden shadow-lg border-4 border-white relative z-0">
           <MapContainer
-          center={[37.8, -78.5]}
-          zoom={7}
-          style={{ height: '100%', width: '100%' }}
-          maxBounds={[[36.5, -83.7], [39.5, -75.2]]}
-          maxBoundsViscosity={1.0}
+            center={[37.8, -78.5]}
+            zoom={7}
+            style={{ height: '100%', width: '100%' }}
+            maxBounds={[[36.5, -83.7], [39.5, -75.2]]}
+            maxBoundsViscosity={1.0}
+            minZoom={6}
+            maxZoom={13}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
