@@ -64,42 +64,36 @@ export default function Layout({ children, currentPageName }) {
               </div>
             </Link>
 
-
+            {/* Page Navigation */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button className="bg-[#a63d2f] hover:bg-[#8b3426] text-white shadow-lg px-6 py-6 text-base font-semibold">
+                  <MoreVertical className="w-5 h-5 mr-2" />
+                  Page Navigation
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56">
+                {navLinks.map((link) => (
+                  <DropdownMenuItem key={link.page} asChild>
+                    <Link
+                      to={createPageUrl(link.page)}
+                      className={`cursor-pointer ${
+                        currentPageName === link.page
+                          ? 'bg-[#a63d2f]/10 text-[#a63d2f] font-semibold'
+                          : 'text-[#1e3a5f]'
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
-
-
         </nav>
       </header>
 
-      {/* Page Navigation Menu - Show on all pages */}
-      <div className="bg-gray-50 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button className="bg-[#1e3a5f] hover:bg-[#2d4a6f] text-white shadow-lg px-6 py-6 text-base font-semibold">
-                <MoreVertical className="w-5 h-5 mr-2" />
-                Page Navigation
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
-              {navLinks.map((link) => (
-                <DropdownMenuItem key={link.page} asChild>
-                  <Link
-                    to={createPageUrl(link.page)}
-                    className={`cursor-pointer ${
-                      currentPageName === link.page
-                        ? 'bg-[#a63d2f]/10 text-[#a63d2f] font-semibold'
-                        : 'text-[#1e3a5f]'
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-      </div>
+
 
       {/* Main Content */}
       <main className="font-body">{children}</main>
