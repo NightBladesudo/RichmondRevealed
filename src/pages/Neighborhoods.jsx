@@ -57,8 +57,38 @@ const neighborhoods = [
     description: 'Upscale shopping and dining corridor known for boutiques, specialty shops, and award-winning restaurants.',
     highlights: ['Shopping', 'Fine Dining', 'Upscale'],
     image: 'https://images.unsplash.com/photo-1567696911980-2eed69a46042?w=800'
+  },
+  {
+    name: 'Jackson Ward',
+    description: 'Historic neighborhood known for its African American heritage, beautiful architecture, and cultural significance. Home to significant civil rights history.',
+    highlights: ['History', 'Culture', 'Heritage'],
+    image: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=800'
+  },
+  {
+    name: 'Bellevue',
+    description: 'Charming historic neighborhood with tree-lined streets, Victorian homes, and a tight-knit community atmosphere.',
+    highlights: ['Historic Homes', 'Walkable', 'Community'],
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800'
+  },
+  {
+    name: 'South of Broad',
+    description: 'Historic neighborhood near downtown Richmond featuring restored homes, galleries, and proximity to the James River.',
+    highlights: ['Historic', 'Arts', 'River Proximity'],
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800'
+  },
+  {
+    name: 'Near West End',
+    description: 'Growing residential neighborhood with diverse architecture, local shops, and convenient access to major thoroughfares.',
+    highlights: ['Residential', 'Diverse', 'Accessible'],
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800'
+  },
+  {
+    name: 'Northside',
+    description: 'Up-and-coming neighborhood north of downtown with affordable housing, murals, and emerging dining and entertainment venues.',
+    highlights: ['Affordable', 'Art Scene', 'Emerging'],
+    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800'
   }
-];
+  ];
 
 export default function Neighborhoods() {
   return (
