@@ -52,56 +52,77 @@ const pointsOfInterest = [
 ];
 
 const categories = [
-  { id: 'all', label: 'All', icon: MapPin },
-  { id: 'neighborhood', label: 'Neighborhoods', icon: MapPin },
-  { id: 'park', label: 'Parks', icon: TreePine },
-  { id: 'historical', label: 'Historical Sites', icon: Landmark },
-  { id: 'restaurant', label: 'Restaurants', icon: Utensils },
-  { id: 'shopping', label: 'Shopping', icon: ShoppingBag },
-  { id: 'education', label: 'Education', icon: GraduationCap },
-];
+        { id: 'all', label: 'All', icon: MapPin, color: 'bg-slate-600 hover:bg-slate-700' },
+        { id: 'neighborhood', label: 'Neighborhoods', icon: MapPin, color: 'bg-indigo-600 hover:bg-indigo-700' },
+        { id: 'park', label: 'Parks', icon: TreePine, color: 'bg-green-600 hover:bg-green-700' },
+        { id: 'historical', label: 'Historical Sites', icon: Landmark, color: 'bg-amber-600 hover:bg-amber-700' },
+        { id: 'restaurant', label: 'Restaurants', icon: Utensils, color: 'bg-red-600 hover:bg-red-700' },
+        { id: 'shopping', label: 'Shopping', icon: ShoppingBag, color: 'bg-pink-600 hover:bg-pink-700' },
+        { id: 'education', label: 'Education', icon: GraduationCap, color: 'bg-purple-600 hover:bg-purple-700' },
+      ];
 
-export default function InteractiveMap() {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+      const categoryColors = {
+        neighborhood: { marker: '#4F46E5', text: 'indigo' },
+        park: { marker: '#16A34A', text: 'green' },
+        historical: { marker: '#D97706', text: 'amber' },
+        restaurant: { marker: '#DC2626', text: 'red' },
+        shopping: { marker: '#EC4899', text: 'pink' },
+        education: { marker: '#A855F7', text: 'purple' },
+      };
 
-  const filteredPoints = selectedCategory === 'all' 
-    ? pointsOfInterest 
-    : pointsOfInterest.filter(point => point.category === selectedCategory);
+      export default function InteractiveMap() {
+        const [selectedCategory, setSelectedCategory] = useState('all');
+        const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredPoints = pointsOfInterest.filter(point => {
+    const categoryMatch = selectedCategory === 'all' || point.category === selectedCategory;
+    const searchMatch = point.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                      point.description.toLowerCase().includes(searchQuery.toLowerCase());
+    return categoryMatch && searchMatch;
+  });
 
   return (
     <div className="space-y-6">
-      {/* Category Filters */}
-            <div className="flex flex-wrap gap-2 bg-white rounded-xl p-4 shadow-sm border border-gray-200">
-              {categories.map((category) => {
-                const Icon = category.icon;
-                const isSelected = selectedCategory === category.id;
-                const categoryColors = {
-                  'all': { bg: 'bg-gray-100', text: 'text-gray-700', selected: 'bg-gray-200 border-gray-400' },
-                  'neighborhood': { bg: 'bg-blue-50', text: 'text-blue-700', selected: 'bg-blue-200 border-blue-400' },
-                  'park': { bg: 'bg-green-50', text: 'text-green-700', selected: 'bg-green-200 border-green-400' },
-                  'historical': { bg: 'bg-amber-50', text: 'text-amber-700', selected: 'bg-amber-200 border-amber-400' },
-                  'restaurant': { bg: 'bg-red-50', text: 'text-red-700', selected: 'bg-red-200 border-red-400' },
-                  'shopping': { bg: 'bg-purple-50', text: 'text-purple-700', selected: 'bg-purple-200 border-purple-400' },
-                  'education': { bg: 'bg-indigo-50', text: 'text-indigo-700', selected: 'bg-indigo-200 border-indigo-400' },
-                };
-                const colors = categoryColors[category.id] || categoryColors['all'];
+      {/* Search Bar */}
+      <div className="relative">
+        <Input
+          placeholder="Search locations..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="pl-10 pr-10 h-10 border-2 border-slate-200 focus:border-[#a63d2f] rounded-lg"
+        />
+        <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400" />
+        {searchQuery && (
+          <button
+            onClick={() => setSearchQuery('')}
+            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-slate-400 hover:text-slate-600"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        )}
+      </div>
 
-                return (
-                  <button
-                    key={category.id}
-                    onClick={() => setSelectedCategory(category.id)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 border-2 ${
-                      isSelected 
-                        ? `${colors.selected} shadow-md scale-105` 
-                        : `${colors.bg} ${colors.text} border-transparent hover:shadow-md hover:scale-102`
-                    }`}
-                  >
-                    <Icon className="w-4 h-4" />
-                    {category.label}
-                  </button>
-                );
-              })}
-            </div>
+      {/* Category Filters */}
+      <div className="flex flex-wrap gap-2">
+        {categories.map((category) => {
+          const Icon = category.icon;
+          const isActive = selectedCategory === category.id;
+          return (
+            <Button
+              key={category.id}
+              onClick={() => setSelectedCategory(category.id)}
+              className={`transition-all duration-200 ${
+                isActive
+                  ? `${category.color} text-white shadow-lg scale-105`
+                  : 'bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300'
+              }`}
+            >
+              <Icon className="w-4 h-4 mr-2" />
+              {category.label}
+            </Button>
+          );
+        })}
+      </div>
 
       {/* Map */}
       <div className="relative">
@@ -126,57 +147,21 @@ export default function InteractiveMap() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           
-          {filteredPoints.map((point) => {
-            const categoryMarkerColors = {
-              'neighborhood': '#3b82f6',
-              'park': '#22c55e',
-              'historical': '#f59e0b',
-              'restaurant': '#ef4444',
-              'shopping': '#a855f7',
-              'education': '#6366f1',
-            };
-            const categoryBgColors = {
-              'neighborhood': 'bg-blue-50',
-              'park': 'bg-green-50',
-              'historical': 'bg-amber-50',
-              'restaurant': 'bg-red-50',
-              'shopping': 'bg-purple-50',
-              'education': 'bg-indigo-50',
-            };
-            const categoryTextColors = {
-              'neighborhood': 'text-blue-700 bg-blue-100',
-              'park': 'text-green-700 bg-green-100',
-              'historical': 'text-amber-700 bg-amber-100',
-              'restaurant': 'text-red-700 bg-red-100',
-              'shopping': 'text-purple-700 bg-purple-100',
-              'education': 'text-indigo-700 bg-indigo-100',
-            };
-
-            return (
-              <Marker 
-                key={point.id} 
-                position={[point.lat, point.lng]}
-                icon={L.icon({
-                  iconUrl: `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='${encodeURIComponent(categoryMarkerColors[point.category] || '#a63d2f')}'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12c0 7 10 13 10 13s10-6 10-13c0-5.52-4.48-10-10-10zm0 18s-8-5-8-11c0-4.42 3.58-8 8-8s8 3.58 8 8c0 6-8 11-8 11z'/%3E%3C/svg%3E`,
-                  iconSize: [32, 32],
-                  iconAnchor: [16, 32],
-                  popupAnchor: [0, -32]
-                })}
-              >
-                <Popup className="custom-popup">
-                  <div className={`p-3 rounded-lg ${categoryBgColors[point.category]}`}>
-                    <h3 className="font-display font-semibold text-[#1e3a5f] mb-2 text-sm">
-                      {point.name}
-                    </h3>
-                    <p className="text-xs text-gray-700 mb-3 leading-relaxed">{point.description}</p>
-                    <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${categoryTextColors[point.category]}`}>
-                      {point.category.charAt(0).toUpperCase() + point.category.slice(1)}
-                    </span>
-                  </div>
-                </Popup>
-              </Marker>
-            );
-          })}
+          {filteredPoints.map((point) => (
+            <Marker key={point.id} position={[point.lat, point.lng]}>
+              <Popup>
+                <div className="p-2">
+                  <h3 className="font-display font-semibold text-[#1e3a5f] mb-1">
+                    {point.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-2">{point.description}</p>
+                  <span className="inline-block px-2 py-1 bg-[#a63d2f]/10 text-[#a63d2f] text-xs font-medium rounded">
+                    {point.category}
+                  </span>
+                </div>
+              </Popup>
+            </Marker>
+          ))}
           </MapContainer>
         </div>
       </div>
