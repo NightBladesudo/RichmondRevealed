@@ -179,11 +179,12 @@ const categories = [
         </div>
       </div>
 
-      {/* Legend */}
-      <div className="bg-white rounded-lg p-4 shadow-sm">
-        <p className="text-sm text-gray-600">
-          Showing <span className="font-semibold text-[#1e3a5f]">{filteredPoints.length}</span> locations
+      {/* Legend & Results */}
+      <div className="bg-gradient-to-r from-[#1e3a5f] to-[#2d4a7a] rounded-lg p-4 shadow-lg text-white">
+        <p className="text-sm">
+          Showing <span className="font-semibold text-[#c9a227]">{filteredPoints.length}</span> location{filteredPoints.length !== 1 ? 's' : ''}
           {selectedCategory !== 'all' && ` in ${categories.find(c => c.id === selectedCategory)?.label}`}
+          {searchQuery && ` matching "${searchQuery}"`}
         </p>
       </div>
     </div>
