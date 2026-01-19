@@ -13,10 +13,10 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Neighborhoods', page: 'Neighborhoods' },
     { name: 'Local Business', page: 'Business' },
     { name: 'Education', page: 'Education' },
+    { name: 'Citations', page: 'Citations' },
     { name: 'Gallery', page: 'Gallery' },
     { name: 'Store', page: 'Store' },
     { name: 'Contact', page: 'Contact' },
-    { name: 'Citations', page: 'Citations' },
   ];
 
   return (
