@@ -57,22 +57,24 @@ export default function Layout({ children, currentPageName }) {
               </div>
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-1">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.page}
-                  to={createPageUrl(link.page)}
-                  className={`px-3 py-2 text-sm font-body font-medium transition-all duration-200 rounded-md ${
-                    currentPageName === link.page
-                      ? 'text-[#c9a227] bg-white/10'
-                      : 'text-gray-200 hover:text-white hover:bg-white/5'
-                  }`}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
+            {/* Desktop Navigation - Hidden on Home page */}
+            {currentPageName !== 'Home' && (
+              <div className="hidden lg:flex items-center space-x-1">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.page}
+                    to={createPageUrl(link.page)}
+                    className={`px-3 py-2 text-sm font-body font-medium transition-all duration-200 rounded-md ${
+                      currentPageName === link.page
+                        ? 'text-[#c9a227] bg-white/10'
+                        : 'text-gray-200 hover:text-white hover:bg-white/5'
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            )}
 
             {/* Mobile menu button */}
             <button
@@ -83,8 +85,8 @@ export default function Layout({ children, currentPageName }) {
             </button>
           </div>
 
-          {/* Mobile Navigation */}
-          {mobileMenuOpen && (
+          {/* Mobile Navigation - Hidden on Home page */}
+          {mobileMenuOpen && currentPageName !== 'Home' && (
             <div className="lg:hidden pb-4 border-t border-white/10 pt-4">
               <div className="flex flex-col space-y-1">
                 {navLinks.map((link) => (
