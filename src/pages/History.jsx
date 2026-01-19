@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
 import { Clock, BookOpen } from 'lucide-react';
+import Timeline from '@/components/history/Timeline';
 
 export default function History() {
   const { data: historyEvents = [], isLoading } = useQuery({
@@ -119,6 +120,31 @@ export default function History() {
             ))}
           </div>
           </div>
+          </section>
+
+          {/* Timeline Section */}
+          <section className="py-20 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-16"
+              >
+                <div className="flex items-center justify-center space-x-2 mb-4">
+                  <Clock className="w-5 h-5 text-[#a63d2f]" />
+                  <span className="text-[#a63d2f] font-medium uppercase tracking-wider text-sm">Timeline</span>
+                </div>
+                <h2 className="font-display text-3xl text-[#1e3a5f] font-bold mb-4">
+                  Milestones in Richmond's History
+                </h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  From the Powhatan Confederacy to modern day, explore the key events that shaped Richmond
+                </p>
+              </motion.div>
+              
+              <Timeline events={historyEvents} isLoading={isLoading} />
+            </div>
           </section>
 
           </div>
