@@ -124,29 +124,27 @@ export default function Store() {
       </section>
 
       {/* Filters */}
-      <section className="py-8 bg-white border-b sticky top-20 z-30">
+      <section className="py-8 bg-gray-50 border-b sticky top-20 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-4 overflow-x-auto pb-2">
-              <Filter className="w-5 h-5 text-gray-400 flex-shrink-0" />
+            <div className="flex items-center gap-3 overflow-x-auto pb-2">
               {categories.map((category) => (
-                <Button
+                <button
                   key={category}
-                  variant={activeCategory === category ? 'default' : 'outline'}
-                  size="sm"
                   onClick={() => setActiveCategory(category)}
-                  className={activeCategory === category 
-                    ? 'bg-[#a63d2f] hover:bg-[#8b3426] text-white' 
-                    : 'border-gray-200 text-gray-600 hover:border-[#a63d2f] hover:text-[#a63d2f]'
-                  }
+                  className={`inline-flex items-center justify-center px-4 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm whitespace-nowrap ${
+                    activeCategory === category
+                      ? 'bg-[#a63d2f] text-white hover:bg-[#8b3426]'
+                      : 'bg-white/90 backdrop-blur-sm text-[#1e3a5f] border border-gray-200 hover:bg-white hover:border-[#a63d2f]'
+                  }`}
                 >
                   {category}
-                </Button>
+                </button>
               ))}
             </div>
             <Button
               onClick={() => setIsCartOpen(true)}
-              className="relative bg-[#1e3a5f] hover:bg-[#2d4a6f] text-white flex-shrink-0"
+              className="relative bg-[#1e3a5f] hover:bg-[#2d4a6f] text-white flex-shrink-0 shadow-lg"
             >
               <ShoppingBag className="w-5 h-5 mr-2" />
               Cart
