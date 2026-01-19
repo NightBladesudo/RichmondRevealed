@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
 import { ShoppingBag, Filter, Tag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import CartDrawer from '../components/store/CartDrawer';
+import { toast } from 'sonner';
 
 const categories = ['All', 'Apparel', 'Accessories', 'Art', 'Home'];
 
 export default function Store() {
   const [activeCategory, setActiveCategory] = useState('All');
+  const [cart, setCart] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const { data: products = [], isLoading } = useQuery({
     queryKey: ['products'],
@@ -18,6 +22,50 @@ export default function Store() {
   const filteredProducts = activeCategory === 'All' 
     ? products 
     : products.filter(p => p.category === activeCategory);
+
+  // Check for successful payment
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+      toast.success('Payment successful! Thank you for your purchase.');
+      setCart([]);
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+  }, []);
+
+  const addToCart = (product) => {
+    setCart(prev => {
+      const existing = prev.find(item => item.id === product.id);
+      if (existing) {
+        return prev.map(item =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      }
+      return [...prev, { ...product, quantity: 1 }];
+    });
+    toast.success(`${product.name} added to cart`);
+  };
+
+  const updateQuantity = (productId, newQuantity) => {
+    if (newQuantity <= 0) {
+      setCart(prev => prev.filter(item => item.id !== productId));
+    } else {
+      setCart(prev =>
+        prev.map(item =>
+          item.id === productId ? { ...item, quantity: newQuantity } : item
+        )
+      );
+    }
+  };
+
+  const removeItem = (productId) => {
+    setCart(prev => prev.filter(item => item.id !== productId));
+    toast.success('Item removed from cart');
+  };
+
+  const cartItemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -54,22 +102,36 @@ export default function Store() {
       {/* Filters */}
       <section className="py-8 bg-white border-b sticky top-20 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-4 overflow-x-auto pb-2">
-            <Filter className="w-5 h-5 text-gray-400 flex-shrink-0" />
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={activeCategory === category ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => setActiveCategory(category)}
-                className={activeCategory === category 
-                  ? 'bg-[#a63d2f] hover:bg-[#8b3426] text-white' 
-                  : 'border-gray-200 text-gray-600 hover:border-[#a63d2f] hover:text-[#a63d2f]'
-                }
-              >
-                {category}
-              </Button>
-            ))}
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-4 overflow-x-auto pb-2">
+              <Filter className="w-5 h-5 text-gray-400 flex-shrink-0" />
+              {categories.map((category) => (
+                <Button
+                  key={category}
+                  variant={activeCategory === category ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => setActiveCategory(category)}
+                  className={activeCategory === category 
+                    ? 'bg-[#a63d2f] hover:bg-[#8b3426] text-white' 
+                    : 'border-gray-200 text-gray-600 hover:border-[#a63d2f] hover:text-[#a63d2f]'
+                  }
+                >
+                  {category}
+                </Button>
+              ))}
+            </div>
+            <Button
+              onClick={() => setIsCartOpen(true)}
+              className="relative bg-[#1e3a5f] hover:bg-[#2d4a6f] text-white flex-shrink-0"
+            >
+              <ShoppingBag className="w-5 h-5 mr-2" />
+              Cart
+              {cartItemCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-[#a63d2f] text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center">
+                  {cartItemCount}
+                </span>
+              )}
+            </Button>
           </div>
         </div>
       </section>
@@ -124,6 +186,7 @@ export default function Store() {
                         <Button
                           size="sm"
                           className="bg-[#1e3a5f] hover:bg-[#2d4a6f] text-white"
+                          onClick={() => addToCart(product)}
                         >
                           <ShoppingBag className="w-4 h-4 mr-1" />
                           Add
@@ -163,6 +226,14 @@ export default function Store() {
           </motion.div>
         </div>
       </section>
+
+      <CartDrawer
+        isOpen={isCartOpen}
+        onClose={() => setIsCartOpen(false)}
+        cart={cart}
+        updateQuantity={updateQuantity}
+        removeItem={removeItem}
+      />
     </div>
   );
 }
