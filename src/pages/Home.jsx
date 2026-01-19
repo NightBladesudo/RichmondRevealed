@@ -15,6 +15,7 @@ export default function Home() {
     { name: 'Gallery', page: 'Gallery' },
     { name: 'Store', page: 'Store' },
     { name: 'Contact', page: 'Contact' },
+    { name: 'Citations', page: 'Citations' },
   ];
 
   return (
