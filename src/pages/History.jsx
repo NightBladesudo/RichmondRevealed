@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
-import { Clock, BookOpen } from 'lucide-react';
+import { Clock, BookOpen, MapPin } from 'lucide-react';
 
 export default function History() {
   const { data: historyEvents = [], isLoading } = useQuery({
@@ -52,6 +52,92 @@ export default function History() {
               the city honors its past while building a vibrant and inclusive future.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <h2 className="font-display text-4xl text-[#1e3a5f] font-bold mb-4">
+              Historical Timeline
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Key moments that shaped Richmond
+            </p>
+          </motion.div>
+
+          {isLoading ? (
+            <div className="space-y-8">
+              {[...Array(5)].map((_, i) => (
+                <div key={i} className="animate-pulse flex gap-8">
+                  <div className="w-24 h-12 bg-gray-300 rounded" />
+                  <div className="flex-1 space-y-3">
+                    <div className="h-6 bg-gray-300 rounded w-1/3" />
+                    <div className="h-4 bg-gray-200 rounded w-full" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="relative">
+              {/* Center line */}
+              <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#a63d2f] to-[#c9a227] transform -translate-x-1/2" />
+
+              <div className="space-y-12">
+                {historyEvents.map((event, index) => (
+                  <motion.div
+                    key={event.id}
+                    initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.05 }}
+                    className={`flex items-start gap-8 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
+                  >
+                    {/* Dot */}
+                    <div className="flex flex-col items-center flex-shrink-0 w-20">
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.05 + 0.2 }}
+                        className="w-5 h-5 bg-[#a63d2f] rounded-full border-4 border-white shadow-lg z-10"
+                      />
+                    </div>
+
+                    {/* Content */}
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.05 + 0.1 }}
+                      className="flex-1 pt-1"
+                    >
+                      <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 group cursor-default">
+                        <div className="flex items-center gap-3 mb-3">
+                          <Clock className="w-5 h-5 text-[#c9a227] flex-shrink-0 group-hover:rotate-12 transition-transform" />
+                          <span className="font-display text-3xl font-bold text-[#a63d2f]">
+                            {event.year}
+                          </span>
+                        </div>
+                        <h3 className="font-display text-2xl text-[#1e3a5f] font-semibold mb-3 group-hover:text-[#a63d2f] transition-colors">
+                          {event.title}
+                        </h3>
+                        <p className="text-gray-600 leading-relaxed text-base">
+                          {event.description}
+                        </p>
+                      </div>
+                    </motion.div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
