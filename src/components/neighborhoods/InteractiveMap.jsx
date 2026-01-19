@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Button } from '@/components/ui/button';
-import { MapPin, Utensils, TreePine, Landmark, ShoppingBag, GraduationCap } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { MapPin, Utensils, TreePine, Landmark, ShoppingBag, GraduationCap, X } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
