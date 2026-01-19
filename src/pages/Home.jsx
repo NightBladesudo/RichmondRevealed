@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '../utils';
 import HeroSection from '../components/home/HeroSection';
-import CallToAction from '../components/home/CallToAction';
 
 export default function Home() {
   const navLinks = [
@@ -42,8 +41,6 @@ export default function Home() {
       </div>
       
       <HeroSection />
-
-      <CallToAction />
     </div>
   );
 }
