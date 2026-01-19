@@ -147,21 +147,34 @@ const categories = [
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           
-          {filteredPoints.map((point) => (
-            <Marker key={point.id} position={[point.lat, point.lng]}>
-              <Popup>
-                <div className="p-2">
-                  <h3 className="font-display font-semibold text-[#1e3a5f] mb-1">
-                    {point.name}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-2">{point.description}</p>
-                  <span className="inline-block px-2 py-1 bg-[#a63d2f]/10 text-[#a63d2f] text-xs font-medium rounded">
-                    {point.category}
-                  </span>
-                </div>
-              </Popup>
-            </Marker>
-          ))}
+          {filteredPoints.map((point) => {
+            const colors = categoryColors[point.category] || { marker: '#6B7280', text: 'gray' };
+            const markerIcon = L.divIcon({
+              html: `<div style="background-color: ${colors.marker}; width: 32px; height: 40px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); display: flex; align-items: center; justify-content: center; border: 3px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                <div style="transform: rotate(45deg); color: white; font-weight: bold; font-size: 16px;">📍</div>
+              </div>`,
+              iconSize: [32, 40],
+              iconAnchor: [16, 40],
+              popupAnchor: [0, -40],
+              className: 'custom-marker'
+            });
+
+            return (
+              <Marker key={point.id} position={[point.lat, point.lng]} icon={markerIcon}>
+                <Popup>
+                  <div className="min-w-[250px] p-3">
+                    <h3 className="font-display font-semibold text-[#1e3a5f] mb-2 text-base">
+                      {point.name}
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-3 leading-relaxed">{point.description}</p>
+                    <span className={`inline-block px-3 py-1.5 bg-${colors.text}-50 text-${colors.text}-700 text-xs font-semibold rounded-full`}>
+                      {point.category.charAt(0).toUpperCase() + point.category.slice(1)}
+                    </span>
+                  </div>
+                </Popup>
+              </Marker>
+            );
+          })}
           </MapContainer>
         </div>
       </div>
