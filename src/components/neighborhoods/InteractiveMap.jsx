@@ -88,7 +88,7 @@ export default function InteractiveMap() {
       </div>
 
       {/* Map */}
-      <div className="h-[600px] rounded-2xl overflow-hidden shadow-lg border-4 border-white">
+      <div className="h-[600px] rounded-2xl overflow-hidden shadow-lg border-4 border-white relative z-0">
         <MapContainer
           center={[37.8, -78.5]}
           zoom={7}
