@@ -37,37 +37,10 @@ export default function HeroSection() {
             <span className="block text-[#c9a227]">Revealed</span>
           </h1>
           
-          <p className="text-xl text-gray-200 leading-relaxed mb-8 max-w-lg">
+          <p className="text-xl text-gray-200 leading-relaxed max-w-lg">
             History, Culture, and Community in One City. Discover the rich heritage, 
             vibrant arts scene, and welcoming neighborhoods of Virginia's capital.
           </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-2">
-            <Link
-              to={createPageUrl('Attractions')}
-              className="inline-flex items-center justify-center px-4 py-3 bg-[#a63d2f] text-white font-semibold rounded-lg hover:bg-[#8b3426] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm"
-            >
-              Attractions
-            </Link>
-            <Link
-              to={createPageUrl('Events')}
-              className="inline-flex items-center justify-center px-4 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 text-sm"
-            >
-              Events
-            </Link>
-            <Link
-              to={createPageUrl('History')}
-              className="inline-flex items-center justify-center px-4 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 text-sm"
-            >
-              History
-            </Link>
-            <Link
-              to={createPageUrl('Business')}
-              className="inline-flex items-center justify-center px-4 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 text-sm"
-            >
-              Businesses
-            </Link>
-          </div>
         </motion.div>
       </div>
 
