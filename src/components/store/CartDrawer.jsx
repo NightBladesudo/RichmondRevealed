@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { X, Plus, Minus, ShoppingCart } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function CartDrawer({ isOpen, onClose, cart, updateQuantity, removeFromCart, onCheckout, isCheckingOut }) {
+export default function CartDrawer({ isOpen, onClose, cart, updateQuantity, removeFromCart, onCheckout }) {
   const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
   return (
@@ -86,9 +86,8 @@ export default function CartDrawer({ isOpen, onClose, cart, updateQuantity, remo
                 <Button
                   className="w-full bg-[#a63d2f] hover:bg-[#8b3426] text-white py-6"
                   onClick={onCheckout}
-                  disabled={isCheckingOut}
                 >
-                  {isCheckingOut ? 'Processing...' : 'Proceed to Checkout'}
+                  Proceed to Checkout
                 </Button>
               </div>
             </>
