@@ -55,6 +55,68 @@ export default function History() {
         </div>
       </section>
 
+      {/* Timeline */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="font-display text-3xl text-[#1e3a5f] font-bold mb-4">
+              Historical Timeline
+            </h2>
+            <p className="text-gray-600">
+              Key moments that shaped our city
+            </p>
+          </motion.div>
+
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-[#a63d2f]/20 transform md:-translate-x-1/2" />
+
+            {historyEvents.map((event, index) => (
+              <motion.div
+                key={event.id}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className={`relative flex items-start mb-12 ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                }`}
+              >
+                {/* Timeline dot */}
+                <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-[#a63d2f] rounded-full border-4 border-white shadow-lg transform -translate-x-1/2 z-10" />
+
+                {/* Content */}
+                <div className={`ml-16 md:ml-0 md:w-1/2 ${
+                  index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'
+                }`}>
+                  <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div className={`flex items-center mb-3 ${
+                      index % 2 === 0 ? 'md:justify-end' : ''
+                    }`}>
+                      <Clock className="w-4 h-4 text-[#c9a227] mr-2" />
+                      <span className="text-[#a63d2f] font-display font-bold text-xl">
+                        {event.year}
+                      </span>
+                    </div>
+                    <h3 className="font-display text-lg text-[#1e3a5f] font-semibold mb-2">
+                      {event.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {event.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Historical Eras */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
