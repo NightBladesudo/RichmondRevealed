@@ -146,25 +146,25 @@ export default function Layout({ children, currentPageName }) {
             {/* Contact */}
             <div>
               <h4 className="font-display text-lg font-semibold mb-6 text-[#c9a227]">Connect</h4>
-              <ul className="space-y-4">
-                <li className="flex items-center space-x-3 text-sm text-gray-300">
-                  <Mail className="w-4 h-4 text-[#2d7d7d]" />
+              <ul className="space-y-3">
+                <li className="flex items-center space-x-2 text-xs text-gray-300">
+                  <Mail className="w-3 h-3 text-[#2d7d7d]" />
                   <span>anshjain0503@gmail.com</span>
                 </li>
-                <li className="flex items-center space-x-3 text-sm text-gray-300">
-                  <Phone className="w-4 h-4 text-[#2d7d7d]" />
+                <li className="flex items-center space-x-2 text-xs text-gray-300">
+                  <Phone className="w-3 h-3 text-[#2d7d7d]" />
                   <span>804-728-9265</span>
                 </li>
               </ul>
-              <div className="flex space-x-4 mt-6">
-                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
-                  <Facebook className="w-4 h-4" />
+              <div className="flex space-x-3 mt-5">
+                <a href="#" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
+                  <Facebook className="w-3 h-3" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
-                  <Instagram className="w-4 h-4" />
+                <a href="#" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
+                  <Instagram className="w-3 h-3" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
-                  <Twitter className="w-4 h-4" />
+                <a href="#" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#a63d2f] transition-colors">
+                  <Twitter className="w-3 h-3" />
                 </a>
               </div>
             </div>
