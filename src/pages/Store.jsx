@@ -144,12 +144,12 @@ export default function Store() {
             </div>
             <Button
               onClick={() => setIsCartOpen(true)}
-              className="relative bg-[#1e3a5f] hover:bg-[#2d4a6f] text-white flex-shrink-0 shadow-lg"
+              className="relative bg-[#1e3a5f] hover:bg-[#2d4a6f] text-white flex-shrink-0 shadow-lg px-6 py-6 text-base font-semibold"
             >
               <ShoppingBag className="w-5 h-5 mr-2" />
               Cart
               {cartItemCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-[#a63d2f] text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-[#a63d2f] text-white text-xs font-bold rounded-full h-7 w-7 flex items-center justify-center">
                   {cartItemCount}
                 </span>
               )}
