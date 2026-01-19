@@ -13,6 +13,7 @@ export default function Store() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isCheckingOut, setIsCheckingOut] = useState(false);
 
   const { data: products = [], isLoading } = useQuery({
     queryKey: ['products'],
@@ -60,9 +61,34 @@ export default function Store() {
     }
   };
 
-  const removeItem = (productId) => {
+  const removeFromCart = (productId) => {
     setCart(prev => prev.filter(item => item.id !== productId));
     toast.success('Item removed from cart');
+  };
+
+  const handleCheckout = async () => {
+    if (window.self !== window.top) {
+      alert('Checkout is only available in the published app. Please open the app in a new tab to complete your purchase.');
+      return;
+    }
+
+    setIsCheckingOut(true);
+    try {
+      const currentUrl = window.location.origin + window.location.pathname;
+      const response = await base44.functions.invoke('createCheckout', {
+        items: cart,
+        successUrl: `${currentUrl}?success=true`,
+        cancelUrl: `${currentUrl}?canceled=true`,
+      });
+
+      if (response.data.url) {
+        window.location.href = response.data.url;
+      }
+    } catch (error) {
+      console.error('Checkout error:', error);
+      toast.error('Failed to start checkout. Please try again.');
+      setIsCheckingOut(false);
+    }
   };
 
   const cartItemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -232,7 +258,9 @@ export default function Store() {
         onClose={() => setIsCartOpen(false)}
         cart={cart}
         updateQuantity={updateQuantity}
-        removeItem={removeItem}
+        removeFromCart={removeFromCart}
+        onCheckout={handleCheckout}
+        isCheckingOut={isCheckingOut}
       />
     </div>
   );
