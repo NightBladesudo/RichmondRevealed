@@ -52,27 +52,17 @@ const pointsOfInterest = [
 ];
 
 const categories = [
-        { id: 'all', label: 'All', icon: MapPin, color: 'bg-slate-600 hover:bg-slate-700' },
-        { id: 'neighborhood', label: 'Neighborhoods', icon: MapPin, color: 'bg-indigo-600 hover:bg-indigo-700' },
-        { id: 'park', label: 'Parks', icon: TreePine, color: 'bg-green-600 hover:bg-green-700' },
-        { id: 'historical', label: 'Historical Sites', icon: Landmark, color: 'bg-amber-600 hover:bg-amber-700' },
-        { id: 'restaurant', label: 'Restaurants', icon: Utensils, color: 'bg-red-600 hover:bg-red-700' },
-        { id: 'shopping', label: 'Shopping', icon: ShoppingBag, color: 'bg-pink-600 hover:bg-pink-700' },
-        { id: 'education', label: 'Education', icon: GraduationCap, color: 'bg-purple-600 hover:bg-purple-700' },
-      ];
+  { id: 'all', label: 'All', icon: MapPin },
+  { id: 'neighborhood', label: 'Neighborhoods', icon: MapPin },
+  { id: 'park', label: 'Parks', icon: TreePine },
+  { id: 'historical', label: 'Historical Sites', icon: Landmark },
+  { id: 'restaurant', label: 'Restaurants', icon: Utensils },
+  { id: 'shopping', label: 'Shopping', icon: ShoppingBag },
+  { id: 'education', label: 'Education', icon: GraduationCap },
+];
 
-      const categoryColors = {
-        neighborhood: { marker: '#4F46E5', text: 'indigo' },
-        park: { marker: '#16A34A', text: 'green' },
-        historical: { marker: '#D97706', text: 'amber' },
-        restaurant: { marker: '#DC2626', text: 'red' },
-        shopping: { marker: '#EC4899', text: 'pink' },
-        education: { marker: '#A855F7', text: 'purple' },
-      };
-
-      export default function InteractiveMap() {
-        const [selectedCategory, setSelectedCategory] = useState('all');
-        const [searchQuery, setSearchQuery] = useState('');
+export default function InteractiveMap() {
+  const [selectedCategory, setSelectedCategory] = useState('all');
 
   const filteredPoints = selectedCategory === 'all' 
     ? pointsOfInterest 
@@ -81,22 +71,37 @@ const categories = [
   return (
     <div className="space-y-6">
       {/* Category Filters */}
-      <div className="flex flex-wrap gap-3">
-        {categories.map((category) => {
-          const Icon = category.icon;
-          return (
-            <Button
-              key={category.id}
-              variant={selectedCategory === category.id ? 'default' : 'outline'}
-              onClick={() => setSelectedCategory(category.id)}
-              className={selectedCategory === category.id ? 'bg-[#a63d2f] hover:bg-[#8b3426]' : ''}
-            >
-              <Icon className="w-4 h-4 mr-2" />
-              {category.label}
-            </Button>
-          );
-        })}
-      </div>
+            <div className="flex flex-wrap gap-2 bg-white rounded-xl p-4 shadow-sm border border-gray-200">
+              {categories.map((category) => {
+                const Icon = category.icon;
+                const isSelected = selectedCategory === category.id;
+                const categoryColors = {
+                  'all': { bg: 'bg-gray-100', text: 'text-gray-700', selected: 'bg-gray-200 border-gray-400' },
+                  'neighborhood': { bg: 'bg-blue-50', text: 'text-blue-700', selected: 'bg-blue-200 border-blue-400' },
+                  'park': { bg: 'bg-green-50', text: 'text-green-700', selected: 'bg-green-200 border-green-400' },
+                  'historical': { bg: 'bg-amber-50', text: 'text-amber-700', selected: 'bg-amber-200 border-amber-400' },
+                  'restaurant': { bg: 'bg-red-50', text: 'text-red-700', selected: 'bg-red-200 border-red-400' },
+                  'shopping': { bg: 'bg-purple-50', text: 'text-purple-700', selected: 'bg-purple-200 border-purple-400' },
+                  'education': { bg: 'bg-indigo-50', text: 'text-indigo-700', selected: 'bg-indigo-200 border-indigo-400' },
+                };
+                const colors = categoryColors[category.id] || categoryColors['all'];
+
+                return (
+                  <button
+                    key={category.id}
+                    onClick={() => setSelectedCategory(category.id)}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 border-2 ${
+                      isSelected 
+                        ? `${colors.selected} shadow-md scale-105` 
+                        : `${colors.bg} ${colors.text} border-transparent hover:shadow-md hover:scale-102`
+                    }`}
+                  >
+                    <Icon className="w-4 h-4" />
+                    {category.label}
+                  </button>
+                );
+              })}
+            </div>
 
       {/* Map */}
       <div className="relative">
