@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, ExternalLink } from 'lucide-react';
+import { BookOpen, ExternalLink, Camera } from 'lucide-react';
 
 export default function Citations() {
   const citations = [
@@ -111,6 +111,82 @@ export default function Citations() {
             official government resources, cultural institutions, and local tourism organizations. 
             Below are the primary references used throughout this website.
           </p>
+        </div>
+      </section>
+
+      {/* Photo Credits */}
+      <section className="py-16 bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <div className="flex items-center space-x-2 mb-4">
+              <Camera className="w-6 h-6 text-[#a63d2f]" />
+              <h2 className="font-display text-3xl text-[#1e3a5f] font-bold">
+                Photo Credits
+              </h2>
+            </div>
+            <p className="text-gray-600">
+              All images used throughout Richmond Revealed are credited below.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { page: 'Home Hero', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
+              { page: 'History Page', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
+              { page: 'Attractions', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
+              { page: 'Neighborhoods Map', source: 'OpenStreetMap', photographer: 'OpenStreetMap Contributors', url: 'https://www.openstreetmap.org/copyright' },
+              { page: 'Events', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
+              { page: 'Business Listings', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
+              { page: 'Education', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
+              { page: 'Store Products', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
+              { page: 'Historical Media Gallery', source: 'Library of Congress / Unsplash', photographer: 'Historical Archives & Contributors', url: 'https://www.loc.gov' },
+              { page: 'James River Canal Historical Photo', source: 'User Submission', photographer: 'Historical Archive', url: '#' },
+            ].map((credit, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-gray-50 rounded-lg p-5 border border-gray-200"
+              >
+                <h3 className="font-semibold text-[#1e3a5f] mb-2 text-sm">
+                  {credit.page}
+                </h3>
+                <div className="space-y-1 text-xs text-gray-600">
+                  <p><span className="font-medium">Source:</span> {credit.source}</p>
+                  <p><span className="font-medium">Credit:</span> {credit.photographer}</p>
+                  {credit.url !== '#' && (
+                    <a
+                      href={credit.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1 mt-1"
+                    >
+                      View Source <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl">
+            <p className="text-sm text-gray-700 leading-relaxed">
+              <span className="font-semibold">Unsplash License:</span> Photos from Unsplash are used under the Unsplash License, 
+              which allows free use for commercial and non-commercial purposes without attribution required (though appreciated). 
+              Learn more at <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">unsplash.com/license</a>
+            </p>
+            <p className="text-sm text-gray-700 leading-relaxed mt-3">
+              <span className="font-semibold">OpenStreetMap:</span> Map data © OpenStreetMap contributors, available under the 
+              Open Database License. Learn more at <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">openstreetmap.org/copyright</a>
+            </p>
+          </div>
         </div>
       </section>
 
