@@ -1,23 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
-import { MapPin, Filter, Landmark } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-
-const categories = ['All', 'Nature', 'Historic', 'Culture', 'Entertainment'];
+import { MapPin, Landmark } from 'lucide-react';
 
 export default function Attractions() {
-  const [activeCategory, setActiveCategory] = useState('All');
-
   const { data: attractions = [], isLoading } = useQuery({
     queryKey: ['attractions'],
     queryFn: () => base44.entities.Attraction.list('-created_date', 50),
   });
-
-  const filteredAttractions = activeCategory === 'All' 
-    ? attractions 
-    : attractions.filter(a => a.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -51,29 +42,6 @@ export default function Attractions() {
         </div>
       </section>
 
-      {/* Filters */}
-      <section className="py-8 bg-white border-b sticky top-20 z-30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-4 overflow-x-auto pb-2">
-            <Filter className="w-5 h-5 text-gray-400 flex-shrink-0" />
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={activeCategory === category ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => setActiveCategory(category)}
-                className={activeCategory === category 
-                  ? 'bg-[#a63d2f] hover:bg-[#8b3426] text-white' 
-                  : 'border-gray-200 text-gray-600 hover:border-[#a63d2f] hover:text-[#a63d2f]'
-                }
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Attractions Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,7 +57,7 @@ export default function Attractions() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredAttractions.map((attraction, index) => (
+              {attractions.map((attraction, index) => (
                 <motion.div
                   key={attraction.id}
                   initial={{ opacity: 0, y: 30 }}
@@ -126,9 +94,9 @@ export default function Attractions() {
             </div>
           )}
 
-          {filteredAttractions.length === 0 && !isLoading && (
+          {attractions.length === 0 && !isLoading && (
             <div className="text-center py-16">
-              <p className="text-gray-500">No attractions found in this category.</p>
+              <p className="text-gray-500">No attractions found.</p>
             </div>
           )}
         </div>
