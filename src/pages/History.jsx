@@ -1,8 +1,16 @@
 import React from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
 import { BookOpen } from 'lucide-react';
+import Timeline from '../components/history/Timeline';
 
 export default function History() {
+  const { data: events = [], isLoading } = useQuery({
+    queryKey: ['historyEvents'],
+    queryFn: () => base44.entities.HistoryEvent.list('year', 100),
+  });
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
@@ -112,6 +120,27 @@ export default function History() {
             ))}
           </div>
           </div>
+          </section>
+
+          {/* Timeline Section */}
+          <section className="py-20 bg-gray-50">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-16"
+              >
+                <h2 className="font-display text-3xl text-[#1e3a5f] font-bold mb-4">
+                  Key Events Timeline
+                </h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  Journey through Richmond's pivotal moments that shaped the city we know today
+                </p>
+              </motion.div>
+              
+              <Timeline events={events} isLoading={isLoading} />
+            </div>
           </section>
 
           </div>
