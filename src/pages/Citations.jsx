@@ -134,46 +134,119 @@ export default function Citations() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { page: 'Home Hero', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
-              { page: 'History Page', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
-              { page: 'Attractions', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
-              { page: 'Neighborhoods Map', source: 'OpenStreetMap', photographer: 'OpenStreetMap Contributors', url: 'https://www.openstreetmap.org/copyright' },
-              { page: 'Events', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
-              { page: 'Business Listings', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
-              { page: 'Education', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
-              { page: 'Store Products', source: 'Unsplash', photographer: 'Various Contributors', url: 'https://unsplash.com' },
-              { page: 'Historical Media Gallery', source: 'Library of Congress / Unsplash', photographer: 'Historical Archives & Contributors', url: 'https://www.loc.gov' },
-              { page: 'James River Canal Historical Photo', source: 'User Submission', photographer: 'Historical Archive', url: '#' },
-            ].map((credit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                className="bg-gray-50 rounded-lg p-5 border border-gray-200"
-              >
-                <h3 className="font-semibold text-[#1e3a5f] mb-2 text-sm">
-                  {credit.page}
-                </h3>
-                <div className="space-y-1 text-xs text-gray-600">
-                  <p><span className="font-medium">Source:</span> {credit.source}</p>
-                  <p><span className="font-medium">Credit:</span> {credit.photographer}</p>
-                  {credit.url !== '#' && (
-                    <a
-                      href={credit.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1 mt-1"
-                    >
+          <div className="space-y-6">
+            {/* Hero Images */}
+            <div>
+              <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Hero Section Images</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  { location: 'Home Page Hero', url: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'History Page Hero', url: 'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Attractions Page Hero', url: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Events Page Hero', url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Neighborhoods Page Hero', url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Business Page Hero', url: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Education Page Hero', url: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Store Page Hero', url: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Contact Page Hero', url: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Citations Page Hero', url: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570', source: 'Unsplash', photographer: 'Photographer' },
+                ].map((credit, index) => (
+                  <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
+                    <p className="font-semibold text-[#1e3a5f] mb-2">{credit.location}</p>
+                    <p className="text-gray-600 mb-1">Source: {credit.source}</p>
+                    <p className="text-gray-600 mb-2">Photo by: {credit.photographer}</p>
+                    <a href={credit.url} target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
+                      View <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Historical Media Gallery */}
+            <div>
+              <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Historical Media Gallery</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  { title: 'James River Canal (1785)', url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/7afe99cb6_image.png', source: 'User Submission', photographer: 'Historical Archive' },
+                  { title: 'Monument Avenue, 1907', url: 'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'Main Street, Richmond (1910)', url: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'St. John\'s Church (1775)', url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'Civil War Richmond (1863)', url: 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'Modern Richmond Skyline (2020)', url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'Civil Rights March (1963)', url: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'School Integration (1968)', url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b', source: 'Unsplash', photographer: 'Photographer' },
+                ].map((credit, index) => (
+                  <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
+                    <p className="font-semibold text-[#1e3a5f] mb-2">{credit.title}</p>
+                    <p className="text-gray-600 mb-1">Source: {credit.source}</p>
+                    <p className="text-gray-600 mb-2">Credit: {credit.photographer}</p>
+                    {credit.url !== '#' && (
+                      <a href={credit.url} target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
+                        View <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Historical Era Section Images */}
+            <div>
+              <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Historical Era Section Images</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  { title: 'Colonial Era Image', url: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'Civil War Era Image', url: 'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'Modern Renaissance Image', url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df', source: 'Unsplash', photographer: 'Photographer' },
+                ].map((credit, index) => (
+                  <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
+                    <p className="font-semibold text-[#1e3a5f] mb-2">{credit.title}</p>
+                    <p className="text-gray-600 mb-1">Source: {credit.source}</p>
+                    <p className="text-gray-600 mb-2">Photo by: {credit.photographer}</p>
+                    <a href={credit.url} target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
+                      View <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Map Data */}
+            <div>
+              <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Interactive Map</h3>
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <p className="font-semibold text-[#1e3a5f] mb-2">Neighborhoods Interactive Map</p>
+                <p className="text-xs text-gray-600 mb-1">Map Data: © OpenStreetMap Contributors</p>
+                <p className="text-xs text-gray-600 mb-2">Tile Layer: OpenStreetMap Standard</p>
+                <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="text-xs text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
+                  View License <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+            </div>
+
+            {/* Other Content Images */}
+            <div>
+              <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Additional Content Images</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  { category: 'Attractions', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
+                  { category: 'Events', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
+                  { category: 'Business Listings', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
+                  { category: 'Store Products', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
+                  { category: 'Gallery Images', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
+                ].map((credit, index) => (
+                  <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <p className="font-semibold text-[#1e3a5f] mb-2 text-sm">{credit.category}</p>
+                    <p className="text-xs text-gray-600 mb-1">{credit.count}</p>
+                    <p className="text-xs text-gray-600 mb-2">Source: {credit.source}</p>
+                    <a href={credit.url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
                       View Source <ExternalLink className="w-3 h-3" />
                     </a>
-                  )}
-                </div>
-              </motion.div>
-            ))}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl">
