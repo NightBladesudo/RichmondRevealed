@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -75,6 +75,17 @@ const categories = [
         const [searchQuery, setSearchQuery] = useState('');
         const [isFullscreen, setIsFullscreen] = useState(false);
 
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isFullscreen]);
+
   const filteredPoints = pointsOfInterest.filter(point => {
     const categoryMatch = selectedCategory === 'all' || point.category === selectedCategory;
     const searchMatch = point.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -126,7 +137,7 @@ const categories = [
       </div>
 
       {/* Map */}
-      <div className={`${isFullscreen ? 'fixed inset-0 z-40 bg-black/80 p-4 pt-24 flex items-center justify-center' : 'relative z-10'}`}>
+      <div className={`${isFullscreen ? 'fixed inset-0 z-40 bg-black/80 p-4 pt-24 flex items-center justify-center overflow-hidden' : 'relative z-10'}`}>
         <div 
           className={`${isFullscreen ? 'h-full w-full max-w-7xl' : 'h-[400px] md:h-[600px]'} rounded-2xl overflow-hidden shadow-lg border-4 border-white relative`}
           onDoubleClick={() => isFullscreen && setIsFullscreen(false)}
