@@ -73,7 +73,7 @@ const categories = [
       export default function InteractiveMap() {
         const [selectedCategory, setSelectedCategory] = useState('all');
         const [searchQuery, setSearchQuery] = useState('');
-        const [mapClicked, setMapClicked] = useState(false);
+        const [isFullscreen, setIsFullscreen] = useState(false);
 
   const filteredPoints = pointsOfInterest.filter(point => {
     const categoryMatch = selectedCategory === 'all' || point.category === selectedCategory;
@@ -126,18 +126,26 @@ const categories = [
       </div>
 
       {/* Map */}
-      <div className="relative">
-        {!mapClicked && (
-          <div className="absolute inset-0 z-20 bg-black/5 backdrop-blur-[0.5px] rounded-2xl flex items-center justify-center cursor-pointer" onClick={() => setMapClicked(true)}>
-            <div className="bg-white/95 backdrop-blur px-6 py-4 rounded-lg shadow-xl border-2 border-slate-200">
-              <p className="text-gray-700 font-semibold flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-[#a63d2f]" />
-                Click to activate map
-              </p>
+      <div className={`${isFullscreen ? 'fixed inset-0 z-50 bg-white p-4' : 'relative'}`}>
+        <div 
+          className={`${isFullscreen ? 'h-full' : 'h-[400px] md:h-[600px]'} rounded-2xl overflow-hidden shadow-lg border-4 border-white relative cursor-pointer`}
+          onClick={() => setIsFullscreen(!isFullscreen)}
+        >
+          {!isFullscreen && (
+            <div className="absolute inset-0 z-10 bg-black/5 backdrop-blur-[0.5px] flex items-center justify-center pointer-events-none">
+              <div className="bg-white/95 backdrop-blur px-6 py-4 rounded-lg shadow-xl border-2 border-slate-200">
+                <p className="text-gray-700 font-semibold flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-[#a63d2f]" />
+                  Click to open fullscreen map
+                </p>
+              </div>
             </div>
-          </div>
-        )}
-        <div className="h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-lg border-4 border-white relative z-0">
+          )}
+          {isFullscreen && (
+            <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur px-4 py-2 rounded-lg shadow-xl border-2 border-slate-200 pointer-events-none">
+              <p className="text-gray-700 text-sm font-semibold">Click anywhere to exit fullscreen</p>
+            </div>
+          )}
           <MapContainer
             center={[37.8, -78.5]}
             zoom={7}
@@ -146,8 +154,6 @@ const categories = [
             maxBoundsViscosity={1.0}
             minZoom={6}
             maxZoom={13}
-            dragging={mapClicked}
-            scrollWheelZoom={mapClicked}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
