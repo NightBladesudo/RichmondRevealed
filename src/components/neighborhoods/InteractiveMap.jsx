@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { MapPin, Utensils, TreePine, Landmark, ShoppingBag, GraduationCap, X, Maximize2 } from 'lucide-react';
+import { MapPin, Utensils, TreePine, Landmark, ShoppingBag, GraduationCap, X, Maximize2, Plus, Minus } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -70,7 +70,30 @@ const categories = [
         education: { marker: '#A855F7', text: 'purple' },
       };
 
-      export default function InteractiveMap() {
+      function ZoomControls() {
+        const map = useMap();
+
+        return (
+          <div className="absolute top-4 left-4 z-[1000] flex flex-col gap-2">
+            <Button
+              onClick={() => map.zoomIn()}
+              size="icon"
+              className="bg-white hover:bg-gray-100 text-gray-700 shadow-lg border-2 border-gray-200"
+            >
+              <Plus className="w-5 h-5" />
+            </Button>
+            <Button
+              onClick={() => map.zoomOut()}
+              size="icon"
+              className="bg-white hover:bg-gray-100 text-gray-700 shadow-lg border-2 border-gray-200"
+            >
+              <Minus className="w-5 h-5" />
+            </Button>
+          </div>
+        );
+      }
+
+            export default function InteractiveMap() {
         const [selectedCategory, setSelectedCategory] = useState('all');
         const [searchQuery, setSearchQuery] = useState('');
         const [isFullscreen, setIsFullscreen] = useState(false);
@@ -172,8 +195,9 @@ const categories = [
             maxZoom={13}
             dragging={true}
             scrollWheelZoom={isFullscreen}
-            zoomControl={isFullscreen}
-        >
+            zoomControl={false}
+          >
+          <ZoomControls />
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
