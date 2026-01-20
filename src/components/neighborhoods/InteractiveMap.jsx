@@ -133,7 +133,7 @@ const categories = [
         >
           {!isFullscreen && (
             <div 
-              className="absolute inset-0 z-10 bg-black/10 backdrop-blur-[0.5px] flex items-center justify-center cursor-pointer"
+              className="absolute inset-0 z-10 bg-transparent flex items-center justify-center cursor-pointer"
               onClick={() => setIsFullscreen(true)}
             >
               <div className="bg-white/95 backdrop-blur px-6 py-4 rounded-lg shadow-xl border-2 border-slate-200">
@@ -159,8 +159,9 @@ const categories = [
             maxBoundsViscosity={1.0}
             minZoom={6}
             maxZoom={13}
-            dragging={isFullscreen}
+            dragging={true}
             scrollWheelZoom={isFullscreen}
+            zoomControl={isFullscreen}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
