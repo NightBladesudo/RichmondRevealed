@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Filter, Landmark } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const categories = ['All', 'Nature', 'Historic', 'Culture', 'Neighborhood', 'Entertainment'];
+const categories = ['All', 'Nature', 'Historic', 'Culture', 'Entertainment'];
 
 export default function Attractions() {
   const [activeCategory, setActiveCategory] = useState('All');
