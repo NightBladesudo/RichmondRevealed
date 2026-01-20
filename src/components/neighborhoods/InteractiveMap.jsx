@@ -74,7 +74,6 @@ const categories = [
         const [selectedCategory, setSelectedCategory] = useState('all');
         const [searchQuery, setSearchQuery] = useState('');
         const [isFullscreen, setIsFullscreen] = useState(false);
-        const [isDragging, setIsDragging] = useState(false);
 
   const filteredPoints = pointsOfInterest.filter(point => {
     const categoryMatch = selectedCategory === 'all' || point.category === selectedCategory;
@@ -131,9 +130,6 @@ const categories = [
         <div 
           className={`${isFullscreen ? 'h-full w-full max-w-7xl' : 'h-[400px] md:h-[600px]'} rounded-2xl overflow-hidden shadow-lg border-4 border-white relative`}
           onDoubleClick={() => isFullscreen && setIsFullscreen(false)}
-          onMouseDown={() => isFullscreen && setIsDragging(true)}
-          onMouseUp={() => setIsDragging(false)}
-          onMouseLeave={() => setIsDragging(false)}
         >
           {!isFullscreen && (
             <div 
@@ -151,7 +147,7 @@ const categories = [
           {isFullscreen && (
             <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur px-4 py-2 rounded-lg shadow-xl border-2 border-slate-200 pointer-events-none">
               <p className="text-gray-700 text-sm font-semibold">
-                Hold to drag • Double-click to exit
+                Drag to explore • Double-click to exit
               </p>
             </div>
           )}
@@ -163,7 +159,7 @@ const categories = [
             maxBoundsViscosity={1.0}
             minZoom={6}
             maxZoom={13}
-            dragging={isFullscreen && isDragging}
+            dragging={isFullscreen}
             scrollWheelZoom={isFullscreen}
         >
           <TileLayer
