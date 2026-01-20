@@ -74,6 +74,7 @@ const categories = [
         const [selectedCategory, setSelectedCategory] = useState('all');
         const [searchQuery, setSearchQuery] = useState('');
         const [isFullscreen, setIsFullscreen] = useState(false);
+        const [isDragging, setIsDragging] = useState(false);
 
   const filteredPoints = pointsOfInterest.filter(point => {
     const categoryMatch = selectedCategory === 'all' || point.category === selectedCategory;
@@ -127,18 +128,12 @@ const categories = [
 
       {/* Map */}
       <div className={`${isFullscreen ? 'fixed inset-0 z-50 bg-black/80 p-4 flex items-center justify-center' : 'relative'}`}>
-        {isFullscreen && (
-          <Button
-            onClick={() => setIsFullscreen(false)}
-            className="absolute top-4 right-4 z-[60] bg-white text-gray-700 hover:bg-gray-100 shadow-xl"
-            size="lg"
-          >
-            <X className="w-5 h-5 mr-2" />
-            Exit Fullscreen
-          </Button>
-        )}
         <div 
           className={`${isFullscreen ? 'h-full w-full max-w-7xl' : 'h-[400px] md:h-[600px]'} rounded-2xl overflow-hidden shadow-lg border-4 border-white relative`}
+          onDoubleClick={() => isFullscreen && setIsFullscreen(false)}
+          onMouseDown={() => isFullscreen && setIsDragging(true)}
+          onMouseUp={() => setIsDragging(false)}
+          onMouseLeave={() => setIsDragging(false)}
         >
           {!isFullscreen && (
             <div 
@@ -153,6 +148,13 @@ const categories = [
               </div>
             </div>
           )}
+          {isFullscreen && (
+            <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur px-4 py-2 rounded-lg shadow-xl border-2 border-slate-200 pointer-events-none">
+              <p className="text-gray-700 text-sm font-semibold">
+                Hold to drag • Double-click to exit
+              </p>
+            </div>
+          )}
           <MapContainer
             center={[37.8, -78.5]}
             zoom={7}
@@ -161,7 +163,7 @@ const categories = [
             maxBoundsViscosity={1.0}
             minZoom={6}
             maxZoom={13}
-            dragging={isFullscreen}
+            dragging={isFullscreen && isDragging}
             scrollWheelZoom={isFullscreen}
         >
           <TileLayer
