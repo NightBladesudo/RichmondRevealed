@@ -73,6 +73,7 @@ const categories = [
       export default function InteractiveMap() {
         const [selectedCategory, setSelectedCategory] = useState('all');
         const [searchQuery, setSearchQuery] = useState('');
+        const [mapClicked, setMapClicked] = useState(false);
 
   const filteredPoints = pointsOfInterest.filter(point => {
     const categoryMatch = selectedCategory === 'all' || point.category === selectedCategory;
@@ -126,12 +127,16 @@ const categories = [
 
       {/* Map */}
       <div className="relative">
-        <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur px-4 py-3 rounded-lg shadow-lg flex items-center gap-2 text-sm text-gray-700 border border-slate-200">
-          <svg className="w-4 h-4 text-[#a63d2f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-          Drag to explore Virginia
-        </div>
+        {!mapClicked && (
+          <div className="absolute inset-0 z-20 bg-black/5 backdrop-blur-[0.5px] rounded-2xl flex items-center justify-center cursor-pointer" onClick={() => setMapClicked(true)}>
+            <div className="bg-white/95 backdrop-blur px-6 py-4 rounded-lg shadow-xl border-2 border-slate-200">
+              <p className="text-gray-700 font-semibold flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-[#a63d2f]" />
+                Click to activate map
+              </p>
+            </div>
+          </div>
+        )}
         <div className="h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-lg border-4 border-white relative z-0">
           <MapContainer
             center={[37.8, -78.5]}
@@ -141,6 +146,8 @@ const categories = [
             maxBoundsViscosity={1.0}
             minZoom={6}
             maxZoom={13}
+            dragging={mapClicked}
+            scrollWheelZoom={mapClicked}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
