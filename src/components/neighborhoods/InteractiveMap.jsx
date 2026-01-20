@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { MapPin, Utensils, TreePine, Landmark, ShoppingBag, GraduationCap, X } from 'lucide-react';
+import { MapPin, Utensils, TreePine, Landmark, ShoppingBag, GraduationCap, X, Maximize2 } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -126,24 +126,31 @@ const categories = [
       </div>
 
       {/* Map */}
-      <div className={`${isFullscreen ? 'fixed inset-0 z-50 bg-white p-4' : 'relative'}`}>
+      <div className={`${isFullscreen ? 'fixed inset-0 z-50 bg-black/80 p-4 flex items-center justify-center' : 'relative'}`}>
+        {isFullscreen && (
+          <Button
+            onClick={() => setIsFullscreen(false)}
+            className="absolute top-4 right-4 z-[60] bg-white text-gray-700 hover:bg-gray-100 shadow-xl"
+            size="lg"
+          >
+            <X className="w-5 h-5 mr-2" />
+            Exit Fullscreen
+          </Button>
+        )}
         <div 
-          className={`${isFullscreen ? 'h-full' : 'h-[400px] md:h-[600px]'} rounded-2xl overflow-hidden shadow-lg border-4 border-white relative cursor-pointer`}
-          onClick={() => setIsFullscreen(!isFullscreen)}
+          className={`${isFullscreen ? 'h-full w-full max-w-7xl' : 'h-[400px] md:h-[600px]'} rounded-2xl overflow-hidden shadow-lg border-4 border-white relative`}
         >
           {!isFullscreen && (
-            <div className="absolute inset-0 z-10 bg-black/5 backdrop-blur-[0.5px] flex items-center justify-center pointer-events-none">
+            <div 
+              className="absolute inset-0 z-10 bg-black/10 backdrop-blur-[0.5px] flex items-center justify-center cursor-pointer"
+              onClick={() => setIsFullscreen(true)}
+            >
               <div className="bg-white/95 backdrop-blur px-6 py-4 rounded-lg shadow-xl border-2 border-slate-200">
                 <p className="text-gray-700 font-semibold flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-[#a63d2f]" />
+                  <Maximize2 className="w-5 h-5 text-[#a63d2f]" />
                   Click to open fullscreen map
                 </p>
               </div>
-            </div>
-          )}
-          {isFullscreen && (
-            <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur px-4 py-2 rounded-lg shadow-xl border-2 border-slate-200 pointer-events-none">
-              <p className="text-gray-700 text-sm font-semibold">Click anywhere to exit fullscreen</p>
             </div>
           )}
           <MapContainer
@@ -154,6 +161,8 @@ const categories = [
             maxBoundsViscosity={1.0}
             minZoom={6}
             maxZoom={13}
+            dragging={isFullscreen}
+            scrollWheelZoom={isFullscreen}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
