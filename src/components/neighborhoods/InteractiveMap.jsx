@@ -126,7 +126,7 @@ const categories = [
       </div>
 
       {/* Map */}
-      <div className={`${isFullscreen ? 'fixed inset-0 z-40 bg-black/80 p-4 pt-24 flex items-center justify-center' : 'relative'}`}>
+      <div className={`${isFullscreen ? 'fixed inset-0 z-40 bg-black/80 p-4 pt-24 flex items-center justify-center' : 'relative z-10'}`}>
         <div 
           className={`${isFullscreen ? 'h-full w-full max-w-7xl' : 'h-[400px] md:h-[600px]'} rounded-2xl overflow-hidden shadow-lg border-4 border-white relative`}
           onDoubleClick={() => isFullscreen && setIsFullscreen(false)}
