@@ -312,22 +312,6 @@ export default function Citations() {
         </div>
       </section>
 
-      {/* Disclaimer */}
-      <section className="py-16 bg-white border-t">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-50 rounded-xl p-8">
-            <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">
-              Disclaimer
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              While we strive for accuracy, information on this website is subject to change. 
-              Please verify current details with official sources before making plans. Richmond Revealed 
-              is an independent guide and is not officially affiliated with the City of Richmond or 
-              Visit Richmond organizations.
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
