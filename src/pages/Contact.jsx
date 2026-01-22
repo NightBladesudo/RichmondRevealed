@@ -194,7 +194,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1e3a5f]">Email</h4>
-                      <p className="text-gray-600">srahulchandran1@gmail.com</p>
+                      <p className="text-gray-600">anshjain0503@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -203,7 +203,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1e3a5f]">Phone</h4>
-                      <p className="text-gray-600">804-801-7404</p>
+                      <p className="text-gray-600">804-728-9265</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
