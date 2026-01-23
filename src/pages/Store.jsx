@@ -98,7 +98,7 @@ export default function Store() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg)',
+            backgroundImage: 'url(https://catalog.archives.gov/iiif/3/lz/stillpix/018-aa/RG-18-AA-129-91-ac.jpg/full/1920,/0/default.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />
