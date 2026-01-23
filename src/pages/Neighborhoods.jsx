@@ -14,31 +14,31 @@ const neighborhoods = [
     name: 'Church Hill',
     description: 'One of Richmond\'s oldest neighborhoods, home to St. John\'s Church where Patrick Henry delivered his famous speech. Rich in history and character.',
     highlights: ['Historic', 'Views', 'Local Cafes'],
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Scott\'s Addition',
     description: 'Former industrial area transformed into Richmond\'s hottest neighborhood. Home to craft breweries, cideries, restaurants, and art spaces.',
     highlights: ['Breweries', 'Trendy', 'Nightlife'],
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Carytown',
     description: 'Richmond\'s mile-long shopping and dining district. Eclectic boutiques, vintage shops, and diverse restaurants line the bustling street.',
     highlights: ['Shopping', 'Restaurants', 'Entertainment'],
-    image: 'https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Shockoe Bottom',
     description: 'Richmond\'s oldest commercial area, now a vibrant entertainment district with restaurants, bars, and farmers markets.',
     highlights: ['Nightlife', 'Markets', 'History'],
-    image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Oregon Hill',
     description: 'Close-knit community near VCU and the river, known for Hollywood Cemetery and stunning views of the James River rapids.',
     highlights: ['River Access', 'Historic Cemetery', 'Community'],
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Museum District',
@@ -50,13 +50,13 @@ const neighborhoods = [
     name: 'Manchester',
     description: 'Revitalized neighborhood on the south side of the James River with stunning city skyline views and a growing arts scene.',
     highlights: ['River Views', 'Arts', 'Affordable'],
-    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Libbie & Grove',
     description: 'Upscale shopping and dining corridor known for boutiques, specialty shops, and award-winning restaurants.',
     highlights: ['Shopping', 'Fine Dining', 'Upscale'],
-    image: 'https://images.unsplash.com/photo-1567696911980-2eed69a46042?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Jackson Ward',
@@ -68,25 +68,25 @@ const neighborhoods = [
     name: 'Bellevue',
     description: 'Charming historic neighborhood with tree-lined streets, Victorian homes, and a tight-knit community atmosphere.',
     highlights: ['Historic Homes', 'Walkable', 'Community'],
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'South of Broad',
     description: 'Historic neighborhood near downtown Richmond featuring restored homes, galleries, and proximity to the James River.',
     highlights: ['Historic', 'Arts', 'River Proximity'],
-    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Near West End',
     description: 'Growing residential neighborhood with diverse architecture, local shops, and convenient access to major thoroughfares.',
     highlights: ['Residential', 'Diverse', 'Accessible'],
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Northside',
     description: 'Up-and-coming neighborhood north of downtown with affordable housing, murals, and emerging dining and entertainment venues.',
     highlights: ['Affordable', 'Art Scene', 'Emerging'],
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   }
   ];
 
@@ -98,7 +98,7 @@ export default function Neighborhoods() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=1920&q=80)',
+            backgroundImage: 'url(https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />

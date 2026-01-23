@@ -37,7 +37,7 @@ export default function Events() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1920&q=80)',
+            backgroundImage: 'url(https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />

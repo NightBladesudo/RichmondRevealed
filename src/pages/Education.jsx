@@ -8,21 +8,21 @@ const universities = [
     type: 'Public Research University',
     description: 'VCU is a major public research university and academic health center. Home to top-ranked arts, medical, and business programs.',
     students: '30,000+',
-    image: 'https://images.unsplash.com/photo-1562774053-701939374585?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'University of Richmond',
     type: 'Private Liberal Arts University',
     description: 'A highly selective private university known for its beautiful campus, strong academics, and collegiate athletics.',
     students: '4,000+',
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Virginia Union University',
     type: 'Private HBCU',
     description: 'A historic HBCU founded in 1865, offering undergraduate and graduate programs in a nurturing environment.',
     students: '1,500+',
-    image: 'https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   }
 ];
 
@@ -73,7 +73,7 @@ export default function Education() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80)',
+            backgroundImage: 'url(https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />
