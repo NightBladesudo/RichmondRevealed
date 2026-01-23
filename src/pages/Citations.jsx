@@ -163,10 +163,12 @@ export default function Citations() {
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.location}</p>
                     <p className="text-gray-600 mb-1">Source: {credit.source}</p>
-                    <p className="text-gray-600 mb-2">Photo by: {credit.photographer}</p>
-                    <a href={credit.url} target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
-                      View <ExternalLink className="w-3 h-3" />
-                    </a>
+                    <p className="text-gray-600 mb-2">Credit: {credit.photographer}</p>
+                    {credit.url !== '#' && (
+                      <a href={credit.url} target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
+                        View <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
                   </div>
                 ))}
               </div>
