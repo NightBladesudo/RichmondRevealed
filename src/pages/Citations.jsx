@@ -10,17 +10,20 @@ export default function Citations() {
         {
           title: 'Valentine Richmond History Center',
           url: 'https://valentinemuseum.com',
-          description: 'Primary source for Richmond history and archives'
+          description: 'Primary source for Richmond history and archives',
+          mla: '"Valentine Richmond History Center." Valentine, www.valentinemuseum.com. Accessed 23 Jan. 2026.'
         },
         {
           title: 'Library of Virginia',
           url: 'https://www.lva.virginia.gov',
-          description: 'State archives and historical records'
+          description: 'State archives and historical records',
+          mla: '"Library of Virginia." Library of Virginia, www.lva.virginia.gov. Accessed 23 Jan. 2026.'
         },
         {
           title: 'American Civil War Museum',
           url: 'https://acwm.org',
-          description: 'Civil War history and documentation'
+          description: 'Civil War history and documentation',
+          mla: '"American Civil War Museum." American Civil War Museum, acwm.org. Accessed 23 Jan. 2026.'
         }
       ]
     },
@@ -30,12 +33,14 @@ export default function Citations() {
         {
           title: 'Visit Richmond',
           url: 'https://www.visitrichmondva.com',
-          description: 'Official tourism board for Richmond, Virginia'
+          description: 'Official tourism board for Richmond, Virginia',
+          mla: '"Visit Richmond." Richmond Region Tourism, www.visitrichmondva.com. Accessed 23 Jan. 2026.'
         },
         {
           title: 'Richmond Region Tourism',
           url: 'https://www.visitrichmond.com',
-          description: 'Regional tourism information and guides'
+          description: 'Regional tourism information and guides',
+          mla: '"Richmond Region Tourism." Richmond Region Tourism, www.visitrichmond.com. Accessed 23 Jan. 2026.'
         }
       ]
     },
@@ -45,12 +50,14 @@ export default function Citations() {
         {
           title: 'City of Richmond',
           url: 'https://www.rva.gov',
-          description: 'Official city government website'
+          description: 'Official city government website',
+          mla: '"City of Richmond." City of Richmond, Virginia, www.rva.gov. Accessed 23 Jan. 2026.'
         },
         {
           title: 'Richmond Public Schools',
           url: 'https://www.rvaschools.net',
-          description: 'Official school district information'
+          description: 'Official school district information',
+          mla: '"Richmond Public Schools." Richmond Public Schools, www.rvaschools.net. Accessed 23 Jan. 2026.'
         }
       ]
     },
@@ -60,12 +67,14 @@ export default function Citations() {
         {
           title: 'Virginia Museum of Fine Arts',
           url: 'https://www.vmfa.museum',
-          description: 'Art and cultural information'
+          description: 'Art and cultural information',
+          mla: '"Virginia Museum of Fine Arts." Virginia Museum of Fine Arts, www.vmfa.museum. Accessed 23 Jan. 2026.'
         },
         {
           title: 'Richmond Symphony',
           url: 'https://richmondsymphony.com',
-          description: 'Music and cultural events'
+          description: 'Music and cultural events',
+          mla: '"Richmond Symphony." Richmond Symphony, richmondsymphony.com. Accessed 23 Jan. 2026.'
         }
       ]
     }
@@ -297,9 +306,17 @@ export default function Citations() {
                           <p className="text-gray-600 text-sm mb-3">
                             {source.description}
                           </p>
-                          <p className="text-[#2d7d7d] text-xs break-all">
-                            {source.url}
-                          </p>
+                          <div className="space-y-2">
+                            <p className="text-[#2d7d7d] text-xs break-all">
+                              {source.url}
+                            </p>
+                            {source.mla && (
+                              <div className="mt-3 pt-3 border-t border-gray-200">
+                                <p className="text-xs text-gray-500 font-semibold mb-1">MLA Citation:</p>
+                                <p className="text-xs text-gray-700 italic">{source.mla}</p>
+                              </div>
+                            )}
+                          </div>
                         </div>
                         <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-[#a63d2f] transition-colors flex-shrink-0 ml-4" />
                       </a>
