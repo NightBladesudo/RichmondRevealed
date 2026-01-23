@@ -149,7 +149,7 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Hero Section Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { location: 'Home Page Hero', url: 'https://pixabay.com/photos/richmond-virginia-richmond-virginia-4611886/', source: 'Pixabay', photographer: 'andrewawood' },
+                  { location: 'Home Page Hero', url: 'https://pixabay.com/photos/water-bridge-travel-architecture-3314160/', source: 'Pixabay', photographer: 'timmorrisette33' },
                   { location: 'History Page Hero', url: 'https://pixabay.com/photos/water-bridge-travel-architecture-3314160/', source: 'Pixabay', photographer: 'timmorrisette33' },
                   { location: 'Attractions Page Hero', url: 'https://pixabay.com/photos/richmond-virginia-hadad-lake-736983/', source: 'Pixabay', photographer: 'smltd' },
                   { location: 'Events Page Hero', url: 'https://pixabay.com/photos/wachapreague-virginia-calm-water-7974344/', source: 'Pixabay', photographer: 'VACHAMP1984' },
