@@ -149,16 +149,16 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Hero Section Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { location: 'Home Page Hero', url: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'History Page Hero', url: 'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'Attractions Page Hero', url: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'Events Page Hero', url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'Neighborhoods Page Hero', url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'Business Page Hero', url: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'Education Page Hero', url: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'Store Page Hero', url: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'Contact Page Hero', url: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a', source: 'Unsplash', photographer: 'Photographer' },
-                  { location: 'Citations Page Hero', url: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570', source: 'Unsplash', photographer: 'Photographer' },
+                  { location: 'Home Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { location: 'History Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { location: 'Attractions Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
+                  { location: 'Events Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { location: 'Neighborhoods Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
+                  { location: 'Business Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
+                  { location: 'Education Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { location: 'Store Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
+                  { location: 'Contact Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { location: 'Citations Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.location}</p>
@@ -178,13 +178,13 @@ export default function Citations() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
                   { title: 'James River Canal (1785)', url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/7afe99cb6_image.png', source: 'User Submission', photographer: 'Historical Archive' },
-                  { title: 'Monument Avenue, 1907', url: 'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72', source: 'Unsplash', photographer: 'Photographer' },
-                  { title: 'Main Street, Richmond (1910)', url: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048', source: 'Unsplash', photographer: 'Photographer' },
-                  { title: 'St. John\'s Church (1775)', url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df', source: 'Unsplash', photographer: 'Photographer' },
-                  { title: 'Civil War Richmond (1863)', url: 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66', source: 'Unsplash', photographer: 'Photographer' },
-                  { title: 'Modern Richmond Skyline (2020)', url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df', source: 'Unsplash', photographer: 'Photographer' },
-                  { title: 'Civil Rights March (1963)', url: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811', source: 'Unsplash', photographer: 'Photographer' },
-                  { title: 'School Integration (1968)', url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'Monument Avenue, 1907', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { title: 'Main Street, Richmond (1910)', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { title: 'St. John\'s Church (1775)', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
+                  { title: 'Civil War Richmond (1863)', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { title: 'Modern Richmond Skyline (2020)', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
+                  { title: 'Civil Rights March (1963)', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { title: 'School Integration (1968)', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.title}</p>
@@ -205,17 +205,19 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Historical Era Section Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { title: 'Colonial Era Image', url: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048', source: 'Unsplash', photographer: 'Photographer' },
-                  { title: 'Civil War Era Image', url: 'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72', source: 'Unsplash', photographer: 'Photographer' },
-                  { title: 'Modern Renaissance Image', url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df', source: 'Unsplash', photographer: 'Photographer' },
+                  { title: 'Colonial Era Image', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { title: 'Civil War Era Image', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { title: 'Modern Renaissance Image', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.title}</p>
                     <p className="text-gray-600 mb-1">Source: {credit.source}</p>
-                    <p className="text-gray-600 mb-2">Photo by: {credit.photographer}</p>
-                    <a href={credit.url} target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
-                      View <ExternalLink className="w-3 h-3" />
-                    </a>
+                    <p className="text-gray-600 mb-2">Credit: {credit.photographer}</p>
+                    {credit.url !== '#' && (
+                      <a href={credit.url} target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:text-[#a63d2f] inline-flex items-center gap-1">
+                        View <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
                   </div>
                 ))}
               </div>
@@ -239,11 +241,11 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Additional Content Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  { category: 'Attractions', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
-                  { category: 'Events', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
-                  { category: 'Business Listings', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
-                  { category: 'Store Products', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
-                  { category: 'Gallery Images', count: 'Multiple images', source: 'Unsplash', url: 'https://unsplash.com' },
+                  { category: 'Attractions', count: 'Multiple images', source: 'Britannica ImageQuest', url: 'https://quest.eb.com' },
+                  { category: 'Events', count: 'Multiple images', source: 'Britannica ImageQuest', url: 'https://quest.eb.com' },
+                  { category: 'Business Listings', count: 'Multiple images', source: 'Britannica ImageQuest', url: 'https://quest.eb.com' },
+                  { category: 'Store Products', count: 'Multiple images', source: 'Britannica ImageQuest', url: 'https://quest.eb.com' },
+                  { category: 'Gallery Images', count: 'Multiple images', source: 'National Archives', url: 'https://www.archives.gov' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <p className="font-semibold text-[#1e3a5f] mb-2 text-sm">{credit.category}</p>
@@ -258,13 +260,18 @@ export default function Citations() {
             </div>
           </div>
 
-          <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl">
+          <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl space-y-3">
             <p className="text-sm text-gray-700 leading-relaxed">
-              <span className="font-semibold">Unsplash License:</span> Photos from Unsplash are used under the Unsplash License, 
-              which allows free use for commercial and non-commercial purposes without attribution required (though appreciated). 
-              Learn more at <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">unsplash.com/license</a>
+              <span className="font-semibold">National Archives:</span> Historical images are sourced from the National Archives and Records Administration, 
+              the nation's record keeper. Images are in the public domain or used with permission. 
+              Learn more at <a href="https://www.archives.gov" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">archives.gov</a>
             </p>
-            <p className="text-sm text-gray-700 leading-relaxed mt-3">
+            <p className="text-sm text-gray-700 leading-relaxed">
+              <span className="font-semibold">Britannica ImageQuest:</span> Educational images licensed from Britannica ImageQuest, 
+              providing access to millions of rights-cleared images for educational purposes. 
+              Learn more at <a href="https://quest.eb.com" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">quest.eb.com</a>
+            </p>
+            <p className="text-sm text-gray-700 leading-relaxed">
               <span className="font-semibold">OpenStreetMap:</span> Map data © OpenStreetMap contributors, available under the 
               Open Database License. Learn more at <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">openstreetmap.org/copyright</a>
             </p>
