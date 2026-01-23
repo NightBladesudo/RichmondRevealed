@@ -8,7 +8,7 @@ const neighborhoods = [
     name: 'The Fan District',
     description: 'Tree-lined streets with stunning Victorian and Edwardian architecture. Known for its vibrant restaurant scene, local shops, and close-knit community feel.',
     highlights: ['Historic Architecture', 'Walkable', 'Great Dining'],
-    image: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Church Hill',
@@ -62,7 +62,7 @@ const neighborhoods = [
     name: 'Jackson Ward',
     description: 'Historic neighborhood known for its African American heritage, beautiful architecture, and cultural significance. Home to significant civil rights history.',
     highlights: ['History', 'Culture', 'Heritage'],
-    image: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=800'
+    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
   },
   {
     name: 'Bellevue',
