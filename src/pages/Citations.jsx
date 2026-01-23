@@ -151,7 +151,7 @@ export default function Citations() {
                 {[
                   { location: 'Home Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
                   { location: 'History Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { location: 'Attractions Page Hero', url: 'https://cdn.quest.eb.com/images/300/300_3373/300_3373746-W.jpg', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
+                  { location: 'Attractions Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
                   { location: 'Events Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
                   { location: 'Neighborhoods Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
                   { location: 'Business Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },

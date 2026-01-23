@@ -17,7 +17,7 @@ export default function Attractions() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://cdn.quest.eb.com/images/300/300_3373/300_3373746-W.jpg)',
+            backgroundImage: 'url(https://catalog.archives.gov/iiif/3/lz/stillpix/018-aa/RG-18-AA-129-90-ac.jpg/full/1920,/0/default.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />
