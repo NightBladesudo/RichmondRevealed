@@ -26,7 +26,7 @@ export default function Business() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://catalog.archives.gov/iiif/3/lz/stillpix/018-aa/RG-18-AA-129-94-ac.jpg/full/1920,/0/default.jpg)',
+            backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/06/18/15/59/deer-813364_1280.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />

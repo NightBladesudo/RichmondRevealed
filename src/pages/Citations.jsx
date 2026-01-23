@@ -87,7 +87,7 @@ export default function Citations() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://catalog.archives.gov/iiif/3/lz/stillpix/018-aa/RG-18-AA-129-95-ac.jpg/full/1920,/0/default.jpg)',
+            backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/06/18/15/58/deer-813358_1280.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/80" />
@@ -149,16 +149,16 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Hero Section Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { location: 'Home Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { location: 'History Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { location: 'Attractions Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { location: 'Events Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { location: 'Neighborhoods Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
-                  { location: 'Business Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
-                  { location: 'Education Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { location: 'Store Page Hero', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
-                  { location: 'Contact Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { location: 'Citations Page Hero', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { location: 'Home Page Hero', url: 'https://pixabay.com/photos/richmond-virginia-richmond-virginia-4611886/', source: 'Pixabay', photographer: 'andrewawood' },
+                  { location: 'History Page Hero', url: 'https://pixabay.com/photos/water-bridge-travel-architecture-3314160/', source: 'Pixabay', photographer: 'timmorrisette33' },
+                  { location: 'Attractions Page Hero', url: 'https://pixabay.com/photos/richmond-virginia-hadad-lake-736983/', source: 'Pixabay', photographer: 'smltd' },
+                  { location: 'Events Page Hero', url: 'https://pixabay.com/photos/wachapreague-virginia-calm-water-7974344/', source: 'Pixabay', photographer: 'VACHAMP1984' },
+                  { location: 'Neighborhoods Page Hero', url: 'https://pixabay.com/photos/waterfall-virginia-water-nature-851041/', source: 'Pixabay', photographer: 'diego_torres' },
+                  { location: 'Business Page Hero', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813364/', source: 'Pixabay', photographer: 'diego_torres' },
+                  { location: 'Education Page Hero', url: 'https://pixabay.com/photos/saint-benedict-statue-catholic-2516519/', source: 'Pixabay', photographer: 'ariyandhamma' },
+                  { location: 'Store Page Hero', url: 'https://pixabay.com/photos/virginia-indian-historic-village-226607/', source: 'Pixabay', photographer: 'JamesDeMers' },
+                  { location: 'Contact Page Hero', url: 'https://pixabay.com/photos/waterfront-hotel-park-urban-7212424/', source: 'Pixabay', photographer: 'BruceEmmerling' },
+                  { location: 'Citations Page Hero', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813358/', source: 'Pixabay', photographer: 'diego_torres' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.location}</p>
@@ -180,13 +180,13 @@ export default function Citations() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
                   { title: 'James River Canal (1785)', url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/7afe99cb6_image.png', source: 'User Submission', photographer: 'Historical Archive' },
-                  { title: 'Monument Avenue, 1907', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { title: 'Main Street, Richmond (1910)', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { title: 'St. John\'s Church (1775)', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
-                  { title: 'Civil War Richmond (1863)', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { title: 'Modern Richmond Skyline (2020)', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
-                  { title: 'Civil Rights March (1963)', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { title: 'School Integration (1968)', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
+                  { title: 'Monument Avenue, 1907', url: 'https://pixabay.com/photos/richmond-virginia-richmond-virginia-4611886/', source: 'Pixabay', photographer: 'andrewawood' },
+                  { title: 'Main Street, Richmond (1910)', url: 'https://pixabay.com/photos/water-bridge-travel-architecture-3314160/', source: 'Pixabay', photographer: 'timmorrisette33' },
+                  { title: 'St. John\'s Church (1775)', url: 'https://pixabay.com/photos/richmond-virginia-hadad-lake-736983/', source: 'Pixabay', photographer: 'smltd' },
+                  { title: 'Civil War Richmond (1863)', url: 'https://pixabay.com/photos/wachapreague-virginia-calm-water-7974344/', source: 'Pixabay', photographer: 'VACHAMP1984' },
+                  { title: 'Modern Richmond Skyline (2020)', url: 'https://pixabay.com/photos/waterfall-virginia-water-nature-851041/', source: 'Pixabay', photographer: 'diego_torres' },
+                  { title: 'Civil Rights March (1963)', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813364/', source: 'Pixabay', photographer: 'diego_torres' },
+                  { title: 'School Integration (1968)', url: 'https://pixabay.com/photos/saint-benedict-statue-catholic-2516519/', source: 'Pixabay', photographer: 'ariyandhamma' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.title}</p>
@@ -207,9 +207,9 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Historical Era Section Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { title: 'Colonial Era Image', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { title: 'Civil War Era Image', url: '#', source: 'National Archives', photographer: 'National Archives Collection' },
-                  { title: 'Modern Renaissance Image', url: '#', source: 'Britannica ImageQuest', photographer: 'Britannica ImageQuest Collection' },
+                  { title: 'Colonial Era Image', url: 'https://pixabay.com/photos/virginia-indian-historic-village-226607/', source: 'Pixabay', photographer: 'JamesDeMers' },
+                  { title: 'Civil War Era Image', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813358/', source: 'Pixabay', photographer: 'diego_torres' },
+                  { title: 'Modern Renaissance Image', url: 'https://pixabay.com/photos/waterfront-hotel-park-urban-7212424/', source: 'Pixabay', photographer: 'BruceEmmerling' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.title}</p>
@@ -243,11 +243,11 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Additional Content Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  { category: 'Attractions', count: 'Multiple images', source: 'Britannica ImageQuest', url: 'https://quest.eb.com' },
-                  { category: 'Events', count: 'Multiple images', source: 'Britannica ImageQuest', url: 'https://quest.eb.com' },
-                  { category: 'Business Listings', count: 'Multiple images', source: 'Britannica ImageQuest', url: 'https://quest.eb.com' },
-                  { category: 'Store Products', count: 'Multiple images', source: 'Britannica ImageQuest', url: 'https://quest.eb.com' },
-                  { category: 'Gallery Images', count: 'Multiple images', source: 'National Archives', url: 'https://www.archives.gov' },
+                  { category: 'Attractions', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
+                  { category: 'Events', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
+                  { category: 'Business Listings', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
+                  { category: 'Store Products', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
+                  { category: 'Gallery Images', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <p className="font-semibold text-[#1e3a5f] mb-2 text-sm">{credit.category}</p>
@@ -263,20 +263,15 @@ export default function Citations() {
           </div>
 
           <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl space-y-3">
-            <p className="text-sm text-gray-700 leading-relaxed">
-              <span className="font-semibold">National Archives:</span> Historical images are sourced from the National Archives and Records Administration, 
-              the nation's record keeper. Images are in the public domain or used with permission. 
-              Learn more at <a href="https://www.archives.gov" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">archives.gov</a>
-            </p>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              <span className="font-semibold">Britannica ImageQuest:</span> Educational images licensed from Britannica ImageQuest, 
-              providing access to millions of rights-cleared images for educational purposes. 
-              Learn more at <a href="https://quest.eb.com" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">quest.eb.com</a>
-            </p>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              <span className="font-semibold">OpenStreetMap:</span> Map data © OpenStreetMap contributors, available under the 
-              Open Database License. Learn more at <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">openstreetmap.org/copyright</a>
-            </p>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            <span className="font-semibold">Pixabay:</span> Free high-quality images sourced from Pixabay, a vibrant community 
+            of creators sharing royalty-free images. All images are released under the Pixabay License, making them safe to use 
+            without attribution. Learn more at <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">pixabay.com</a>
+          </p>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            <span className="font-semibold">OpenStreetMap:</span> Map data © OpenStreetMap contributors, available under the 
+            Open Database License. Learn more at <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">openstreetmap.org/copyright</a>
+          </p>
           </div>
         </div>
       </section>

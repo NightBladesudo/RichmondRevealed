@@ -29,7 +29,7 @@ export default function History() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://catalog.archives.gov/iiif/3/lz/stillpix/018-aa/RG-18-AA-129-93-ac.jpg/full/1920,/0/default.jpg)',
+            backgroundImage: 'url(https://cdn.pixabay.com/photo/2018/04/12/17/36/water-3314160_1280.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/80" />

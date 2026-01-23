@@ -73,7 +73,7 @@ export default function Education() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://catalog.archives.gov/iiif/3/lz/stillpix/018-aa/RG-18-AA-129-92-ac.jpg/full/1920,/0/default.jpg)',
+            backgroundImage: 'url(https://cdn.pixabay.com/photo/2017/05/25/04/50/saint-benedict-2516519_1280.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />
