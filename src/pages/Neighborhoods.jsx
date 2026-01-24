@@ -8,85 +8,85 @@ const neighborhoods = [
     name: 'The Fan District',
     description: 'Tree-lined streets with stunning Victorian and Edwardian architecture. Known for its vibrant restaurant scene, local shops, and close-knit community feel.',
     highlights: ['Historic Architecture', 'Walkable', 'Great Dining'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg'
   },
   {
     name: 'Church Hill',
     description: 'One of Richmond\'s oldest neighborhoods, home to St. John\'s Church where Patrick Henry delivered his famous speech. Rich in history and character.',
     highlights: ['Historic', 'Views', 'Local Cafes'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/18/15/44/architecture-1835359_1280.jpg'
   },
   {
     name: 'Scott\'s Addition',
     description: 'Former industrial area transformed into Richmond\'s hottest neighborhood. Home to craft breweries, cideries, restaurants, and art spaces.',
     highlights: ['Breweries', 'Trendy', 'Nightlife'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg'
   },
   {
     name: 'Carytown',
     description: 'Richmond\'s mile-long shopping and dining district. Eclectic boutiques, vintage shops, and diverse restaurants line the bustling street.',
     highlights: ['Shopping', 'Restaurants', 'Entertainment'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_1280.jpg'
   },
   {
     name: 'Shockoe Bottom',
     description: 'Richmond\'s oldest commercial area, now a vibrant entertainment district with restaurants, bars, and farmers markets.',
     highlights: ['Nightlife', 'Markets', 'History'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_1280.jpg'
   },
   {
     name: 'Oregon Hill',
     description: 'Close-knit community near VCU and the river, known for Hollywood Cemetery and stunning views of the James River rapids.',
     highlights: ['River Access', 'Historic Cemetery', 'Community'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/02/13/13/11/tree-1197515_1280.jpg'
   },
   {
     name: 'Museum District',
     description: 'Home to Virginia Museum of Fine Arts and Science Museum. Beautiful tree-lined streets with elegant early 20th-century homes.',
     highlights: ['Museums', 'Architecture', 'Family-Friendly'],
-    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/1c073cf3a_image.png'
+    image: 'https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg'
   },
   {
     name: 'Manchester',
     description: 'Revitalized neighborhood on the south side of the James River with stunning city skyline views and a growing arts scene.',
     highlights: ['River Views', 'Arts', 'Affordable'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2015/05/15/14/46/water-768583_1280.jpg'
   },
   {
     name: 'Libbie & Grove',
     description: 'Upscale shopping and dining corridor known for boutiques, specialty shops, and award-winning restaurants.',
     highlights: ['Shopping', 'Fine Dining', 'Upscale'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/08/10/08/47/woman-2619168_1280.jpg'
   },
   {
     name: 'Jackson Ward',
     description: 'Historic neighborhood known for its African American heritage, beautiful architecture, and cultural significance. Home to significant civil rights history.',
     highlights: ['History', 'Culture', 'Heritage'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/09/08/20/29/washington-dc-2730141_1280.jpg'
   },
   {
     name: 'Bellevue',
     description: 'Charming historic neighborhood with tree-lined streets, Victorian homes, and a tight-knit community atmosphere.',
     highlights: ['Historic Homes', 'Walkable', 'Community'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg'
   },
   {
     name: 'South of Broad',
     description: 'Historic neighborhood near downtown Richmond featuring restored homes, galleries, and proximity to the James River.',
     highlights: ['Historic', 'Arts', 'River Proximity'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg'
   },
   {
     name: 'Near West End',
     description: 'Growing residential neighborhood with diverse architecture, local shops, and convenient access to major thoroughfares.',
     highlights: ['Residential', 'Diverse', 'Accessible'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg'
   },
   {
     name: 'Northside',
     description: 'Up-and-coming neighborhood north of downtown with affordable housing, murals, and emerging dining and entertainment venues.',
     highlights: ['Affordable', 'Art Scene', 'Emerging'],
-    image: 'https://catalog.archives.gov/OpaAPI/media/513295/content/arcmedia/media/images/19/5/19-14.jpg'
+    image: 'https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg'
   }
   ];
 
