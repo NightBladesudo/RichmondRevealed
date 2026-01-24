@@ -1,14 +1,60 @@
 import React from 'react';
-import { useQuery } from '@tanstack/react-query';
-import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
 import { MapPin, Landmark } from 'lucide-react';
 
+const attractions = [
+  {
+    id: 1,
+    name: 'Virginia Museum of Fine Arts',
+    description: 'World-class art museum with free general admission featuring collections spanning 5,000 years.',
+    category: 'Culture',
+    image_url: 'https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=600',
+    address: '200 N Arthur Ashe Blvd'
+  },
+  {
+    id: 2,
+    name: 'Maymont',
+    description: 'Historic 100-acre estate with gardens, wildlife exhibits, and a beautiful mansion.',
+    category: 'Nature',
+    image_url: 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=600',
+    address: '1700 Hampton St'
+  },
+  {
+    id: 3,
+    name: 'Belle Isle',
+    description: 'Island park in the James River with trails, rapids, and historic ruins.',
+    category: 'Nature',
+    image_url: 'https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=600',
+    address: 'Tredegar St'
+  },
+  {
+    id: 4,
+    name: 'Virginia State Capitol',
+    description: 'Historic capitol building designed by Thomas Jefferson, offering tours and rich history.',
+    category: 'Historic',
+    image_url: 'https://images.unsplash.com/20/cambridge.JPG?w=600',
+    address: '1000 Bank St'
+  },
+  {
+    id: 5,
+    name: 'Lewis Ginter Botanical Garden',
+    description: 'Stunning 50-acre botanical garden with diverse plant collections and beautiful landscapes.',
+    category: 'Nature',
+    image_url: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600',
+    address: '1800 Lakeside Ave'
+  },
+  {
+    id: 6,
+    name: 'Hollywood Cemetery',
+    description: 'Historic cemetery overlooking the James River, final resting place of presidents and Civil War figures.',
+    category: 'Historic',
+    image_url: 'https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?w=600',
+    address: '412 S Cherry St'
+  }
+];
+
 export default function Attractions() {
-  const { data: attractions = [], isLoading } = useQuery({
-    queryKey: ['attractions'],
-    queryFn: () => base44.entities.Attraction.list('-created_date', 50),
-  });
+  const isLoading = false;
 
   return (
     <div className="min-h-screen bg-gray-50">
