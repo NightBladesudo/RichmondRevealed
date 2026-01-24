@@ -17,7 +17,7 @@ export default function Attractions() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/04/23/23/15/richmond-736983_1280.jpg)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1551632811-561732d1e306?w=1280)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />

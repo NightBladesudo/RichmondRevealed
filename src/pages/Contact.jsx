@@ -44,7 +44,7 @@ export default function Contact() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://cdn.pixabay.com/photo/2022/05/22/09/52/waterfront-7212424_1280.jpg)',
+            backgroundImage: 'url(https://cdn.pixabay.com/photo/2017/06/11/22/00/contact-us-2393716_1280.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/80" />
