@@ -71,7 +71,7 @@ export default function VirtualReality() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/06/18/16/00/deer-813369_1280.jpg)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?w=1280)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/80" />

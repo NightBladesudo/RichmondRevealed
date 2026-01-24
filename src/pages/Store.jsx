@@ -98,7 +98,7 @@ export default function Store() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://cdn.pixabay.com/photo/2013/12/12/02/03/virginia-226607_1280.jpg)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1280)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />

@@ -87,7 +87,7 @@ export default function Citations() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/06/18/15/58/deer-813358_1280.jpg)',
+            backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/11/19/21/10/knowledge-1052010_1280.jpg)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/80" />

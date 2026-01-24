@@ -98,7 +98,7 @@ export default function Neighborhoods() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/07/19/01/15/waterfall-851041_1280.jpg)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=1280)',
           }}
         >
           <div className="absolute inset-0 bg-[#1e3a5f]/75" />
