@@ -14,25 +14,25 @@ const neighborhoods = [
     name: 'Church Hill',
     description: 'One of Richmond\'s oldest neighborhoods, home to St. John\'s Church where Patrick Henry delivered his famous speech. Rich in history and character.',
     highlights: ['Historic', 'Views', 'Local Cafes'],
-    image: 'https://cdn.pixabay.com/photo/2020/06/06/14/30/church-5266655_1280.jpg'
+    image: 'https://images.unsplash.com/photo-1580893211528-57e7d5206a5d?w=1280'
   },
   {
     name: 'Scott\'s Addition',
     description: 'Former industrial area transformed into Richmond\'s hottest neighborhood. Home to craft breweries, cideries, restaurants, and art spaces.',
     highlights: ['Breweries', 'Trendy', 'Nightlife'],
-    image: 'https://cdn.pixabay.com/photo/2016/03/27/19/43/beer-1283566_1280.jpg'
+    image: 'https://images.unsplash.com/photo-1542835497-a6813df96ed9?w=1280'
   },
   {
     name: 'Carytown',
     description: 'Richmond\'s mile-long shopping and dining district. Eclectic boutiques, vintage shops, and diverse restaurants line the bustling street.',
     highlights: ['Shopping', 'Restaurants', 'Entertainment'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2018/08/01/17/15/city-3577655_1280.jpg'
   },
   {
     name: 'Shockoe Bottom',
     description: 'Richmond\'s oldest commercial area, now a vibrant entertainment district with restaurants, bars, and farmers markets.',
     highlights: ['Nightlife', 'Markets', 'History'],
-    image: 'https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg'
   },
   {
     name: 'Oregon Hill',
@@ -50,13 +50,13 @@ const neighborhoods = [
     name: 'Manchester',
     description: 'Revitalized neighborhood on the south side of the James River with stunning city skyline views and a growing arts scene.',
     highlights: ['River Views', 'Arts', 'Affordable'],
-    image: 'https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg'
   },
   {
     name: 'Libbie & Grove',
     description: 'Upscale shopping and dining corridor known for boutiques, specialty shops, and award-winning restaurants.',
     highlights: ['Shopping', 'Fine Dining', 'Upscale'],
-    image: 'https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/08/10/08/47/woman-2619168_1280.jpg'
   },
   {
     name: 'Jackson Ward',
@@ -68,7 +68,7 @@ const neighborhoods = [
     name: 'Bellevue',
     description: 'Charming historic neighborhood with tree-lined streets, Victorian homes, and a tight-knit community atmosphere.',
     highlights: ['Historic Homes', 'Walkable', 'Community'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg'
   },
   {
     name: 'South of Broad',
