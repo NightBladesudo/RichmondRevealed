@@ -8,7 +8,7 @@ const virtualWorlds = [
     id: 1,
     name: 'Monument Avenue',
     description: 'Walk through Richmond\'s historic boulevard lined with stunning architecture',
-    image: 'https://images.unsplash.com/photo-1566990898722-88c9b9b0d52c?w=800&q=80',
+    image: 'https://cdn.pixabay.com/photo/2019/11/08/17/12/richmond-virginia-4611886_1280.jpg',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948123456!6m8!1m7!1sCAoSLEFGMVFpcE9JdU1rRzFDUC1HZGQ1NXFJZktxYmNiUlB5aHN3SXFacExFRmZh!2m2!1d37.55564!2d-77.47956!3f0!4f0!5f0.7820865974627469',
     category: 'Historic'
   },
@@ -16,7 +16,7 @@ const virtualWorlds = [
     id: 2,
     name: 'Belle Isle',
     description: 'Explore the natural beauty and trails of this James River island',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+    image: 'https://cdn.pixabay.com/photo/2015/05/15/14/46/water-768583_1280.jpg',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948223456!6m8!1m7!1sCAoSLEFGMVFpcE5yWE1OMXdRbUFPQXhSUHBvZGNRLXVmX1RoNTVFUFY2SWQ3YlNV!2m2!1d37.53127!2d-77.45869!3f0!4f0!5f0.7820865974627469',
     category: 'Nature'
   },
@@ -24,7 +24,7 @@ const virtualWorlds = [
     id: 3,
     name: 'Virginia State Capitol',
     description: 'Tour the historic seat of Virginia\'s government designed by Thomas Jefferson',
-    image: 'https://images.unsplash.com/photo-1589802829985-817e51171b92?w=800&q=80',
+    image: 'https://cdn.pixabay.com/photo/2016/11/18/15/44/architecture-1835359_1280.jpg',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948323456!6m8!1m7!1sCAoSLEFGMVFpcE1wTWY0WmpfZEh0ckc0LURlNnBGWGFRNmlhQXZpaGhNYUxwNXdV!2m2!1d37.53858!2d-77.43403!3f0!4f0!5f0.7820865974627469',
     category: 'Landmark'
   },
@@ -32,7 +32,7 @@ const virtualWorlds = [
     id: 4,
     name: 'Carytown',
     description: 'Experience Richmond\'s eclectic shopping and dining district',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
+    image: 'https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948423456!6m8!1m7!1sCAoSLEFGMVFpcE5XckFFcE9BMU5LT2JGRUpPYXJHTkVqSW0zX3hhRUxsRE1aRldE!2m2!1d37.55564!2d-77.48829!3f0!4f0!5f0.7820865974627469',
     category: 'Neighborhood'
   },
@@ -40,7 +40,7 @@ const virtualWorlds = [
     id: 5,
     name: 'James River Park',
     description: 'Discover trails, rapids, and scenic views along the James River',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+    image: 'https://cdn.pixabay.com/photo/2016/02/13/13/11/tree-1197515_1280.jpg',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948523456!6m8!1m7!1sCAoSLEFGMVFpcE9aWHBrUk5qWTBTVzB5UVBKWndTb1NsMVJPa3J2MG0yOVQ4TFN4!2m2!1d37.53696!2d-77.46576!3f0!4f0!5f0.7820865974627469',
     category: 'Nature'
   },
@@ -48,7 +48,7 @@ const virtualWorlds = [
     id: 6,
     name: 'Scott\'s Addition',
     description: 'Visit Richmond\'s trendy neighborhood with breweries and murals',
-    image: 'https://images.unsplash.com/photo-1569163139394-de4798aa62b4?w=800&q=80',
+    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948623456!6m8!1m7!1sCAoSLEFGMVFpcE5mT1oyRXh0ckJzUlN2eGNOTGZnMnlFRzY0QzI0dU42TTU4WFJC!2m2!1d37.56864!2d-77.45394!3f0!4f0!5f0.7820865974627469',
     category: 'Neighborhood'
   }
