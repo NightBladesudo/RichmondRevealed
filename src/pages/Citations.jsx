@@ -149,23 +149,23 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Hero Section Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { location: 'Home Page Hero', url: 'https://pixabay.com/photos/water-bridge-travel-architecture-3314160/', source: 'Pixabay', photographer: 'timmorrisette33' },
-                  { location: 'History Page Hero', url: 'https://pixabay.com/photos/water-bridge-travel-architecture-3314160/', source: 'Pixabay', photographer: 'timmorrisette33' },
-                  { location: 'Attractions Page Hero', url: 'https://pixabay.com/photos/richmond-virginia-hadad-lake-736983/', source: 'Pixabay', photographer: 'smltd' },
-                  { location: 'Events Page Hero', url: 'https://pixabay.com/photos/wachapreague-virginia-calm-water-7974344/', source: 'Pixabay', photographer: 'VACHAMP1984' },
-                  { location: 'Neighborhoods Page Hero', url: 'https://pixabay.com/photos/waterfall-virginia-water-nature-851041/', source: 'Pixabay', photographer: 'diego_torres' },
-                  { location: 'Business Page Hero', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813364/', source: 'Pixabay', photographer: 'diego_torres' },
-                  { location: 'Education Page Hero', url: 'https://pixabay.com/photos/saint-benedict-statue-catholic-2516519/', source: 'Pixabay', photographer: 'ariyandhamma' },
-                  { location: 'Store Page Hero', url: 'https://pixabay.com/photos/virginia-indian-historic-village-226607/', source: 'Pixabay', photographer: 'JamesDeMers' },
-                  { location: 'Contact Page Hero', url: 'https://pixabay.com/photos/waterfront-hotel-park-urban-7212424/', source: 'Pixabay', photographer: 'BruceEmmerling' },
-                  { location: 'Citations Page Hero', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813358/', source: 'Pixabay', photographer: 'diego_torres' },
-                  { location: 'Virtual Reality Page Hero', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813369/', source: 'Pixabay', photographer: 'diego_torres' },
-                  { location: 'VR Tour - Monument Avenue', url: 'https://pixabay.com/photos/richmond-virginia-richmond-virginia-4611886/', source: 'Pixabay', photographer: 'andrewawood' },
-                  { location: 'VR Tour - Belle Isle', url: 'https://pixabay.com/photos/water-rain-weather-drops-768583/', source: 'Pixabay', photographer: 'Unsplash' },
-                  { location: 'VR Tour - Virginia State Capitol', url: 'https://pixabay.com/photos/architecture-building-castle-1835359/', source: 'Pixabay', photographer: 'Pexels' },
-                  { location: 'VR Tour - Carytown', url: 'https://pixabay.com/photos/architecture-building-city-house-1867187/', source: 'Pixabay', photographer: 'Pexels' },
-                  { location: 'VR Tour - James River Park', url: 'https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-1197515/', source: 'Pixabay', photographer: 'jplenio' },
-                  { location: 'VR Tour - Scott\'s Addition', url: 'https://pixabay.com/photos/people-girls-women-students-2591874/', source: 'Pixabay', photographer: 'StockSnap' },
+                  { location: 'Home Page Hero', url: 'https://unsplash.com/photos/city-skyline-under-blue-sky-during-daytime-CmF_5GYc6c0', source: 'Unsplash', photographer: 'Sawyer Bengtson' },
+                  { location: 'History Page Hero', url: 'https://unsplash.com/photos/man-standing-on-rock-looking-towards-lake-BKLHxgbYFDI', source: 'Unsplash', photographer: 'Sébastien Goldberg' },
+                  { location: 'Attractions Page Hero', url: 'https://unsplash.com/photos/two-person-walking-towards-mountain-covered-with-snow-Yizrl9N_eDA', source: 'Unsplash', photographer: 'Toomas Tartes' },
+                  { location: 'Events Page Hero', url: 'https://unsplash.com/photos/people-at-concert-hGO4pRIl5jE', source: 'Unsplash', photographer: 'Aditya Chinchure' },
+                  { location: 'Neighborhoods Page Hero', url: 'https://unsplash.com/photos/person-hiking-above-mountain-overlooking-river-znoL1m6MD_k', source: 'Unsplash', photographer: 'Joel & Jasmin Førestbird' },
+                  { location: 'Business Page Hero', url: 'https://unsplash.com/photos/interior-of-a-coffee-shop-tKN1WXrzQ3s', source: 'Unsplash', photographer: 'daan evers' },
+                  { location: 'Education Page Hero', url: 'https://unsplash.com/photos/brown-concrete-palace-under-blue-sky-at-daytime-d6ebY-faOO0', source: 'Unsplash', photographer: 'Vadim Sherbakov' },
+                  { location: 'Store Page Hero', url: 'https://unsplash.com/photos/photo-of-woman-holding-white-and-black-paper-bags-_3Q3tsJ01nc', source: 'Unsplash', photographer: 'freestocks' },
+                  { location: 'Contact Page Hero', url: 'https://pixabay.com/photos/contact-us-contact-e-mail-inquiry-2393716/', source: 'Pixabay', photographer: 'jessica45' },
+                  { location: 'Citations Page Hero', url: 'https://pixabay.com/photos/book-asia-children-boys-education-1052010/', source: 'Pixabay', photographer: 'tednewkirk' },
+                  { location: 'Virtual Reality Page Hero', url: 'https://unsplash.com/photos/boy-wearing-black-and-white-vr-headset-DeyfdybVQhA', source: 'Unsplash', photographer: 'Jessica Lewis' },
+                  { location: 'VR Tour - Monument Avenue', url: 'https://unsplash.com/photos/architectural-photography-of-brown-and-blue-house-d55fhArDES0', source: 'Unsplash', photographer: 'Darya Tryfanava' },
+                  { location: 'VR Tour - Belle Isle', url: 'https://unsplash.com/photos/person-hiking-above-mountain-overlooking-river-znoL1m6MD_k', source: 'Unsplash', photographer: 'Joel & Jasmin Førestbird' },
+                  { location: 'VR Tour - Virginia State Capitol', url: 'https://unsplash.com/photos/brown-concrete-palace-under-blue-sky-at-daytime-d6ebY-faOO0', source: 'Unsplash', photographer: 'Vadim Sherbakov' },
+                  { location: 'VR Tour - Carytown', url: 'https://pixabay.com/photos/city-shopping-street-shopping-center-3577655/', source: 'Pixabay', photographer: 'InstagramFOTOGRAFIN' },
+                  { location: 'VR Tour - James River Park', url: 'https://unsplash.com/photos/person-carrying-yellow-and-black-backpack-walking-between-green-plants-UVyOfX3v0Ls', source: 'Unsplash', photographer: 'Holly Mandarich' },
+                  { location: 'VR Tour - Scott\'s Addition', url: 'https://unsplash.com/photos/brown-pizza-oven-EHbtjmz7hvw', source: 'Unsplash', photographer: 'Claude Piché' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.location}</p>
@@ -187,13 +187,13 @@ export default function Citations() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
                   { title: 'James River Canal (1785)', url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/7afe99cb6_image.png', source: 'User Submission', photographer: 'Historical Archive' },
-                  { title: 'Monument Avenue, 1907', url: 'https://pixabay.com/photos/richmond-virginia-richmond-virginia-4611886/', source: 'Pixabay', photographer: 'andrewawood' },
-                  { title: 'Main Street, Richmond (1910)', url: 'https://pixabay.com/photos/water-bridge-travel-architecture-3314160/', source: 'Pixabay', photographer: 'timmorrisette33' },
-                  { title: 'St. John\'s Church (1775)', url: 'https://pixabay.com/photos/richmond-virginia-hadad-lake-736983/', source: 'Pixabay', photographer: 'smltd' },
-                  { title: 'Civil War Richmond (1863)', url: 'https://pixabay.com/photos/wachapreague-virginia-calm-water-7974344/', source: 'Pixabay', photographer: 'VACHAMP1984' },
-                  { title: 'Modern Richmond Skyline (2020)', url: 'https://pixabay.com/photos/waterfall-virginia-water-nature-851041/', source: 'Pixabay', photographer: 'diego_torres' },
-                  { title: 'Civil Rights March (1963)', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813364/', source: 'Pixabay', photographer: 'diego_torres' },
-                  { title: 'School Integration (1968)', url: 'https://pixabay.com/photos/saint-benedict-statue-catholic-2516519/', source: 'Pixabay', photographer: 'ariyandhamma' },
+                  { title: 'Monument Avenue, 1907', url: 'https://unsplash.com/photos/architectural-photography-of-brown-and-blue-house-d55fhArDES0', source: 'Unsplash', photographer: 'Darya Tryfanava' },
+                  { title: 'Main Street, Richmond (1910)', url: 'https://unsplash.com/photos/city-skyline-under-blue-sky-during-daytime-CmF_5GYc6c0', source: 'Unsplash', photographer: 'Sawyer Bengtson' },
+                  { title: 'St. John\'s Church (1775)', url: 'https://unsplash.com/photos/brown-concrete-building-near-green-trees-during-daytime-N2Y1LRCmYr8', source: 'Unsplash', photographer: 'Harry Kessell' },
+                  { title: 'Civil War Richmond (1863)', url: 'https://unsplash.com/photos/people-at-concert-hGO4pRIl5jE', source: 'Unsplash', photographer: 'Aditya Chinchure' },
+                  { title: 'Modern Richmond Skyline (2020)', url: 'https://unsplash.com/photos/city-skyline-under-blue-sky-during-daytime-CmF_5GYc6c0', source: 'Unsplash', photographer: 'Sawyer Bengtson' },
+                  { title: 'Civil Rights March (1963)', url: 'https://unsplash.com/photos/people-throwing-hats-on-air-_kd5cxwZOK4', source: 'Unsplash', photographer: 'Pang Yuhao' },
+                  { title: 'School Integration (1968)', url: 'https://unsplash.com/photos/people-sitting-on-chair-in-front-of-computer-YRMWVcdyhmI', source: 'Unsplash', photographer: 'Dom Fou' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.title}</p>
@@ -214,9 +214,9 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Historical Era Section Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { title: 'Colonial Era Image', url: 'https://pixabay.com/photos/virginia-indian-historic-village-226607/', source: 'Pixabay', photographer: 'JamesDeMers' },
-                  { title: 'Civil War Era Image', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813358/', source: 'Pixabay', photographer: 'diego_torres' },
-                  { title: 'Modern Renaissance Image', url: 'https://pixabay.com/photos/waterfront-hotel-park-urban-7212424/', source: 'Pixabay', photographer: 'BruceEmmerling' },
+                  { title: 'Colonial Era Image', url: 'https://unsplash.com/photos/landscape-photography-of-green-mountain-H3giJcTw__w', source: 'Unsplash', photographer: 'Benjamin Voros' },
+                  { title: 'Civil War Era Image', url: 'https://unsplash.com/photos/brown-wooden-fence-on-green-grass-field-near-mountain-during-daytime-TrhLCn1abMU', source: 'Unsplash', photographer: 'Intricate Explorer' },
+                  { title: 'Modern Renaissance Image', url: 'https://unsplash.com/photos/city-skyline-under-blue-sky-during-daytime-CmF_5GYc6c0', source: 'Unsplash', photographer: 'Sawyer Bengtson' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.title}</p>
@@ -284,11 +284,12 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Additional Content Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  { category: 'Attractions', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
-                  { category: 'Events', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
-                  { category: 'Business Listings', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
-                  { category: 'Store Products', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
-                  { category: 'Gallery Images', count: 'Multiple images', source: 'Pixabay', url: 'https://pixabay.com' },
+                  { category: 'Attractions', count: 'Multiple images', source: 'Unsplash & Pixabay', url: 'https://unsplash.com' },
+                  { category: 'Events', count: 'Multiple images', source: 'Unsplash & Pixabay', url: 'https://unsplash.com' },
+                  { category: 'Business Listings', count: 'Multiple images', source: 'Unsplash & Pixabay', url: 'https://unsplash.com' },
+                  { category: 'Store Products', count: 'Multiple images', source: 'Unsplash & Pixabay', url: 'https://unsplash.com' },
+                  { category: 'Gallery Images', count: 'Multiple images', source: 'Unsplash & Pixabay', url: 'https://unsplash.com' },
+                  { category: 'University Images', count: '3 images', source: 'Unsplash', url: 'https://unsplash.com/photos/three-round-white-wooden-tables-n4y3eiQSIoc' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <p className="font-semibold text-[#1e3a5f] mb-2 text-sm">{credit.category}</p>
@@ -304,6 +305,11 @@ export default function Citations() {
           </div>
 
           <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl space-y-3">
+          <p className="text-sm text-gray-700 leading-relaxed">
+            <span className="font-semibold">Unsplash:</span> Free high-quality images from talented photographers around the world. 
+            All photos are released under the Unsplash License, making them free to use for any purpose. 
+            Learn more at <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="text-[#2d7d7d] hover:underline">unsplash.com/license</a>
+          </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             <span className="font-semibold">Pixabay:</span> Free high-quality images sourced from Pixabay, a vibrant community 
             of creators sharing royalty-free images. All images are released under the Pixabay License, making them safe to use 
