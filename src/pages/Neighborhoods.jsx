@@ -8,19 +8,19 @@ const neighborhoods = [
     name: 'The Fan District',
     description: 'Tree-lined streets with stunning Victorian and Edwardian architecture. Known for its vibrant restaurant scene, local shops, and close-knit community feel.',
     highlights: ['Historic Architecture', 'Walkable', 'Great Dining'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg'
   },
   {
     name: 'Church Hill',
     description: 'One of Richmond\'s oldest neighborhoods, home to St. John\'s Church where Patrick Henry delivered his famous speech. Rich in history and character.',
     highlights: ['Historic', 'Views', 'Local Cafes'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/15/44/architecture-1835359_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2020/06/06/14/30/church-5266655_1280.jpg'
   },
   {
     name: 'Scott\'s Addition',
     description: 'Former industrial area transformed into Richmond\'s hottest neighborhood. Home to craft breweries, cideries, restaurants, and art spaces.',
     highlights: ['Breweries', 'Trendy', 'Nightlife'],
-    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/03/27/19/43/beer-1283566_1280.jpg'
   },
   {
     name: 'Carytown',
@@ -32,61 +32,61 @@ const neighborhoods = [
     name: 'Shockoe Bottom',
     description: 'Richmond\'s oldest commercial area, now a vibrant entertainment district with restaurants, bars, and farmers markets.',
     highlights: ['Nightlife', 'Markets', 'History'],
-    image: 'https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg'
   },
   {
     name: 'Oregon Hill',
     description: 'Close-knit community near VCU and the river, known for Hollywood Cemetery and stunning views of the James River rapids.',
     highlights: ['River Access', 'Historic Cemetery', 'Community'],
-    image: 'https://cdn.pixabay.com/photo/2016/02/13/13/11/tree-1197515_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2019/09/25/15/31/cemetery-4503185_1280.jpg'
   },
   {
     name: 'Museum District',
     description: 'Home to Virginia Museum of Fine Arts and Science Museum. Beautiful tree-lined streets with elegant early 20th-century homes.',
     highlights: ['Museums', 'Architecture', 'Family-Friendly'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/29/12/45/museum-1869452_1280.jpg'
   },
   {
     name: 'Manchester',
     description: 'Revitalized neighborhood on the south side of the James River with stunning city skyline views and a growing arts scene.',
     highlights: ['River Views', 'Arts', 'Affordable'],
-    image: 'https://cdn.pixabay.com/photo/2015/05/15/14/46/water-768583_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg'
   },
   {
     name: 'Libbie & Grove',
     description: 'Upscale shopping and dining corridor known for boutiques, specialty shops, and award-winning restaurants.',
     highlights: ['Shopping', 'Fine Dining', 'Upscale'],
-    image: 'https://cdn.pixabay.com/photo/2017/08/10/08/47/woman-2619168_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_1280.jpg'
   },
   {
     name: 'Jackson Ward',
     description: 'Historic neighborhood known for its African American heritage, beautiful architecture, and cultural significance. Home to significant civil rights history.',
     highlights: ['History', 'Culture', 'Heritage'],
-    image: 'https://cdn.pixabay.com/photo/2017/09/08/20/29/washington-dc-2730141_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2020/06/07/16/43/row-houses-5270588_1280.jpg'
   },
   {
     name: 'Bellevue',
     description: 'Charming historic neighborhood with tree-lined streets, Victorian homes, and a tight-knit community atmosphere.',
     highlights: ['Historic Homes', 'Walkable', 'Community'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg'
   },
   {
     name: 'South of Broad',
     description: 'Historic neighborhood near downtown Richmond featuring restored homes, galleries, and proximity to the James River.',
     highlights: ['Historic', 'Arts', 'River Proximity'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2014/07/10/17/18/bridge-389768_1280.jpg'
   },
   {
     name: 'Near West End',
     description: 'Growing residential neighborhood with diverse architecture, local shops, and convenient access to major thoroughfares.',
     highlights: ['Residential', 'Diverse', 'Accessible'],
-    image: 'https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg'
   },
   {
     name: 'Northside',
     description: 'Up-and-coming neighborhood north of downtown with affordable housing, murals, and emerging dining and entertainment venues.',
     highlights: ['Affordable', 'Art Scene', 'Emerging'],
-    image: 'https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg'
   }
   ];
 

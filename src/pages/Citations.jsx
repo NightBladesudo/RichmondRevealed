@@ -237,20 +237,20 @@ export default function Citations() {
               <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-4">Neighborhood Images</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { location: 'The Fan District', url: 'https://pixabay.com/photos/architecture-building-city-house-1867187/', source: 'Pixabay', photographer: 'Pexels' },
-                  { location: 'Church Hill', url: 'https://pixabay.com/photos/architecture-building-castle-1835359/', source: 'Pixabay', photographer: 'Pexels' },
-                  { location: 'Scott\'s Addition', url: 'https://pixabay.com/photos/people-girls-women-students-2591874/', source: 'Pixabay', photographer: 'StockSnap' },
+                  { location: 'The Fan District', url: 'https://pixabay.com/photos/house-garage-driveway-stone-1836070/', source: 'Pixabay', photographer: 'Pexels' },
+                  { location: 'Church Hill', url: 'https://pixabay.com/photos/church-steeple-building-5266655/', source: 'Pixabay', photographer: 'joakant' },
+                  { location: 'Scott\'s Addition', url: 'https://pixabay.com/photos/beer-barrel-keg-cellar-1283566/', source: 'Pixabay', photographer: 'Pexels' },
                   { location: 'Carytown', url: 'https://pixabay.com/photos/hand-united-together-people-1850120/', source: 'Pixabay', photographer: 'sasint' },
-                  { location: 'Shockoe Bottom', url: 'https://pixabay.com/photos/airport-transport-woman-girl-2373727/', source: 'Pixabay', photographer: 'JillWellington' },
-                  { location: 'Oregon Hill', url: 'https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-1197515/', source: 'Pixabay', photographer: 'jplenio' },
-                  { location: 'Museum District', url: 'https://pixabay.com/photos/astronomy-bright-constellation-dark-1867616/', source: 'Pixabay', photographer: 'Pexels' },
-                  { location: 'Manchester', url: 'https://pixabay.com/photos/water-rain-weather-drops-768583/', source: 'Pixabay', photographer: 'Unsplash' },
-                  { location: 'Libbie & Grove', url: 'https://pixabay.com/photos/woman-people-coffee-portrait-2619168/', source: 'Pixabay', photographer: 'StockSnap' },
-                  { location: 'Jackson Ward', url: 'https://pixabay.com/photos/washington-dc-usa-america-travel-2730141/', source: 'Pixabay', photographer: 'bogitw' },
-                  { location: 'Bellevue', url: 'https://pixabay.com/photos/couch-space-living-room-interior-1835923/', source: 'Pixabay', photographer: 'Pexels' },
-                  { location: 'South of Broad', url: 'https://pixabay.com/photos/house-garage-driveway-stone-1836070/', source: 'Pixabay', photographer: 'Pexels' },
-                  { location: 'Near West End', url: 'https://pixabay.com/photos/architecture-building-facade-1477041/', source: 'Pixabay', photographer: 'Tama66' },
-                  { location: 'Northside', url: 'https://pixabay.com/photos/code-coding-computer-data-1076536/', source: 'Pixabay', photographer: 'Pexels' },
+                  { location: 'Shockoe Bottom', url: 'https://pixabay.com/photos/concert-crowd-audience-people-2527495/', source: 'Pixabay', photographer: 'Pexels' },
+                  { location: 'Oregon Hill', url: 'https://pixabay.com/photos/cemetery-graves-headstones-4503185/', source: 'Pixabay', photographer: 'Nicky ❤️🌿🐞🌿❤️' },
+                  { location: 'Museum District', url: 'https://pixabay.com/photos/museum-building-architecture-facade-1869452/', source: 'Pixabay', photographer: 'Pexels' },
+                  { location: 'Manchester', url: 'https://pixabay.com/photos/polynesia-french-polynesia-tahiti-3021072/', source: 'Pixabay', photographer: 'Julius_Silver' },
+                  { location: 'Libbie & Grove', url: 'https://pixabay.com/photos/auto-automobile-automotive-2179220/', source: 'Pixabay', photographer: 'Tama66' },
+                  { location: 'Jackson Ward', url: 'https://pixabay.com/photos/row-houses-houses-homes-5270588/', source: 'Pixabay', photographer: 'MemoryCatcher' },
+                  { location: 'Bellevue', url: 'https://pixabay.com/photos/living-room-couch-interior-room-1835923/', source: 'Pixabay', photographer: 'Pexels' },
+                  { location: 'South of Broad', url: 'https://pixabay.com/photos/bridge-river-water-landscape-sky-389768/', source: 'Pixabay', photographer: 'jplenio' },
+                  { location: 'Near West End', url: 'https://pixabay.com/photos/architecture-building-city-house-1867187/', source: 'Pixabay', photographer: 'Pexels' },
+                  { location: 'Northside', url: 'https://pixabay.com/photos/colorful-colourful-mural-wall-art-2468874/', source: 'Pixabay', photographer: 'ROverhate' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.location}</p>
