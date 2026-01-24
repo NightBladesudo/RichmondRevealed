@@ -159,6 +159,13 @@ export default function Citations() {
                   { location: 'Store Page Hero', url: 'https://pixabay.com/photos/virginia-indian-historic-village-226607/', source: 'Pixabay', photographer: 'JamesDeMers' },
                   { location: 'Contact Page Hero', url: 'https://pixabay.com/photos/waterfront-hotel-park-urban-7212424/', source: 'Pixabay', photographer: 'BruceEmmerling' },
                   { location: 'Citations Page Hero', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813358/', source: 'Pixabay', photographer: 'diego_torres' },
+                  { location: 'Virtual Reality Page Hero', url: 'https://pixabay.com/photos/deer-forest-richmond-park-813369/', source: 'Pixabay', photographer: 'diego_torres' },
+                  { location: 'VR Tour - Monument Avenue', url: 'https://pixabay.com/photos/richmond-virginia-richmond-virginia-4611886/', source: 'Pixabay', photographer: 'andrewawood' },
+                  { location: 'VR Tour - Belle Isle', url: 'https://pixabay.com/photos/water-rain-weather-drops-768583/', source: 'Pixabay', photographer: 'Unsplash' },
+                  { location: 'VR Tour - Virginia State Capitol', url: 'https://pixabay.com/photos/architecture-building-castle-1835359/', source: 'Pixabay', photographer: 'Pexels' },
+                  { location: 'VR Tour - Carytown', url: 'https://pixabay.com/photos/architecture-building-city-house-1867187/', source: 'Pixabay', photographer: 'Pexels' },
+                  { location: 'VR Tour - James River Park', url: 'https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-1197515/', source: 'Pixabay', photographer: 'jplenio' },
+                  { location: 'VR Tour - Scott\'s Addition', url: 'https://pixabay.com/photos/people-girls-women-students-2591874/', source: 'Pixabay', photographer: 'StockSnap' },
                 ].map((credit, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200 text-xs">
                     <p className="font-semibold text-[#1e3a5f] mb-2">{credit.location}</p>
