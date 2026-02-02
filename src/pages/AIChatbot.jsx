@@ -79,7 +79,7 @@ Provide a helpful, friendly, and informative response about Richmond. Keep respo
               <span className="text-[#c9a227] font-medium uppercase tracking-wider text-sm">Ask Me Anything</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl text-white font-bold mb-4">
-              AI Chatbot
+              Richmond ChatBot
             </h1>
             <p className="text-xl text-gray-200 max-w-2xl">
               Get instant answers about Richmond's history, attractions, events, and more.

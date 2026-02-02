@@ -19,7 +19,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Events', page: 'Events' },
     { name: 'Neighborhoods', page: 'Neighborhoods' },
     { name: 'Virtual Reality', page: 'VirtualReality' },
-    { name: 'AI Chatbot', page: 'AIChatbot' },
+    { name: 'Richmond ChatBot', page: 'AIChatbot' },
     { name: 'Local Business', page: 'Business' },
     { name: 'Education', page: 'Education' },
     { name: 'Store', page: 'Store' },
