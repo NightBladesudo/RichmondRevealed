@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, MapPin, Map } from 'lucide-react';
 import InteractiveMap from '../components/neighborhoods/InteractiveMap';
+import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 const neighborhoods = [
   {
@@ -176,13 +177,13 @@ export default function Neighborhoods() {
                 className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
               >
                 <div className="relative h-56 overflow-hidden">
-                  <img
+                  <ImageWithLightbox
                     src={neighborhood.image}
                     alt={neighborhood.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-4 left-4 right-4 pointer-events-none">
                     <h3 className="font-display text-2xl text-white font-semibold">
                       {neighborhood.name}
                     </h3>

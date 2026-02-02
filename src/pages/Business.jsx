@@ -4,6 +4,7 @@ import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
 import { Store, MapPin, Filter, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 const categories = ['All', 'Restaurant', 'Cafe', 'Shop', 'Bar', 'Service'];
 
@@ -110,12 +111,12 @@ export default function Business() {
                   className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
+                    <ImageWithLightbox
                       src={business.image_url}
                       alt={business.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 left-4 flex gap-2">
+                    <div className="absolute top-4 left-4 flex gap-2 pointer-events-none">
                       <span className="px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-[#1e3a5f]">
                         {business.category}
                       </span>

@@ -6,6 +6,7 @@ import { ShoppingBag, Filter, Tag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import CartDrawer from '../components/store/CartDrawer';
 import { toast } from 'sonner';
+import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 const categories = ['All', 'Apparel', 'Accessories', 'Art', 'Home'];
 
@@ -183,13 +184,13 @@ export default function Store() {
                 >
                   <div className="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
                     <div className="aspect-square overflow-hidden">
-                      <img
+                      <ImageWithLightbox
                         src={product.image_url}
                         alt={product.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                     </div>
-                    <div className="absolute top-4 left-4">
+                    <div className="absolute top-4 left-4 pointer-events-none">
                       <span className="px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-[#1e3a5f]">
                         {product.category}
                       </span>

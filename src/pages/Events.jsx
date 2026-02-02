@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Calendar, MapPin, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, addMonths, subMonths } from 'date-fns';
+import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 const categories = ['All', 'Festival', 'Art', 'Music', 'Food', 'Sports', 'Community', 'Family'];
 
@@ -185,7 +186,7 @@ export default function Events() {
                     className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col sm:flex-row"
                   >
                     <div className="sm:w-48 h-48 sm:h-auto relative overflow-hidden flex-shrink-0">
-                      <img
+                      <ImageWithLightbox
                         src={event.image_url}
                         alt={event.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

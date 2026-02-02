@@ -7,6 +7,7 @@ import Timeline from '../components/history/Timeline';
 import MediaGallery from '../components/history/MediaGallery';
 import MediaSubmissionForm from '../components/history/MediaSubmissionForm';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 export default function History() {
   const [showSubmissionForm, setShowSubmissionForm] = useState(false);
@@ -111,13 +112,13 @@ export default function History() {
                 className="group"
               >
                 <div className="relative h-64 rounded-2xl overflow-hidden mb-5">
-                  <img
+                  <ImageWithLightbox
                     src={era.image}
                     alt={era.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent" />
-                  <div className="absolute bottom-4 left-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-4 left-4 pointer-events-none">
                     <span className="text-[#c9a227] text-sm font-medium">{era.period}</span>
                   </div>
                 </div>

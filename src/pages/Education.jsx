@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Building, BookOpen, Library, Users } from 'lucide-react';
+import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 const universities = [
   {
@@ -126,13 +127,13 @@ export default function Education() {
                 className="group bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <ImageWithLightbox
                     src={uni.image}
                     alt={uni.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-4 left-4 right-4 pointer-events-none">
                     <span className="text-[#c9a227] text-sm font-medium">{uni.type}</span>
                   </div>
                 </div>
