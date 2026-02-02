@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Landmark } from 'lucide-react';
+import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 const attractions = [
   {
