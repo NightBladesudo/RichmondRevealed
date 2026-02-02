@@ -16,7 +16,7 @@ const attractions = [
     name: 'Maymont',
     description: 'Historic 100-acre estate with gardens, wildlife exhibits, and a beautiful mansion.',
     category: 'Nature',
-    image_url: 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=600',
+    image_url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/a94a036fd_image.png',
     address: '1700 Hampton St'
   },
   {
