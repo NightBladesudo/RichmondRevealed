@@ -58,6 +58,7 @@ import Home from './pages/Home';
 import Neighborhoods from './pages/Neighborhoods';
 import Store from './pages/Store';
 import VirtualReality from './pages/VirtualReality';
+import ChatBot from './pages/ChatBot';
 import __Layout from './Layout.jsx';
 
 
@@ -73,6 +74,7 @@ export const PAGES = {
     "Neighborhoods": Neighborhoods,
     "Store": Store,
     "VirtualReality": VirtualReality,
+    "ChatBot": ChatBot,
 }
 
 export const pagesConfig = {
