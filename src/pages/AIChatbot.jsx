@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare, Send, Bot, User } from 'lucide-react';
+import { MessageSquare, Send, Bot, User, Image as ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { base44 } from '@/api/base44Client';
@@ -9,7 +9,7 @@ export default function AIChatbot() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: 'Hello! I\'m your Richmond guide. Ask me anything about Richmond, Virginia - its history, attractions, neighborhoods, events, or anything else you\'d like to know!'
+      content: 'Hello! I\'m your AI assistant. Ask me anything - I can answer questions with web sources and generate images for you!'
     }
   ]);
   const [input, setInput] = useState('');
@@ -34,18 +34,30 @@ export default function AIChatbot() {
     setIsLoading(true);
 
     try {
-      const response = await base44.integrations.Core.InvokeLLM({
-        prompt: `You are a helpful AI assistant for Richmond Revealed, a website about Richmond, Virginia. 
-        
-Context: Richmond is the capital of Virginia with rich history, diverse neighborhoods, cultural attractions, and vibrant dining and arts scenes. Key attractions include the Virginia Museum of Fine Arts, Maymont, Belle Isle, Virginia State Capitol, and Lewis Ginter Botanical Garden. Historic neighborhoods include The Fan, Church Hill, and Jackson Ward.
+      // Check if user wants image generation
+      const imageKeywords = ['generate', 'create', 'make', 'draw', 'image', 'picture', 'photo', 'illustration'];
+      const isImageRequest = imageKeywords.some(keyword => userMessage.toLowerCase().includes(keyword));
 
-User question: ${userMessage}
+      if (isImageRequest) {
+        // Generate image
+        const imageResponse = await base44.integrations.Core.GenerateImage({
+          prompt: userMessage
+        });
 
-Provide a helpful, friendly, and informative response about Richmond. Keep responses concise but informative.`,
-        add_context_from_internet: false
-      });
+        setMessages(prev => [...prev, { 
+          role: 'assistant', 
+          content: 'Here\'s your generated image:',
+          image_url: imageResponse.url
+        }]);
+      } else {
+        // Answer with LLM and web sources
+        const response = await base44.integrations.Core.InvokeLLM({
+          prompt: userMessage,
+          add_context_from_internet: true
+        });
 
-      setMessages(prev => [...prev, { role: 'assistant', content: response }]);
+        setMessages(prev => [...prev, { role: 'assistant', content: response }]);
+      }
     } catch (error) {
       setMessages(prev => [...prev, { 
         role: 'assistant', 
@@ -82,7 +94,7 @@ Provide a helpful, friendly, and informative response about Richmond. Keep respo
               Richmond ChatBot
             </h1>
             <p className="text-xl text-gray-200 max-w-2xl">
-              Get instant answers about Richmond's history, attractions, events, and more.
+              Get instant answers to any question with web sources, or generate images on demand.
             </p>
           </motion.div>
         </div>
@@ -109,13 +121,20 @@ Provide a helpful, friendly, and informative response about Richmond. Keep respo
                         </div>
                       )}
                       <div
-                        className={`max-w-[75%] rounded-2xl px-4 py-3 ${
-                          message.role === 'user'
-                            ? 'bg-[#1e3a5f] text-white'
-                            : 'bg-gray-100 text-gray-800'
-                        }`}
+                       className={`max-w-[75%] rounded-2xl px-4 py-3 ${
+                         message.role === 'user'
+                           ? 'bg-[#1e3a5f] text-white'
+                           : 'bg-gray-100 text-gray-800'
+                       }`}
                       >
-                        <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
+                       <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
+                       {message.image_url && (
+                         <img 
+                           src={message.image_url} 
+                           alt="Generated image" 
+                           className="mt-3 rounded-lg max-w-full"
+                         />
+                       )}
                       </div>
                       {message.role === 'user' && (
                         <div className="w-8 h-8 rounded-full bg-[#2d7d7d] flex items-center justify-center flex-shrink-0">
@@ -152,7 +171,7 @@ Provide a helpful, friendly, and informative response about Richmond. Keep respo
                   <Input
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder="Ask about Richmond..."
+                    placeholder="Ask anything or request an image..."
                     disabled={isLoading}
                     className="flex-1 border-gray-200 focus:border-[#2d7d7d] focus:ring-[#2d7d7d]"
                   />
@@ -170,13 +189,13 @@ Provide a helpful, friendly, and informative response about Richmond. Keep respo
 
           {/* Quick Suggestions */}
           <div className="mt-6">
-            <p className="text-sm text-gray-500 mb-3">Try asking about:</p>
+            <p className="text-sm text-gray-500 mb-3">Try asking:</p>
             <div className="flex flex-wrap gap-2">
               {[
-                'What are the top attractions in Richmond?',
-                'Tell me about Richmond\'s history',
-                'Best neighborhoods to visit?',
-                'Upcoming events in Richmond'
+                'What\'s happening in the world today?',
+                'Explain quantum computing',
+                'Generate an image of a sunset over mountains',
+                'What are the latest AI developments?'
               ].map((suggestion) => (
                 <button
                   key={suggestion}

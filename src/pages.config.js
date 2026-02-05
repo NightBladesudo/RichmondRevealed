@@ -47,6 +47,7 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
+import AIChatbot from './pages/AIChatbot';
 import Attractions from './pages/Attractions';
 import Business from './pages/Business';
 import Citations from './pages/Citations';
@@ -58,11 +59,11 @@ import Home from './pages/Home';
 import Neighborhoods from './pages/Neighborhoods';
 import Store from './pages/Store';
 import VirtualReality from './pages/VirtualReality';
-import AIChatbot from './pages/AIChatbot';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
+    "AIChatbot": AIChatbot,
     "Attractions": Attractions,
     "Business": Business,
     "Citations": Citations,
@@ -74,7 +75,6 @@ export const PAGES = {
     "Neighborhoods": Neighborhoods,
     "Store": Store,
     "VirtualReality": VirtualReality,
-    "AIChatbot": AIChatbot,
 }
 
 export const pagesConfig = {
