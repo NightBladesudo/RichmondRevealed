@@ -1,26 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
-import { BookOpen, Camera } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import Timeline from '../components/history/Timeline';
-import MediaGallery from '../components/history/MediaGallery';
-import MediaSubmissionForm from '../components/history/MediaSubmissionForm';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 export default function History() {
-  const [showSubmissionForm, setShowSubmissionForm] = useState(false);
-
   const { data: events = [], isLoading } = useQuery({
     queryKey: ['historyEvents'],
     queryFn: () => base44.entities.HistoryEvent.list('year', 100),
-  });
-
-  const { data: media = [], refetch: refetchMedia } = useQuery({
-    queryKey: ['historicalMedia'],
-    queryFn: () => base44.entities.HistoricalMedia.list('-created_date', 100),
-    initialData: [],
   });
 
   return (
@@ -154,44 +143,6 @@ export default function History() {
               <Timeline events={events} isLoading={isLoading} />
             </div>
           </section>
-
-          {/* Media Gallery Section */}
-          <section className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-center mb-16"
-              >
-                <div className="flex items-center justify-center space-x-2 mb-4">
-                  <Camera className="w-6 h-6 text-[#a63d2f]" />
-                  <span className="text-[#a63d2f] font-medium uppercase tracking-wider text-sm">Visual History</span>
-                </div>
-                <h2 className="font-display text-3xl text-[#1e3a5f] font-bold mb-4">
-                  Historical Media Gallery
-                </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  Explore photos and videos that capture Richmond's rich history across the centuries
-                </p>
-              </motion.div>
-
-              <MediaGallery 
-                media={media} 
-                onSubmitClick={() => setShowSubmissionForm(true)}
-              />
-            </div>
-          </section>
-
-          {/* Submission Form Dialog */}
-          <Dialog open={showSubmissionForm} onOpenChange={setShowSubmissionForm}>
-            <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
-              <MediaSubmissionForm 
-                onClose={() => setShowSubmissionForm(false)}
-                onSuccess={() => refetchMedia()}
-              />
-            </DialogContent>
-          </Dialog>
 
           </div>
           );
