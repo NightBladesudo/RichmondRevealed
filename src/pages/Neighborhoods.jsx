@@ -75,7 +75,7 @@ const neighborhoods = [
     name: 'South of Broad',
     description: 'Historic neighborhood near downtown Richmond featuring restored homes, galleries, and proximity to the James River.',
     highlights: ['Historic', 'Arts', 'River Proximity'],
-    image: 'https://cdn.pixabay.com/photo/2014/07/10/17/18/bridge-389768_1280.jpg'
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/bae1a67d7_image.png'
   },
   {
     name: 'Near West End',
