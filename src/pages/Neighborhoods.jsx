@@ -45,7 +45,7 @@ const neighborhoods = [
     name: 'Museum District',
     description: 'Home to Virginia Museum of Fine Arts and Science Museum. Beautiful tree-lined streets with elegant early 20th-century homes.',
     highlights: ['Museums', 'Architecture', 'Family-Friendly'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/29/12/45/museum-1869452_1280.jpg'
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/388e5f51c_image.png'
   },
   {
     name: 'Manchester',
