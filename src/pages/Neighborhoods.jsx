@@ -39,7 +39,7 @@ const neighborhoods = [
     name: 'Oregon Hill',
     description: 'Close-knit community near VCU and the river, known for Hollywood Cemetery and stunning views of the James River rapids.',
     highlights: ['River Access', 'Historic Cemetery', 'Community'],
-    image: 'https://cdn.pixabay.com/photo/2019/09/25/15/31/cemetery-4503185_1280.jpg'
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/5e7d9dc14_image.png'
   },
   {
     name: 'Museum District',
