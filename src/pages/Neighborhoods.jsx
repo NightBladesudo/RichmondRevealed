@@ -63,7 +63,7 @@ const neighborhoods = [
     name: 'Jackson Ward',
     description: 'Historic neighborhood known for its African American heritage, beautiful architecture, and cultural significance. Home to significant civil rights history.',
     highlights: ['History', 'Culture', 'Heritage'],
-    image: 'https://cdn.pixabay.com/photo/2020/06/07/16/43/row-houses-5270588_1280.jpg'
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/6feaf8f01_image.png'
   },
   {
     name: 'Bellevue',
