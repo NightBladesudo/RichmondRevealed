@@ -57,7 +57,7 @@ const neighborhoods = [
     name: 'Libbie & Grove',
     description: 'Upscale shopping and dining corridor known for boutiques, specialty shops, and award-winning restaurants.',
     highlights: ['Shopping', 'Fine Dining', 'Upscale'],
-    image: 'https://cdn.pixabay.com/photo/2017/08/10/08/47/woman-2619168_1280.jpg'
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/4838a8e33_image.png'
   },
   {
     name: 'Jackson Ward',
