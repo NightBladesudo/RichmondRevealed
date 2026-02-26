@@ -9,7 +9,7 @@ const universities = [
     type: 'Public Research University',
     description: 'VCU is a major public research university and academic health center. Home to top-ranked arts, medical, and business programs.',
     students: '30,000+',
-    image: 'https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=600'
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/1193eecdf_image.png'
   },
   {
     name: 'University of Richmond',
