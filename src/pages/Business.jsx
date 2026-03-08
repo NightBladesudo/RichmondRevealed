@@ -89,6 +89,14 @@ export default function Business() {
         </div>
       </section>
 
+      {/* Map */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-2xl text-[#1e3a5f] font-bold mb-6">Map View</h2>
+          <LocationMap items={filteredBusinesses} activeId={activeId} onMarkerClick={setActiveId} />
+        </div>
+      </section>
+
       {/* Businesses Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
