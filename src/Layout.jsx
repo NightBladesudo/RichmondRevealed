@@ -22,7 +22,6 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Richmond ChatBot', page: 'AIChatbot' },
     { name: 'Local Business', page: 'Business' },
     { name: 'Education', page: 'Education' },
-    { name: 'Store', page: 'Store' },
     { name: 'Contact', page: 'Contact' },
     { name: 'Citations', page: 'Citations' },
   ];
