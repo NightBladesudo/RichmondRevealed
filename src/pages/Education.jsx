@@ -230,17 +230,28 @@ export default function Education() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-[#1e3a5f] rounded-2xl p-8 text-white"
+                className="bg-[#1e3a5f] rounded-2xl overflow-hidden text-white"
               >
-                <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-5">
-                  <resource.icon className="w-6 h-6 text-[#c9a227]" />
+                {resource.image && (
+                  <div className="h-40 overflow-hidden">
+                    <ImageWithLightbox
+                      src={resource.image}
+                      alt={resource.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+                <div className="p-8">
+                  <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-5">
+                    <resource.icon className="w-6 h-6 text-[#c9a227]" />
+                  </div>
+                  <h3 className="font-display text-xl font-semibold mb-3">
+                    {resource.name}
+                  </h3>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {resource.description}
+                  </p>
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-3">
-                  {resource.name}
-                </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {resource.description}
-                </p>
               </motion.div>
             ))}
           </div>
