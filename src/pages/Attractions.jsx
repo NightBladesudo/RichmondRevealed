@@ -57,6 +57,7 @@ const attractions = [
 
 export default function Attractions() {
   const isLoading = false;
+  const [activeId, setActiveId] = useState(null);
 
   return (
     <div className="min-h-screen bg-gray-50">

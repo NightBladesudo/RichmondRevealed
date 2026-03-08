@@ -11,6 +11,7 @@ const categories = ['All', 'Restaurant', 'Cafe', 'Shop', 'Bar', 'Service'];
 
 export default function Business() {
   const [activeCategory, setActiveCategory] = useState('All');
+  const [activeId, setActiveId] = useState(null);
 
   const { data: businesses = [], isLoading } = useQuery({
     queryKey: ['businesses'],
