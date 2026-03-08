@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Store, MapPin, Filter, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ImageWithLightbox } from '../components/ui/image-lightbox';
+import LocationMap from '../components/shared/LocationMap';
 
 const categories = ['All', 'Restaurant', 'Cafe', 'Shop', 'Bar', 'Service'];
 
