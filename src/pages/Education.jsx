@@ -16,7 +16,7 @@ const universities = [
     type: 'Private Liberal Arts University',
     description: 'A highly selective private university known for its beautiful campus, strong academics, and collegiate athletics.',
     students: '4,000+',
-    image: 'https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=600'
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/4f2be7a0e_image.png'
   },
   {
     name: 'Virginia Union University',
