@@ -120,7 +120,8 @@ export default function Attractions() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
-                  className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+                  className={`group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer ${activeId === attraction.id ? 'ring-2 ring-[#a63d2f]' : ''}`}
+                  onClick={() => setActiveId(attraction.id)}
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <ImageWithLightbox
