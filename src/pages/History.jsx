@@ -89,7 +89,8 @@ export default function History() {
                 title: 'Modern Renaissance',
                 period: '1960-Present',
                 description: 'Today Richmond is a thriving, diverse city embracing its complex history while building an inclusive future.',
-                image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600'
+                image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600',
+                image2: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/2339079f0_image.png'
               }
             ].map((era, index) => (
               <motion.div
