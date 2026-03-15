@@ -8,7 +8,7 @@ const virtualWorlds = [
     id: 1,
     name: 'Monument Avenue',
     description: 'Walk through Richmond\'s historic boulevard lined with stunning architecture',
-    image: 'https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=800',
+    image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0bd593351_image.png',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948123456!6m8!1m7!1sCAoSLEFGMVFpcE9JdU1rRzFDUC1HZGQ1NXFJZktxYmNiUlB5aHN3SXFacExFRmZh!2m2!1d37.55564!2d-77.47956!3f0!4f0!5f0.7820865974627469',
     category: 'Historic'
   },
