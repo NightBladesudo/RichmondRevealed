@@ -158,21 +158,25 @@ export default function AIChatbot() {
 
               {/* Input */}
               <div className="border-t border-gray-200 p-4">
-                <form onSubmit={handleSubmit} className="flex gap-2">
-                  <Input
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    placeholder="Ask anything or request an image..."
-                    disabled={isLoading}
-                    className="flex-1 border-gray-200 focus:border-[#2d7d7d] focus:ring-[#2d7d7d]"
-                  />
-                  <Button
-                    type="submit"
-                    disabled={isLoading || !input.trim()}
-                    className="bg-[#a63d2f] hover:bg-[#8b3426] text-white px-6"
-                  >
-                    <Send className="w-5 h-5" />
-                  </Button>
+                <form onSubmit={handleSubmit} className="flex gap-2 items-end">
+                   <textarea
+                     value={input}
+                     onChange={(e) => setInput(e.target.value)}
+                     onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSubmit(e); } }}
+                     placeholder="Ask anything or request an image..."
+                     disabled={isLoading}
+                     rows={1}
+                     className="flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm resize-none overflow-hidden focus:outline-none focus:border-[#2d7d7d] focus:ring-1 focus:ring-[#2d7d7d] disabled:opacity-50"
+                     style={{ minHeight: '38px', maxHeight: '120px', overflowY: 'auto' }}
+                     onInput={(e) => { e.target.style.height = 'auto'; e.target.style.height = Math.min(e.target.scrollHeight, 120) + 'px'; }}
+                   />
+                   <Button
+                     type="submit"
+                     disabled={isLoading || !input.trim()}
+                     className="bg-[#a63d2f] hover:bg-[#8b3426] text-white px-6"
+                   >
+                     <Send className="w-5 h-5" />
+                   </Button>
                 </form>
               </div>
             </div>
