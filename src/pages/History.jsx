@@ -77,7 +77,8 @@ export default function History() {
                 title: 'Colonial Era',
                 period: '1607-1780',
                 description: 'From Jamestown\'s founding to becoming the state capital, Richmond grew as a vital trading post on the James River.',
-                image: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=600'
+                image: 'https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=600',
+                image2: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0a58aadd4_image.png'
               },
               {
                 title: 'Civil War',
