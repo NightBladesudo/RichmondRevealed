@@ -50,7 +50,7 @@ const attractions = [
     name: 'Hollywood Cemetery',
     description: 'Historic cemetery overlooking the James River, final resting place of presidents and Civil War figures.',
     category: 'Historic',
-    image_url: 'https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?w=600',
+    image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/7ca0f9d49_image.png',
     address: '412 S Cherry St'
   }
 ];
