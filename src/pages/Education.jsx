@@ -64,7 +64,8 @@ const resources = [
     icon: Building,
     name: 'Community Centers',
     description: 'Parks and Recreation centers offering after-school programs, classes, and activities.',
-    link: '#'
+    link: '#',
+    image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/41105a7ef_image.png'
   },
   {
     icon: Users,
