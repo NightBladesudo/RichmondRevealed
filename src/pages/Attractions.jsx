@@ -26,7 +26,7 @@ const attractions = [
     name: 'Belle Isle',
     description: 'Island park in the James River with trails, rapids, and historic ruins.',
     category: 'Nature',
-    image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/2ee72a04d_image.png',
+    image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/1fc761363_image.png',
     address: 'Tredegar St'
   },
   {
