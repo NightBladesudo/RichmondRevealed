@@ -16,7 +16,7 @@ const virtualWorlds = [
     id: 2,
     name: 'Belle Isle',
     description: 'Explore the natural beauty and trails of this James River island',
-    image: 'https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=800',
+    image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/4f3c055f7_image.png',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948223456!6m8!1m7!1sCAoSLEFGMVFpcE5yWE1OMXdRbUFPQXhSUHBvZGNRLXVmX1RoNTVFUFY2SWQ3YlNV!2m2!1d37.53127!2d-77.45869!3f0!4f0!5f0.7820865974627469',
     category: 'Nature'
   },
