@@ -40,7 +40,7 @@ const virtualWorlds = [
     id: 5,
     name: 'James River Park',
     description: 'Discover trails, rapids, and scenic views along the James River',
-    image: 'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
+    image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/818bcc2e2_image.png',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948523456!6m8!1m7!1sCAoSLEFGMVFpcE9aWHBrUk5qWTBTVzB5UVBKWndTb1NsMVJPa3J2MG0yOVQ4TFN4!2m2!1d37.53696!2d-77.46576!3f0!4f0!5f0.7820865974627469',
     category: 'Nature'
   },
