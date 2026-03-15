@@ -56,8 +56,7 @@ const resources = [
     icon: BookOpen,
     name: 'Chop Suey Books',
     description: 'A beloved independent bookstore in Carytown offering new, used, and rare books for all ages.',
-    link: '#',
-    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/33d599d2a_image.png'
+    link: '#'
   },
   {
     icon: Building,
