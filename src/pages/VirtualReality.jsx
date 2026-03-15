@@ -48,7 +48,7 @@ const virtualWorlds = [
     id: 6,
     name: 'Scott\'s Addition',
     description: 'Visit Richmond\'s trendy neighborhood with breweries and murals',
-    image: 'https://images.unsplash.com/photo-1542835497-a6813df96ed9?w=800',
+    image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/61a794f27_image.png',
     embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948623456!6m8!1m7!1sCAoSLEFGMVFpcE5mT1oyRXh0ckJzUlN2eGNOTGZnMnlFRzY0QzI0dU42TTU4WFJC!2m2!1d37.56864!2d-77.45394!3f0!4f0!5f0.7820865974627469',
     category: 'Neighborhood'
   }
