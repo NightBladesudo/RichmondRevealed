@@ -101,16 +101,27 @@ export default function History() {
                 transition={{ delay: index * 0.1 }}
                 className="group"
               >
-                <div className="relative h-64 rounded-2xl overflow-hidden mb-5">
-                  <ImageWithLightbox
-                    src={era.image}
-                    alt={era.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent pointer-events-none" />
-                  <div className="absolute bottom-4 left-4 pointer-events-none">
-                    <span className="text-[#c9a227] text-sm font-medium">{era.period}</span>
+                <div className={`grid ${era.image2 ? 'grid-cols-2 gap-2' : 'grid-cols-1'} mb-5`}>
+                  <div className="relative h-64 rounded-2xl overflow-hidden">
+                    <ImageWithLightbox
+                      src={era.image}
+                      alt={era.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-4 left-4 pointer-events-none">
+                      <span className="text-[#c9a227] text-sm font-medium">{era.period}</span>
+                    </div>
                   </div>
+                  {era.image2 && (
+                    <div className="relative h-64 rounded-2xl overflow-hidden">
+                      <ImageWithLightbox
+                        src={era.image2}
+                        alt={`${era.title} 2`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
                 </div>
                 <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-3">
                   {era.title}
