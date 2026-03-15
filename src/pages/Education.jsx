@@ -71,7 +71,8 @@ const resources = [
     icon: Users,
     name: 'Youth Programs',
     description: 'Various nonprofits and organizations providing mentorship, tutoring, and enrichment.',
-    link: '#'
+    link: '#',
+    image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/9132a02fe_image.png'
   }
 ];
 
