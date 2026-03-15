@@ -34,7 +34,7 @@ const attractions = [
     name: 'Virginia State Capitol',
     description: 'Historic capitol building designed by Thomas Jefferson, offering tours and rich history.',
     category: 'Historic',
-    image_url: 'https://images.unsplash.com/20/cambridge.JPG?w=600',
+    image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/11d2af63e_image.png',
     address: '1000 Bank St'
   },
   {
