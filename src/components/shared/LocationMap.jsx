@@ -56,7 +56,7 @@ export default function LocationMap({ items, activeId, onMarkerClick }) {
   const validItems = items.filter(item => coords[item.id]);
 
   return (
-    <div className="w-full h-[450px] rounded-2xl overflow-hidden shadow-md border border-gray-200">
+    <div className="w-full h-[450px] rounded-2xl overflow-hidden shadow-md border border-gray-200" style={{ zIndex: 0, position: 'relative' }}>
       <MapContainer
         center={[37.5407, -77.4360]}
         zoom={13}
