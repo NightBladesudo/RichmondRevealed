@@ -50,7 +50,8 @@ const resources = [
     icon: Library,
     name: 'Richmond Public Library',
     description: '9 locations throughout the city offering free programs, resources, and community spaces.',
-    link: '#'
+    link: '#',
+    image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/927f19671_image.png'
   },
   {
     icon: BookOpen,
