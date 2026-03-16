@@ -19,7 +19,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Attractions & Landmarks', page: 'Attractions' },
     { name: 'Local Businesses & Dining', page: 'Business' },
     { name: 'Neighborhoods', page: 'Neighborhoods' },
-    { name: 'Education', page: 'Education' },
+    { name: 'Education & Resources', page: 'Education' },
     { name: 'Virtual Reality', page: 'VirtualReality' },
     { name: 'Richmond ChatBot', page: 'AIChatbot' },
     { name: 'Contact', page: 'Contact' },
