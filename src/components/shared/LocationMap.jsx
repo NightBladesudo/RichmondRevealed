@@ -80,8 +80,8 @@ export default function LocationMap({ items, activeId, onMarkerClick }) {
           >
             <Popup>
               <div className="min-w-[160px]">
-                {item.image_url && (
-                  <img src={item.image_url} alt={item.name} className="w-full h-24 object-cover rounded mb-2" />
+                {(item.image_url || item.image) && (
+                  <img src={item.image_url || item.image} alt={item.name} className="w-full h-24 object-cover rounded mb-2" />
                 )}
                 <p className="font-semibold text-[#1e3a5f] text-sm">{item.name}</p>
                 {item.category && <p className="text-xs text-gray-500 mt-0.5">{item.category}</p>}
