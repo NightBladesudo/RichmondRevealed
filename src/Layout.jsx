@@ -14,7 +14,7 @@ export default function Layout({ children, currentPageName }) {
 
   const navLinks = [
     { name: 'Home', page: 'Home' },
-    { name: 'History', page: 'History' },
+    { name: 'History of Richmond', page: 'History' },
     { name: 'Calendar of Events', page: 'Events' },
     { name: 'Attractions & Landmarks', page: 'Attractions' },
     { name: 'Local Businesses & Dining', page: 'Business' },
