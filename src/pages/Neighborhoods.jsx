@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Users, MapPin, Map } from 'lucide-react';
-import InteractiveMap from '../components/neighborhoods/InteractiveMap';
+import { Users, MapPin } from 'lucide-react';
+import LocationMap from '../components/shared/LocationMap';
 import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 const neighborhoods = [
