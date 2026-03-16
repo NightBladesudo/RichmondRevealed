@@ -17,7 +17,7 @@ const virtualWorlds = [
     name: 'Belle Isle',
     description: 'Explore the natural beauty and trails of this James River island',
     image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/99a87209e_image.png',
-    embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948223456!6m8!1m7!1sCAoSLEFGMVFpcE5yWE1OMXdRbUFPQXhSUHBvZGNRLXVmX1RoNTVFUFY2SWQ3YlNV!2m2!1d37.53127!2d-77.45869!3f0!4f0!5f0.7820865974627469',
+    embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5!2d-77.45869!3d37.53127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b1113a7ac04f37%3A0x4a40ea25f9a9a7a6!2sBelle%20Isle%2C%20Richmond%2C%20VA!5e0!3m2!1sen!2sus!4v1705948223456',
     category: 'Nature'
   },
   {
