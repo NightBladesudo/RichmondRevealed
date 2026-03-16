@@ -403,6 +403,20 @@ const imageCitations = [
       }
     ]
   },
+  // PLAN YOUR TRIP
+  {
+    page: 'Plan Your Trip Page',
+    items: [
+      {
+        number: 46,
+        location: 'Plan Your Trip – Hero Background',
+        url: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1280',
+        source: 'Unsplash',
+        photographer: 'Unsplash Contributor',
+        mla: 'Unsplash Contributor. Travel Planning. Unsplash, https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1. Accessed 16 Mar. 2026.'
+      }
+    ]
+  },
   // CITATIONS PAGE
   {
     page: 'Citations Page',
@@ -474,6 +488,59 @@ const textCitations = [
         url: 'https://www.rvaschools.net',
         description: 'Official school district information',
         mla: '"Richmond Public Schools." Richmond Public Schools, www.rvaschools.net. Accessed 16 Mar. 2026.'
+      }
+    ]
+  },
+  {
+    category: 'Plan Your Trip – Useful Websites',
+    sources: [
+      {
+        title: 'TripAdvisor – Richmond',
+        url: 'https://www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html',
+        description: 'Traveler reviews for hotels, restaurants, and attractions in Richmond.',
+        mla: '"TripAdvisor – Richmond, Virginia." TripAdvisor, www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html. Accessed 16 Mar. 2026.'
+      },
+      {
+        title: 'Visit Richmond VA (Official Tourism)',
+        url: 'https://www.visitrichmondva.com',
+        description: 'Official tourism website for Richmond with events, guides, and trip planning tools.',
+        mla: '"Visit Richmond VA." Richmond Region Tourism, www.visitrichmondva.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        title: 'Expedia – Richmond Hotels',
+        url: 'https://www.expedia.com/Richmond.d178293.Destination-Travel-Guides',
+        description: 'Search and book hotels, flights, and rental cars for Richmond.',
+        mla: '"Richmond Travel Guide." Expedia, www.expedia.com/Richmond.d178293.Destination-Travel-Guides. Accessed 16 Mar. 2026.'
+      },
+      {
+        title: 'Airbnb – Richmond',
+        url: 'https://www.airbnb.com/s/Richmond--Virginia',
+        description: 'Unique stays and local experiences in Richmond neighborhoods.',
+        mla: '"Richmond, Virginia Stays." Airbnb, www.airbnb.com/s/Richmond--Virginia. Accessed 16 Mar. 2026.'
+      },
+      {
+        title: 'Yelp – Richmond',
+        url: 'https://www.yelp.com/search?find_loc=Richmond%2C+VA',
+        description: 'Community reviews for restaurants, bars, and local shops in Richmond.',
+        mla: '"Richmond, VA Businesses." Yelp, www.yelp.com/search?find_loc=Richmond%2C+VA. Accessed 16 Mar. 2026.'
+      },
+      {
+        title: 'Google Maps – Richmond',
+        url: 'https://maps.google.com/?q=Richmond,Virginia',
+        description: 'Navigate Richmond and get real-time directions to attractions.',
+        mla: '"Richmond, Virginia." Google Maps, maps.google.com/?q=Richmond,Virginia. Accessed 16 Mar. 2026.'
+      },
+      {
+        title: 'Richmond.com',
+        url: 'https://www.richmond.com',
+        description: 'Local news, events calendar, and community information for Richmond.',
+        mla: '"Richmond.com." Richmond Times-Dispatch, www.richmond.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        title: 'GRTC Transit – Bus Routes',
+        url: 'https://www.ridegrtc.com',
+        description: 'Public transit route planning for Richmond city buses.',
+        mla: '"GRTC Transit System." GRTC, www.ridegrtc.com. Accessed 16 Mar. 2026.'
       }
     ]
   },
