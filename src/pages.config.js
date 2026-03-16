@@ -59,6 +59,7 @@ import Home from './pages/Home';
 import Neighborhoods from './pages/Neighborhoods';
 import Store from './pages/Store';
 import VirtualReality from './pages/VirtualReality';
+import PlanYourTrip from './pages/PlanYourTrip';
 import __Layout from './Layout.jsx';
 
 
@@ -75,6 +76,7 @@ export const PAGES = {
     "Neighborhoods": Neighborhoods,
     "Store": Store,
     "VirtualReality": VirtualReality,
+    "PlanYourTrip": PlanYourTrip,
 }
 
 export const pagesConfig = {
