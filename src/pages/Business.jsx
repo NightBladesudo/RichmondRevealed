@@ -168,6 +168,65 @@ export default function Business() {
           )}
         </div>
       </section>
+
+      {/* Detail Modal */}
+      <AnimatePresence>
+        {selectedBusiness && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
+            onClick={() => setSelectedBusiness(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={e => e.stopPropagation()}
+              className="bg-white rounded-2xl overflow-hidden shadow-2xl max-w-lg w-full"
+            >
+              {selectedBusiness.image_url && (
+                <div className="relative h-56">
+                  <img src={selectedBusiness.image_url} alt={selectedBusiness.name} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <button
+                    onClick={() => setSelectedBusiness(null)}
+                    className="absolute top-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-full p-1.5 transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                  <div className="absolute bottom-4 left-4 flex gap-2">
+                    {selectedBusiness.category && (
+                      <span className="px-2 py-1 bg-[#c9a227] text-white text-xs font-semibold rounded-full">{selectedBusiness.category}</span>
+                    )}
+                    {selectedBusiness.neighborhood && (
+                      <span className="px-2 py-1 bg-[#2d7d7d] text-white text-xs font-semibold rounded-full">{selectedBusiness.neighborhood}</span>
+                    )}
+                  </div>
+                </div>
+              )}
+              <div className="p-6">
+                {!selectedBusiness.image_url && (
+                  <button onClick={() => setSelectedBusiness(null)} className="float-right text-gray-400 hover:text-gray-600">
+                    <X className="w-5 h-5" />
+                  </button>
+                )}
+                <h2 className="font-display text-2xl text-[#1e3a5f] font-bold mb-2">{selectedBusiness.name}</h2>
+                {selectedBusiness.description && (
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{selectedBusiness.description}</p>
+                )}
+                {selectedBusiness.address && (
+                  <p className="flex items-center gap-2 text-sm text-gray-500">
+                    <MapPin className="w-4 h-4 text-[#a63d2f]" />
+                    {selectedBusiness.address}
+                  </p>
+                )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
