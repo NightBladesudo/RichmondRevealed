@@ -87,7 +87,7 @@ export default function VirtualReality() {
               <span className="text-[#c9a227] font-medium uppercase tracking-wider text-sm">Immersive Experience</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl text-white font-bold mb-4">
-              Virtual Reality Tours
+              Virtual Reality
             </h1>
             <p className="text-xl text-gray-200 max-w-2xl">
               Explore Richmond's landmarks and history through immersive virtual reality experiences.
