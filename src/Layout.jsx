@@ -15,8 +15,8 @@ export default function Layout({ children, currentPageName }) {
   const navLinks = [
     { name: 'Home', page: 'Home' },
     { name: 'History', page: 'History' },
-    { name: 'Attractions', page: 'Attractions' },
     { name: 'Events', page: 'Events' },
+    { name: 'Attractions', page: 'Attractions' },
     { name: 'Neighborhoods', page: 'Neighborhoods' },
     { name: 'Virtual Reality', page: 'VirtualReality' },
     { name: 'Richmond ChatBot', page: 'AIChatbot' },
