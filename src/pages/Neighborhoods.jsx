@@ -22,6 +22,7 @@ const neighborhoods = [
 ];
 
 export default function Neighborhoods() {
+  const [activeId, setActiveId] = useState(null);
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
