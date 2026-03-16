@@ -15,7 +15,7 @@ export default function Layout({ children, currentPageName }) {
   const navLinks = [
     { name: 'Home', page: 'Home' },
     { name: 'History', page: 'History' },
-    { name: 'Events', page: 'Events' },
+    { name: 'Calendar of Events', page: 'Events' },
     { name: 'Attractions', page: 'Attractions' },
     { name: 'Local Business', page: 'Business' },
     { name: 'Neighborhoods', page: 'Neighborhoods' },
