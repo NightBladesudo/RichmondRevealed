@@ -52,6 +52,22 @@ const attractions = [
     category: 'Historic',
     image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/7ca0f9d49_image.png',
     address: '412 S Cherry St, Richmond, VA 23220'
+  },
+  {
+    id: 7,
+    name: 'Dominion Energy Center',
+    description: 'Richmond\'s premier performing arts venue hosting Broadway shows, concerts, ballet, and opera in a stunning historic theater.',
+    category: 'Entertainment',
+    image_url: 'https://images.unsplash.com/photo-1503095396549-807759245b35?w=600',
+    address: '600 E Grace St, Richmond, VA 23219'
+  },
+  {
+    id: 8,
+    name: 'The National',
+    description: 'Iconic mid-size music venue in a restored 1923 theater, hosting national and local acts across all genres.',
+    category: 'Entertainment',
+    image_url: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600',
+    address: '708 E Broad St, Richmond, VA 23219'
   }
 ];
 
