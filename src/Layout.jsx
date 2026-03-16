@@ -17,7 +17,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'History', page: 'History' },
     { name: 'Calendar of Events', page: 'Events' },
     { name: 'Attractions & Landmarks', page: 'Attractions' },
-    { name: 'Local Business', page: 'Business' },
+    { name: 'Local Businesses & Dining', page: 'Business' },
     { name: 'Neighborhoods', page: 'Neighborhoods' },
     { name: 'Education', page: 'Education' },
     { name: 'Virtual Reality', page: 'VirtualReality' },
