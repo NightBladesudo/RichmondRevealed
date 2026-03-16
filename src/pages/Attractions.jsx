@@ -55,11 +55,11 @@ const attractions = [
   },
   {
     id: 7,
-    name: 'Dominion Energy Center',
-    description: 'Richmond\'s premier performing arts venue hosting Broadway shows, concerts, ballet, and opera in a stunning historic theater.',
+    name: 'Kings Dominion',
+    description: 'Thrilling amusement park featuring over 60 rides, roller coasters, and a water park just north of Richmond.',
     category: 'Entertainment',
-    image_url: 'https://images.unsplash.com/photo-1503095396549-807759245b35?w=600',
-    address: '600 E Grace St, Richmond, VA 23219'
+    image_url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600',
+    address: '16000 Theme Park Way, Doswell, VA 23047'
   },
   {
     id: 8,
