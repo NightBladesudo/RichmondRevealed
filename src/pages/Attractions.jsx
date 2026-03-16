@@ -11,7 +11,7 @@ const attractions = [
     description: 'World-class art museum with free general admission featuring collections spanning 5,000 years.',
     category: 'Culture',
     image_url: 'https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=600',
-    address: '200 N Arthur Ashe Blvd'
+    address: '200 N Arthur Ashe Blvd, Richmond, VA 23220'
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const attractions = [
     description: 'Historic 100-acre estate with gardens, wildlife exhibits, and a beautiful mansion.',
     category: 'Nature',
     image_url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/a94a036fd_image.png',
-    address: '1700 Hampton St'
+    address: '1700 Hampton St, Richmond, VA 23220'
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const attractions = [
     description: 'Island park in the James River with trails, rapids, and historic ruins.',
     category: 'Nature',
     image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/1fc761363_image.png',
-    address: 'Tredegar St'
+    address: 'Belle Isle, Richmond, VA 23224'
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const attractions = [
     description: 'Historic capitol building designed by Thomas Jefferson, offering tours and rich history.',
     category: 'Historic',
     image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/11d2af63e_image.png',
-    address: '1000 Bank St'
+    address: '1000 Bank St, Richmond, VA 23219'
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const attractions = [
     description: 'Stunning 50-acre botanical garden with diverse plant collections and beautiful landscapes.',
     category: 'Nature',
     image_url: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600',
-    address: '1800 Lakeside Ave'
+    address: '1800 Lakeside Ave, Richmond, VA 23228'
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const attractions = [
     description: 'Historic cemetery overlooking the James River, final resting place of presidents and Civil War figures.',
     category: 'Historic',
     image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/7ca0f9d49_image.png',
-    address: '412 S Cherry St'
+    address: '412 S Cherry St, Richmond, VA 23220'
   }
 ];
 
