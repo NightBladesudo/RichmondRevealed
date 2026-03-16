@@ -54,28 +54,11 @@ export default function Neighborhoods() {
         </div>
       </section>
 
-      {/* Interactive Map */}
-      <section className="py-20 bg-white">
+      {/* Map */}
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <Map className="w-6 h-6 text-[#a63d2f]" />
-              <h2 className="font-display text-3xl text-[#1e3a5f] font-bold">
-                Explore Richmond Map
-              </h2>
-            </div>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Navigate through neighborhoods, parks, restaurants, and historical landmarks. 
-              Click on markers for more information.
-            </p>
-          </motion.div>
-          
-          <InteractiveMap />
+          <h2 className="font-display text-2xl text-[#1e3a5f] font-bold mb-6">Map View</h2>
+          <LocationMap items={neighborhoods} activeId={activeId} onMarkerClick={setActiveId} />
         </div>
       </section>
 
