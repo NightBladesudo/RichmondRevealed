@@ -16,7 +16,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Home', page: 'Home' },
     { name: 'History', page: 'History' },
     { name: 'Calendar of Events', page: 'Events' },
-    { name: 'Attractions', page: 'Attractions' },
+    { name: 'Attractions & Landmarks', page: 'Attractions' },
     { name: 'Local Business', page: 'Business' },
     { name: 'Neighborhoods', page: 'Neighborhoods' },
     { name: 'Education', page: 'Education' },
