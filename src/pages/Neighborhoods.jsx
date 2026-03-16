@@ -9,7 +9,8 @@ const neighborhoods = [
     name: 'The Fan District',
     description: 'Tree-lined streets with stunning Victorian and Edwardian architecture. Known for its vibrant restaurant scene, local shops, and close-knit community feel.',
     highlights: ['Historic Architecture', 'Walkable', 'Great Dining'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg'
+    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg',
+    address: 'The Fan District, Richmond, VA 23220'
   },
   {
     name: 'Church Hill',
