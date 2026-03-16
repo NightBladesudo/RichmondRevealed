@@ -3,41 +3,42 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-function createPinIcon(label, isActive) {
+// Fix default marker icons
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+});
+
+const SHADOW_URL = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png';
+
+function makeNumberedIcon(number, isActive) {
   const bg = isActive ? '#a63d2f' : '#1e3a5f';
-  const html = `
-    <div style="
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    ">
-      <div style="
-        background: ${bg};
-        color: white;
-        font-size: 11px;
-        font-weight: 700;
-        font-family: Inter, sans-serif;
-        width: 28px;
-        height: 28px;
-        border-radius: 50% 50% 50% 0;
-        transform: rotate(-45deg);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.35);
-        border: 2px solid white;
-      ">
-        <span style="transform: rotate(45deg);">${label}</span>
-      </div>
-    </div>
-  `;
   return L.divIcon({
-    html,
     className: '',
-    iconSize: [28, 36],
-    iconAnchor: [14, 36],
-    popupAnchor: [0, -38],
+    iconSize: [30, 42],
+    iconAnchor: [15, 42],
+    popupAnchor: [0, -44],
+    html: `<div style="
+        width:30px; height:42px; position:relative; display:flex;
+        flex-direction:column; align-items:center;
+      ">
+      <div style="
+        width:30px; height:30px; background:${bg}; border-radius:50% 50% 50% 0;
+        transform:rotate(-45deg); border:2px solid white;
+        box-shadow:0 2px 8px rgba(0,0,0,0.4);
+        display:flex; align-items:center; justify-content:center;
+      ">
+        <span style="
+          transform:rotate(45deg); color:white; font-weight:800;
+          font-size:11px; font-family:sans-serif; line-height:1;
+        ">${number}</span>
+      </div>
+      <div style="
+        width:2px; height:10px; background:${bg}; margin-top:-1px;
+      "></div>
+    </div>`,
   });
 }
 
@@ -95,17 +96,17 @@ export default function LocationMap({ items, activeId, onMarkerClick }) {
           <Marker
             key={item.id}
             position={coords[item.id]}
-            icon={createPinIcon(index + 1, activeId === item.id)}
+            icon={makeNumberedIcon(index + 1, activeId === item.id)}
             eventHandlers={{ click: () => onMarkerClick && onMarkerClick(item.id) }}
           >
             <Popup>
-              <div className="min-w-[160px]">
+              <div style={{ minWidth: '160px' }}>
                 {(item.image_url || item.image) && (
-                  <img src={item.image_url || item.image} alt={item.name} className="w-full h-24 object-cover rounded mb-2" />
+                  <img src={item.image_url || item.image} alt={item.name} style={{ width: '100%', height: '80px', objectFit: 'cover', borderRadius: '4px', marginBottom: '6px' }} />
                 )}
-                <p className="font-semibold text-[#1e3a5f] text-sm">{item.name}</p>
-                {item.category && <p className="text-xs text-gray-500 mt-0.5">{item.category}</p>}
-                {item.address && <p className="text-xs text-gray-400 mt-1">📍 {item.address}</p>}
+                <p style={{ fontWeight: 700, color: '#1e3a5f', fontSize: '13px', margin: '0 0 2px' }}>{item.name}</p>
+                {item.category && <p style={{ fontSize: '11px', color: '#888', margin: '0 0 2px' }}>{item.category}</p>}
+                {item.address && <p style={{ fontSize: '11px', color: '#aaa', margin: 0 }}>📍 {item.address}</p>}
               </div>
             </Popup>
           </Marker>
