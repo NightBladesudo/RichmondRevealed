@@ -1,6 +1,73 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Hotel, Utensils, Car, Sun, Cloud, Umbrella, CheckSquare, Square, Printer } from 'lucide-react';
+import { MapPin, Calendar, Hotel, Utensils, Car, Sun, CheckSquare, Square, ExternalLink, Globe } from 'lucide-react';
+
+const usefulWebsites = [
+  {
+    name: 'TripAdvisor – Richmond',
+    description: 'Read reviews for hotels, restaurants, and attractions in Richmond from real travelers.',
+    url: 'https://www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html',
+    category: 'Reviews & Planning',
+    color: 'bg-green-50 border-green-200',
+    badge: 'bg-green-100 text-green-800',
+  },
+  {
+    name: 'Visit Richmond VA',
+    description: 'The official tourism website for Richmond with events, guides, and trip planning tools.',
+    url: 'https://www.visitrichmondva.com',
+    category: 'Official Tourism',
+    color: 'bg-blue-50 border-blue-200',
+    badge: 'bg-blue-100 text-blue-800',
+  },
+  {
+    name: 'Expedia – Richmond Hotels',
+    description: 'Search and book hotels, flights, and rental cars for your Richmond trip.',
+    url: 'https://www.expedia.com/Richmond.d178293.Destination-Travel-Guides',
+    category: 'Booking',
+    color: 'bg-yellow-50 border-yellow-200',
+    badge: 'bg-yellow-100 text-yellow-800',
+  },
+  {
+    name: 'Airbnb – Richmond',
+    description: 'Find unique stays and local experiences in Richmond neighborhoods.',
+    url: 'https://www.airbnb.com/s/Richmond--Virginia',
+    category: 'Accommodations',
+    color: 'bg-rose-50 border-rose-200',
+    badge: 'bg-rose-100 text-rose-800',
+  },
+  {
+    name: 'Yelp – Richmond',
+    description: 'Discover the best local restaurants, bars, and shops with community reviews.',
+    url: 'https://www.yelp.com/search?find_loc=Richmond%2C+VA',
+    category: 'Dining & Local',
+    color: 'bg-red-50 border-red-200',
+    badge: 'bg-red-100 text-red-800',
+  },
+  {
+    name: 'Google Maps – Richmond',
+    description: 'Navigate Richmond, find attractions, and get real-time directions.',
+    url: 'https://maps.google.com/?q=Richmond,Virginia',
+    category: 'Navigation',
+    color: 'bg-indigo-50 border-indigo-200',
+    badge: 'bg-indigo-100 text-indigo-800',
+  },
+  {
+    name: 'Richmond.com',
+    description: 'Local news, events calendar, and community information for Richmond residents and visitors.',
+    url: 'https://www.richmond.com',
+    category: 'Local Info',
+    color: 'bg-orange-50 border-orange-200',
+    badge: 'bg-orange-100 text-orange-800',
+  },
+  {
+    name: 'GRTC Transit – Bus Routes',
+    description: 'Plan your public transit routes across Richmond using the city bus system.',
+    url: 'https://www.ridegrtc.com',
+    category: 'Transportation',
+    color: 'bg-teal-50 border-teal-200',
+    badge: 'bg-teal-100 text-teal-800',
+  },
+];
 
 const neighborhoods = [
   'The Fan District', 'Church Hill', "Scott's Addition", 'Carytown',
