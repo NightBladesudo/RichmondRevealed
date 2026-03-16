@@ -11,6 +11,13 @@ const categories = ['All', 'Restaurant', 'Cafe', 'Shop', 'Bar', 'Service'];
 export default function Business() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [activeId, setActiveId] = useState(null);
+  const [selectedBusiness, setSelectedBusiness] = useState(null);
+
+  const handleSelect = (id) => {
+    const biz = businesses.find(b => b.id === id);
+    setActiveId(id);
+    setSelectedBusiness(biz || null);
+  };
 
   const { data: businesses = [], isLoading } = useQuery({
     queryKey: ['businesses'],
