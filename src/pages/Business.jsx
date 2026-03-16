@@ -126,10 +126,10 @@ export default function Business() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
                   className={`group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer ${activeId === business.id ? 'ring-2 ring-[#a63d2f]' : ''}`}
-                  onClick={() => setActiveId(business.id)}
-                >
+                  onClick={() => handleSelect(business.id)}
+                  >
                   <div className="relative aspect-[4/3] overflow-hidden">
-                    <ImageWithLightbox
+                    <img
                       src={business.image_url}
                       alt={business.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
