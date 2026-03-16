@@ -5,13 +5,8 @@ import LocationMap from '../components/shared/LocationMap';
 import { ImageWithLightbox } from '../components/ui/image-lightbox';
 
 const neighborhoods = [
-  {
-    name: 'The Fan District',
-    description: 'Tree-lined streets with stunning Victorian and Edwardian architecture. Known for its vibrant restaurant scene, local shops, and close-knit community feel.',
-    highlights: ['Historic Architecture', 'Walkable', 'Great Dining'],
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg',
-    address: 'The Fan District, Richmond, VA 23220'
-  },
+  { name: 'The Fan District', description: 'Tree-lined streets with stunning Victorian and Edwardian architecture. Known for its vibrant restaurant scene, local shops, and close-knit community feel.', highlights: ['Historic Architecture', 'Walkable', 'Great Dining'], image: 'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg', address: 'Monument Avenue, Richmond, VA 23220' },
+...
   {
     name: 'Church Hill',
     description: 'One of Richmond\'s oldest neighborhoods, home to St. John\'s Church where Patrick Henry delivered his famous speech. Rich in history and character.',
