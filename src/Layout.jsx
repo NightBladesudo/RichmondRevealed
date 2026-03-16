@@ -22,7 +22,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Education & Resources', page: 'Education' },
     { name: 'Virtual Reality', page: 'VirtualReality' },
     { name: 'Richmond ChatBot', page: 'AIChatbot' },
-    { name: 'Contact', page: 'Contact' },
+    { name: 'Contact Us', page: 'Contact' },
     { name: 'Citations', page: 'Citations' },
   ];
 
