@@ -58,7 +58,7 @@ const attractions = [
     name: 'Kings Dominion',
     description: 'Thrilling amusement park featuring over 60 rides, roller coasters, and a water park just north of Richmond.',
     category: 'Entertainment',
-    image_url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600',
+    image_url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0bf57f0fe_image.png',
     address: '16000 Theme Park Way, Doswell, VA 23047'
   },
   {
