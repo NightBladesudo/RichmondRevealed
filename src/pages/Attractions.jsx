@@ -55,7 +55,7 @@ const attractions = [
   }
 ];
 
-const categories = ['All', 'Nature', 'Historic', 'Culture', 'Neighborhood', 'Entertainment'];
+const categories = ['All', 'Nature', 'Historic', 'Culture', 'Entertainment'];
 
 export default function Attractions() {
   const [activeId, setActiveId] = useState(null);
