@@ -29,7 +29,10 @@ function FlyToMarker({ position }) {
 }
 
 async function geocodeAddress(address) {
-  const query = encodeURIComponent(`${address}, Richmond, Virginia`);
+  // If address already contains state/zip info, don't append Richmond again
+  const query = /richmond|VA\s*\d{5}/i.test(address)
+    ? encodeURIComponent(address)
+    : encodeURIComponent(`${address}, Richmond, Virginia`);
   const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}&limit=1`);
   const data = await res.json();
   if (data && data[0]) return [parseFloat(data[0].lat), parseFloat(data[0].lon)];
