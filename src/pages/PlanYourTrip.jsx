@@ -298,6 +298,42 @@ export default function PlanYourTrip() {
         </div>
       </section>
 
+      {/* Useful Websites */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-10">
+            <div className="flex items-center gap-2 mb-2">
+              <Globe className="w-6 h-6 text-[#a63d2f]" />
+              <h2 className="font-display text-3xl text-[#1e3a5f] font-bold">Useful Websites</h2>
+            </div>
+            <p className="text-gray-500">Helpful resources to book, plan, and explore Richmond online.</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {usefulWebsites.map((site, index) => (
+              <motion.a
+                key={site.name}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className={`group block rounded-xl border-2 p-5 hover:shadow-md transition-all duration-200 ${site.color}`}
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <span className={`text-xs font-semibold px-2 py-1 rounded-full ${site.badge}`}>{site.category}</span>
+                  <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-[#a63d2f] transition-colors" />
+                </div>
+                <h3 className="font-display text-base text-[#1e3a5f] font-semibold mb-2 group-hover:text-[#a63d2f] transition-colors">{site.name}</h3>
+                <p className="text-xs text-gray-600 leading-relaxed">{site.description}</p>
+              </motion.a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Explore by Neighborhood */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
