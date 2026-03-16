@@ -118,11 +118,7 @@ export default function Layout({ children, currentPageName }) {
             </p>
           </div>
 
-          <div className="border-t border-white/10 mt-12 pt-8 text-center">
-            <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Richmond Revealed. All rights reserved.
-            </p>
-          </div>
+
         </div>
       </footer>
     </div>
