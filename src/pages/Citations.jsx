@@ -108,7 +108,7 @@ const imageCitations = [
       {
         number: 11,
         location: 'Attractions – Virginia State Capitol',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/11d2af63e_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Virginia State Capitol Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
