@@ -396,7 +396,7 @@ const imageCitations = [
       {
         number: 44,
         location: 'Virtual Reality – Scott\'s Addition Card',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/61a794f27_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: "Pixabay Contributor. Scott's Addition VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026."
