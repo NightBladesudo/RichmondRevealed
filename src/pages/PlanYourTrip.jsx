@@ -169,6 +169,80 @@ export default function PlanYourTrip() {
         </div>
       </section>
 
+      {/* Flight Planner */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-10">
+            <div className="flex items-center gap-2 mb-2">
+              <Plane className="w-6 h-6 text-[#a63d2f]" />
+              <h2 className="font-display text-3xl text-[#1e3a5f] font-bold">Flight Planner</h2>
+            </div>
+            <p className="text-gray-500">Find flights to Richmond International Airport (RIC) and plan your arrival.</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            {/* Flight Search Form */}
+            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+              <h3 className="font-display text-xl text-[#1e3a5f] font-semibold mb-5">Search for Flights</h3>
+              <FlightSearchForm />
+            </motion.div>
+
+            {/* Airport Info & Booking Links */}
+            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-5">
+              <div className="bg-[#1e3a5f] rounded-2xl p-6 text-white">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-[#c9a227] rounded-full flex items-center justify-center">
+                    <Plane className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-display text-lg font-bold">Richmond International Airport</h4>
+                    <p className="text-gray-300 text-sm">Airport Code: RIC</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                  Located just 7 miles east of downtown Richmond, RIC offers direct flights from major hubs including New York, Atlanta, Chicago, Philadelphia, and more.
+                </p>
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="bg-white/10 rounded-lg p-3">
+                    <p className="text-[#c9a227] font-semibold">Distance to Downtown</p>
+                    <p className="text-white">~15 min drive</p>
+                  </div>
+                  <div className="bg-white/10 rounded-lg p-3">
+                    <p className="text-[#c9a227] font-semibold">Ground Transport</p>
+                    <p className="text-white">Taxi, Uber, Rental Cars</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="font-display text-lg text-[#1e3a5f] font-semibold mb-3">Book Your Flight</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {[
+                    { name: 'Google Flights', url: 'https://www.google.com/flights?q=flights+to+RIC', color: 'bg-blue-50 border-blue-200 text-blue-800' },
+                    { name: 'Expedia', url: 'https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:,to:RIC', color: 'bg-yellow-50 border-yellow-200 text-yellow-800' },
+                    { name: 'Kayak', url: 'https://www.kayak.com/flights/RIC', color: 'bg-orange-50 border-orange-200 text-orange-800' },
+                    { name: 'Southwest', url: 'https://www.southwest.com', color: 'bg-red-50 border-red-200 text-red-800' },
+                    { name: 'Delta', url: 'https://www.delta.com', color: 'bg-indigo-50 border-indigo-200 text-indigo-800' },
+                    { name: 'American Airlines', url: 'https://www.aa.com', color: 'bg-gray-50 border-gray-200 text-gray-800' },
+                  ].map((site) => (
+                    <a
+                      key={site.name}
+                      href={site.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center justify-between px-4 py-3 rounded-xl border-2 text-sm font-semibold hover:shadow-md transition-all duration-200 ${site.color}`}
+                    >
+                      {site.name}
+                      <ExternalLink className="w-4 h-4 opacity-60" />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Suggested Itineraries */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
