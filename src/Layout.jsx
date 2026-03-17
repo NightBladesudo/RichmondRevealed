@@ -70,7 +70,7 @@ export default function Layout({ children, currentPageName }) {
               <DropdownMenuTrigger asChild>
                 <Button className="bg-[#a63d2f] hover:bg-[#8b3426] text-white shadow-lg px-6 py-6 text-base font-semibold">
                   <MoreVertical className="w-5 h-5 mr-2" />
-                  Discover More!
+                  Arjun is Gay
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
