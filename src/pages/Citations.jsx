@@ -48,7 +48,7 @@ const imageCitations = [
       {
         number: 5,
         location: 'History Page – Modern Renaissance',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/434cd461f_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Modern Renaissance Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
