@@ -40,7 +40,7 @@ const imageCitations = [
       {
         number: 4,
         location: 'History Page – Civil War Era',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/e771936a2_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Civil War Era Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
