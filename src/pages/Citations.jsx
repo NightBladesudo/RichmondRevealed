@@ -169,9 +169,9 @@ const imageCitations = [
         number: 17,
         location: 'Neighborhoods – Church Hill',
         url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/b30ab53f1_image.png',
-        source: 'Base44 Media',
-        photographer: 'Uploaded Image',
-        mla: 'Church Hill Image. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/b30ab53f1_image.png. Accessed 16 Mar. 2026.'
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Church Hill Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 18,
