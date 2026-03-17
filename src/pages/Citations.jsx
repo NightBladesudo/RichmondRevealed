@@ -372,7 +372,7 @@ const imageCitations = [
       {
         number: 41,
         location: 'Virtual Reality – Virginia State Capitol Card',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/300ec980f_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Virginia State Capitol VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
