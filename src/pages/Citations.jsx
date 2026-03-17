@@ -356,7 +356,7 @@ const imageCitations = [
       {
         number: 39,
         location: 'Virtual Reality – Monument Avenue Card',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0bd593351_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Monument Avenue VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
