@@ -287,9 +287,9 @@ const imageCitations = [
         number: 31,
         location: 'Education – Virginia Commonwealth University',
         url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/1193eecdf_image.png',
-        source: 'Base44 Media',
-        photographer: 'Uploaded Image',
-        mla: 'Virginia Commonwealth University Image. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/1193eecdf_image.png. Accessed 16 Mar. 2026.'
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Virginia Commonwealth University Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 32,
