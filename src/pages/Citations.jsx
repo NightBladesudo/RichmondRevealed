@@ -232,7 +232,7 @@ const imageCitations = [
       {
         number: 25,
         location: 'Neighborhoods – Jackson Ward',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/6feaf8f01_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Jackson Ward Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
