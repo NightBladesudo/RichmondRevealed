@@ -224,7 +224,7 @@ const imageCitations = [
       {
         number: 24,
         location: 'Neighborhoods – Libbie & Grove',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/4838a8e33_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Libbie & Grove Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
