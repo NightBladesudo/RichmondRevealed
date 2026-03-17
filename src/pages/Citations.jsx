@@ -100,7 +100,7 @@ const imageCitations = [
       {
         number: 10,
         location: 'Attractions – Belle Isle',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/1fc761363_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Belle Isle Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
