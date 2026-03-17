@@ -248,7 +248,7 @@ const imageCitations = [
       {
         number: 27,
         location: 'Neighborhoods – South of Broad',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/bae1a67d7_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. South of Broad Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
