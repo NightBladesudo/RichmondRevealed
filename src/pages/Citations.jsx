@@ -310,7 +310,7 @@ const imageCitations = [
       {
         number: 34,
         location: 'Education – Richmond Public Library',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/927f19671_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Richmond Public Library Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
