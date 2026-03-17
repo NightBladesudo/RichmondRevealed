@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Hotel, Utensils, Car, Sun, CheckSquare, Square, ExternalLink, Globe } from 'lucide-react';
+import { MapPin, Calendar, Hotel, Utensils, Car, Sun, CheckSquare, Square, ExternalLink, Globe, Plane, ArrowRight } from 'lucide-react';
 
 const usefulWebsites = [
   {
