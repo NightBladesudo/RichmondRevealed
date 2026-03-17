@@ -60,15 +60,22 @@ async function geocodeAddress(address) {
   return null;
 }
 
+const coordsCache = {};
+
 export default function LocationMap({ items, activeId, onMarkerClick }) {
   const [coords, setCoords] = useState({});
   const [flyTo, setFlyTo] = useState(null);
 
   useEffect(() => {
     items.forEach(async (item) => {
-      if (item.address && !coords[item.id]) {
+      if (item.address && !coordsCache[item.id]) {
         const pos = await geocodeAddress(item.address);
-        if (pos) setCoords(prev => ({ ...prev, [item.id]: pos }));
+        if (pos) {
+          coordsCache[item.id] = pos;
+          setCoords(prev => ({ ...prev, [item.id]: pos }));
+        }
+      } else if (coordsCache[item.id] && !coords[item.id]) {
+        setCoords(prev => ({ ...prev, [item.id]: coordsCache[item.id] }));
       }
     });
   }, [items]);
