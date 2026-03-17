@@ -8,7 +8,7 @@ export default function AIChatbot() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: 'Hello! I\'m your AI assistant. Ask me anything - I can answer questions with web sources and generate images for you!'
+      content: 'Hello! I\'m your AI assistant. Ask me anything - I can answer questions with web sources and generate images for you about Richmond!'
     }
   ]);
   const [input, setInput] = useState('');
