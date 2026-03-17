@@ -13,7 +13,7 @@ const imageCitations = [
         url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1280',
         source: 'Unsplash',
         photographer: 'Pedro Lastra',
-        mla: 'Lastra, Pedro. City Skyline at Night. Unsplash, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df. Accessed 17 Mar. 2026.'
+        mla: 'Lastra, Pedro. City Skyline at Night. Unsplash, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -27,31 +27,31 @@ const imageCitations = [
         url: 'https://images.unsplash.com/photo-1568454537842-d933259bb258?w=1280',
         source: 'Unsplash',
         photographer: 'Unsplash Contributor',
-        mla: 'Unsplash Contributor. Historic Architecture. Unsplash, https://images.unsplash.com/photo-1568454537842-d933259bb258. Accessed 17 Mar. 2026.'
+        mla: 'Unsplash Contributor. Historic Architecture. Unsplash, https://images.unsplash.com/photo-1568454537842-d933259bb258. Accessed 16 Mar. 2026.'
       },
       {
         number: 3,
         location: 'History Page – Colonial Era',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0a58aadd4_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Colonial Era Richmond Illustration. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0a58aadd4_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Colonial Era Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 4,
         location: 'History Page – Civil War Era',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/e771936a2_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Civil War Era Richmond Illustration. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/e771936a2_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Civil War Era Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 5,
         location: 'History Page – Modern Renaissance',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/434cd461f_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Modern Richmond Renaissance Illustration. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/434cd461f_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Modern Renaissance Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -65,7 +65,7 @@ const imageCitations = [
         url: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1280',
         source: 'Unsplash',
         photographer: 'Aditya Chinchure',
-        mla: 'Chinchure, Aditya. People at Concert. Unsplash, https://images.unsplash.com/photo-1501281668745-f7f57925c3b4. Accessed 17 Mar. 2026.'
+        mla: 'Chinchure, Aditya. People at Concert. Unsplash, https://images.unsplash.com/photo-1501281668745-f7f57925c3b4. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -79,7 +79,7 @@ const imageCitations = [
         url: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=1280',
         source: 'Unsplash',
         photographer: 'Toomas Tartes',
-        mla: 'Tartes, Toomas. Outdoor Trail. Unsplash, https://images.unsplash.com/photo-1551632811-561732d1e306. Accessed 17 Mar. 2026.'
+        mla: 'Tartes, Toomas. Mountain Hiking. Unsplash, https://images.unsplash.com/photo-1551632811-561732d1e306. Accessed 16 Mar. 2026.'
       },
       {
         number: 8,
@@ -87,31 +87,31 @@ const imageCitations = [
         url: 'https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=600',
         source: 'Unsplash',
         photographer: 'Unsplash Contributor',
-        mla: 'Unsplash Contributor. Art Museum Interior. Unsplash, https://images.unsplash.com/photo-1518998053901-5348d3961a04. Accessed 17 Mar. 2026.'
+        mla: 'Unsplash Contributor. Art Museum Interior. Unsplash, https://images.unsplash.com/photo-1518998053901-5348d3961a04. Accessed 16 Mar. 2026.'
       },
       {
         number: 9,
         location: 'Attractions – Maymont',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/a94a036fd_image.png',
-        source: 'Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Maymont Estate. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/a94a036fd_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Maymont Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 10,
         location: 'Attractions – Belle Isle',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/1fc761363_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Belle Isle James River. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/1fc761363_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Belle Isle Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 11,
         location: 'Attractions – Virginia State Capitol',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/11d2af63e_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Virginia State Capitol. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/11d2af63e_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Virginia State Capitol Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 12,
@@ -119,31 +119,15 @@ const imageCitations = [
         url: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600',
         source: 'Unsplash',
         photographer: 'Unsplash Contributor',
-        mla: 'Unsplash Contributor. Botanical Garden. Unsplash, https://images.unsplash.com/photo-1585320806297-9794b3e4eeae. Accessed 17 Mar. 2026.'
+        mla: 'Unsplash Contributor. Botanical Garden. Unsplash, https://images.unsplash.com/photo-1585320806297-9794b3e4eeae. Accessed 16 Mar. 2026.'
       },
       {
         number: 13,
         location: 'Attractions – Hollywood Cemetery',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/7ca0f9d49_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Hollywood Cemetery Richmond. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/7ca0f9d49_image.png. Accessed 17 Mar. 2026.'
-      },
-      {
-        number: 14,
-        location: 'Attractions – Kings Dominion',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0bf57f0fe_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Kings Dominion Amusement Park. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0bf57f0fe_image.png. Accessed 17 Mar. 2026.'
-      },
-      {
-        number: 15,
-        location: 'Attractions – The National (Music Venue)',
-        url: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600',
-        source: 'Unsplash',
-        photographer: 'Unsplash Contributor',
-        mla: 'Unsplash Contributor. Music Concert Venue. Unsplash, https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Hollywood Cemetery Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -152,12 +136,12 @@ const imageCitations = [
     page: 'Local Businesses & Dining Page',
     items: [
       {
-        number: 16,
+        number: 14,
         location: 'Business Page – Hero Background',
         url: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1280',
         source: 'Unsplash',
         photographer: 'daan evers',
-        mla: 'Evers, Daan. Interior of a Coffee Shop. Unsplash, https://images.unsplash.com/photo-1554118811-1e0d58224f24. Accessed 17 Mar. 2026.'
+        mla: 'Evers, Daan. Interior of a Coffee Shop. Unsplash, https://images.unsplash.com/photo-1554118811-1e0d58224f24. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -166,124 +150,124 @@ const imageCitations = [
     page: 'Neighborhoods Page',
     items: [
       {
-        number: 17,
+        number: 15,
         location: 'Neighborhoods Page – Hero Background',
         url: 'https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=1280',
         source: 'Unsplash',
         photographer: 'Joel & Jasmin Førestbird',
-        mla: 'Førestbird, Joel & Jasmin. Person Hiking Above Mountain Overlooking River. Unsplash, https://images.unsplash.com/photo-1533240332313-0db49b459ad6. Accessed 17 Mar. 2026.'
+        mla: 'Førestbird, Joel & Jasmin. Person Hiking Above Mountain Overlooking River. Unsplash, https://images.unsplash.com/photo-1533240332313-0db49b459ad6. Accessed 16 Mar. 2026.'
       },
       {
-        number: 18,
+        number: 16,
         location: 'Neighborhoods – The Fan District',
         url: 'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg',
         source: 'Pixabay',
         photographer: 'Pexels',
-        mla: 'Pexels. House Garage Driveway Stone. Pixabay, https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'Pexels. House Garage Driveway Stone. Pixabay, https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg. Accessed 16 Mar. 2026.'
       },
       {
-        number: 19,
+        number: 17,
         location: 'Neighborhoods – Church Hill',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/b30ab53f1_image.png',
-        source: 'Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Church Hill Richmond. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/b30ab53f1_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Church Hill Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
-        number: 20,
-        location: "Neighborhoods – Scott's Addition",
+        number: 18,
+        location: 'Neighborhoods – Scott\'s Addition',
         url: 'https://images.unsplash.com/photo-1542835497-a6813df96ed9?w=1280',
         source: 'Unsplash',
         photographer: 'Claude Piché',
-        mla: "Piché, Claude. Industrial Brewery Scene. Unsplash, https://images.unsplash.com/photo-1542835497-a6813df96ed9. Accessed 17 Mar. 2026."
+        mla: 'Piché, Claude. Brown Pizza Oven. Unsplash, https://images.unsplash.com/photo-1542835497-a6813df96ed9. Accessed 16 Mar. 2026.'
       },
       {
-        number: 21,
+        number: 19,
         location: 'Neighborhoods – Carytown',
         url: 'https://cdn.pixabay.com/photo/2018/08/01/17/15/city-3577655_1280.jpg',
         source: 'Pixabay',
         photographer: 'InstagramFOTOGRAFIN',
-        mla: 'InstagramFOTOGRAFIN. City Shopping Street. Pixabay, https://cdn.pixabay.com/photo/2018/08/01/17/15/city-3577655_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'InstagramFOTOGRAFIN. City Shopping Street. Pixabay, https://cdn.pixabay.com/photo/2018/08/01/17/15/city-3577655_1280.jpg. Accessed 16 Mar. 2026.'
       },
       {
-        number: 22,
+        number: 20,
         location: 'Neighborhoods – Shockoe Bottom',
         url: 'https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg',
         source: 'Pixabay',
         photographer: 'Pexels',
-        mla: 'Pexels. Audience Concert Music. Pixabay, https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'Pexels. Audience Concert Music. Pixabay, https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 21,
+        location: 'Neighborhoods – Oregon Hill',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Oregon Hill Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 22,
+        location: 'Neighborhoods – Museum District',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Museum District Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 23,
-        location: 'Neighborhoods – Oregon Hill',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/5e7d9dc14_image.png',
-        source: 'Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Oregon Hill Neighborhood. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/5e7d9dc14_image.png. Accessed 17 Mar. 2026.'
-      },
-      {
-        number: 24,
-        location: 'Neighborhoods – Museum District',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/388e5f51c_image.png',
-        source: 'Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Museum District Richmond. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/388e5f51c_image.png. Accessed 17 Mar. 2026.'
-      },
-      {
-        number: 25,
         location: 'Neighborhoods – Manchester',
         url: 'https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg',
         source: 'Pixabay',
         photographer: 'Pexels',
-        mla: 'Pexels. Night Sky City View. Pixabay, https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'Pexels. Astronomy Bright Constellation. Pixabay, https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 24,
+        location: 'Neighborhoods – Libbie & Grove',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Libbie & Grove Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 25,
+        location: 'Neighborhoods – Jackson Ward',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Jackson Ward Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 26,
-        location: 'Neighborhoods – Libbie & Grove',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/4838a8e33_image.png',
-        source: 'Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Libbie & Grove Shopping. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/4838a8e33_image.png. Accessed 17 Mar. 2026.'
-      },
-      {
-        number: 27,
-        location: 'Neighborhoods – Jackson Ward',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/6feaf8f01_image.png',
-        source: 'Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Jackson Ward Historic District. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/6feaf8f01_image.png. Accessed 17 Mar. 2026.'
-      },
-      {
-        number: 28,
         location: 'Neighborhoods – Bellevue',
         url: 'https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg',
         source: 'Pixabay',
         photographer: 'Pexels',
-        mla: 'Pexels. Couch Space Living Room Interior. Pixabay, https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'Pexels. Couch Space Living Room Interior. Pixabay, https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_1280.jpg. Accessed 16 Mar. 2026.'
       },
       {
-        number: 29,
+        number: 27,
         location: 'Neighborhoods – South of Broad',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/bae1a67d7_image.png',
-        source: 'Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. South of Broad Neighborhood. Base44 Media, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/bae1a67d7_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. South of Broad Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
-        number: 30,
+        number: 28,
         location: 'Neighborhoods – Near West End',
         url: 'https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg',
         source: 'Pixabay',
         photographer: 'Pexels',
-        mla: 'Pexels. Architecture Building City House. Pixabay, https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'Pexels. Architecture Building City House. Pixabay, https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg. Accessed 16 Mar. 2026.'
       },
       {
-        number: 31,
+        number: 29,
         location: 'Neighborhoods – Northside',
         url: 'https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg',
         source: 'Pixabay',
         photographer: 'ROverhate',
-        mla: 'ROverhate. Colorful Mural Wall Art. Pixabay, https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'ROverhate. Colorful Mural Wall Art. Pixabay, https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -292,12 +276,68 @@ const imageCitations = [
     page: 'Education & Resources Page',
     items: [
       {
-        number: 32,
+        number: 30,
         location: 'Education Page – Hero Background',
         url: 'https://images.unsplash.com/20/cambridge.JPG?w=1280',
         source: 'Unsplash',
         photographer: 'Vadim Sherbakov',
-        mla: 'Sherbakov, Vadim. Brown Concrete Palace Under Blue Sky. Unsplash, https://images.unsplash.com/20/cambridge.JPG. Accessed 17 Mar. 2026.'
+        mla: 'Sherbakov, Vadim. Brown Concrete Palace Under Blue Sky. Unsplash, https://images.unsplash.com/20/cambridge.JPG. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 31,
+        location: 'Education – Virginia Commonwealth University',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Virginia Commonwealth University Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 32,
+        location: 'Education – University of Richmond',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. University of Richmond Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 33,
+        location: 'Education – Virginia Union University',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Virginia Union University Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 34,
+        location: 'Education – Richmond Public Library',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Richmond Public Library Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 35,
+        location: 'Education – Chop Suey Books',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Chop Suey Books Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 36,
+        location: 'Education – Community Centers',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Community Centers Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
+      },
+      {
+        number: 37,
+        location: 'Education – Youth Programs',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Youth Programs Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -306,60 +346,60 @@ const imageCitations = [
     page: 'Virtual Reality Page',
     items: [
       {
-        number: 33,
+        number: 38,
         location: 'Virtual Reality Page – Hero Background',
         url: 'https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?w=1280',
         source: 'Unsplash',
         photographer: 'Jessica Lewis',
-        mla: 'Lewis, Jessica. Boy Wearing Black and White VR Headset. Unsplash, https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1. Accessed 17 Mar. 2026.'
+        mla: 'Lewis, Jessica. Boy Wearing Black and White VR Headset. Unsplash, https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1. Accessed 16 Mar. 2026.'
       },
       {
-        number: 34,
+        number: 39,
         location: 'Virtual Reality – Monument Avenue Card',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0bd593351_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Monument Avenue Virtual Tour Card. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0bd593351_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Monument Avenue VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
-        number: 35,
+        number: 40,
         location: 'Virtual Reality – Belle Isle Card',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/99a87209e_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Belle Isle Virtual Tour Card. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/99a87209e_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Belle Isle VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
-        number: 36,
+        number: 41,
         location: 'Virtual Reality – Virginia State Capitol Card',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/300ec980f_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: 'Richmond Revealed. Virginia State Capitol Virtual Tour Card. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/300ec980f_image.png. Accessed 17 Mar. 2026.'
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Virginia State Capitol VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
-        number: 37,
+        number: 42,
         location: 'Virtual Reality – Carytown Card',
         url: 'https://cdn.pixabay.com/photo/2018/08/01/17/15/city-3577655_1280.jpg',
         source: 'Pixabay',
         photographer: 'InstagramFOTOGRAFIN',
-        mla: 'InstagramFOTOGRAFIN. City Shopping Street. Pixabay, https://cdn.pixabay.com/photo/2018/08/01/17/15/city-3577655_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'InstagramFOTOGRAFIN. City Shopping Street. Pixabay, https://cdn.pixabay.com/photo/2018/08/01/17/15/city-3577655_1280.jpg. Accessed 16 Mar. 2026.'
       },
       {
-        number: 38,
+        number: 43,
         location: 'Virtual Reality – James River Park Card',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/818bcc2e2_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: "Richmond Revealed. James River Park Virtual Tour Card. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/818bcc2e2_image.png. Accessed 17 Mar. 2026."
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. James River Park VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
-        number: 39,
-        location: "Virtual Reality – Scott's Addition Card",
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/61a794f27_image.png',
-        source: 'AI-Generated / Uploaded',
-        photographer: 'Richmond Revealed',
-        mla: "Richmond Revealed. Scott's Addition Virtual Tour Card. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/61a794f27_image.png. Accessed 17 Mar. 2026."
+        number: 44,
+        location: 'Virtual Reality – Scott\'s Addition Card',
+        url: 'https://pixabay.com',
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: "Pixabay Contributor. Scott's Addition VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026."
       }
     ]
   },
@@ -368,26 +408,12 @@ const imageCitations = [
     page: 'Plan Your Trip Page',
     items: [
       {
-        number: 40,
+        number: 46,
         location: 'Plan Your Trip – Hero Background',
         url: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1280',
         source: 'Unsplash',
         photographer: 'Unsplash Contributor',
-        mla: 'Unsplash Contributor. Travel Planning Aerial View. Unsplash, https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1. Accessed 17 Mar. 2026.'
-      }
-    ]
-  },
-  // AI CHATBOT
-  {
-    page: 'Richmond ChatBot Page',
-    items: [
-      {
-        number: 41,
-        location: 'Richmond ChatBot – Hero Background',
-        url: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1280',
-        source: 'Unsplash',
-        photographer: 'Unsplash Contributor',
-        mla: 'Unsplash Contributor. Technology AI Interface. Unsplash, https://images.unsplash.com/photo-1531746790731-6c087fecd65a. Accessed 17 Mar. 2026.'
+        mla: 'Unsplash Contributor. Travel Planning. Unsplash, https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -396,12 +422,12 @@ const imageCitations = [
     page: 'Citations Page',
     items: [
       {
-        number: 42,
+        number: 45,
         location: 'Citations Page – Hero Background',
         url: 'https://cdn.pixabay.com/photo/2015/11/19/21/10/knowledge-1052010_1280.jpg',
         source: 'Pixabay',
         photographer: 'tednewkirk',
-        mla: 'Tednewkirk. Book Asia Children Education. Pixabay, https://cdn.pixabay.com/photo/2015/11/19/21/10/knowledge-1052010_1280.jpg. Accessed 17 Mar. 2026.'
+        mla: 'Tednewkirk. Book Asia Children Education. Pixabay, https://cdn.pixabay.com/photo/2015/11/19/21/10/knowledge-1052010_1280.jpg. Accessed 16 Mar. 2026.'
       }
     ]
   }
@@ -415,19 +441,19 @@ const textCitations = [
         title: 'Valentine Richmond History Center',
         url: 'https://valentinemuseum.com',
         description: 'Primary source for Richmond history and archives',
-        mla: '"Valentine Richmond History Center." Valentine, www.valentinemuseum.com. Accessed 17 Mar. 2026.'
+        mla: '"Valentine Richmond History Center." Valentine, www.valentinemuseum.com. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Library of Virginia',
         url: 'https://www.lva.virginia.gov',
         description: 'State archives and historical records',
-        mla: '"Library of Virginia." Library of Virginia, www.lva.virginia.gov. Accessed 17 Mar. 2026.'
+        mla: '"Library of Virginia." Library of Virginia, www.lva.virginia.gov. Accessed 16 Mar. 2026.'
       },
       {
         title: 'American Civil War Museum',
         url: 'https://acwm.org',
         description: 'Civil War history and documentation',
-        mla: '"American Civil War Museum." American Civil War Museum, acwm.org. Accessed 17 Mar. 2026.'
+        mla: '"American Civil War Museum." American Civil War Museum, acwm.org. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -438,13 +464,13 @@ const textCitations = [
         title: 'Visit Richmond',
         url: 'https://www.visitrichmondva.com',
         description: 'Official tourism board for Richmond, Virginia',
-        mla: '"Visit Richmond." Richmond Region Tourism, www.visitrichmondva.com. Accessed 17 Mar. 2026.'
+        mla: '"Visit Richmond." Richmond Region Tourism, www.visitrichmondva.com. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Richmond Region Tourism',
         url: 'https://www.visitrichmond.com',
         description: 'Regional tourism information and guides',
-        mla: '"Richmond Region Tourism." Richmond Region Tourism, www.visitrichmond.com. Accessed 17 Mar. 2026.'
+        mla: '"Richmond Region Tourism." Richmond Region Tourism, www.visitrichmond.com. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -455,13 +481,13 @@ const textCitations = [
         title: 'City of Richmond',
         url: 'https://www.rva.gov',
         description: 'Official city government website',
-        mla: '"City of Richmond." City of Richmond, Virginia, www.rva.gov. Accessed 17 Mar. 2026.'
+        mla: '"City of Richmond." City of Richmond, Virginia, www.rva.gov. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Richmond Public Schools',
         url: 'https://www.rvaschools.net',
         description: 'Official school district information',
-        mla: '"Richmond Public Schools." Richmond Public Schools, www.rvaschools.net. Accessed 17 Mar. 2026.'
+        mla: '"Richmond Public Schools." Richmond Public Schools, www.rvaschools.net. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -472,49 +498,49 @@ const textCitations = [
         title: 'TripAdvisor – Richmond',
         url: 'https://www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html',
         description: 'Traveler reviews for hotels, restaurants, and attractions in Richmond.',
-        mla: '"TripAdvisor – Richmond, Virginia." TripAdvisor, www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html. Accessed 17 Mar. 2026.'
+        mla: '"TripAdvisor – Richmond, Virginia." TripAdvisor, www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Visit Richmond VA (Official Tourism)',
         url: 'https://www.visitrichmondva.com',
         description: 'Official tourism website for Richmond with events, guides, and trip planning tools.',
-        mla: '"Visit Richmond VA." Richmond Region Tourism, www.visitrichmondva.com. Accessed 17 Mar. 2026.'
+        mla: '"Visit Richmond VA." Richmond Region Tourism, www.visitrichmondva.com. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Expedia – Richmond Hotels',
         url: 'https://www.expedia.com/Richmond.d178293.Destination-Travel-Guides',
         description: 'Search and book hotels, flights, and rental cars for Richmond.',
-        mla: '"Richmond Travel Guide." Expedia, www.expedia.com/Richmond.d178293.Destination-Travel-Guides. Accessed 17 Mar. 2026.'
+        mla: '"Richmond Travel Guide." Expedia, www.expedia.com/Richmond.d178293.Destination-Travel-Guides. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Airbnb – Richmond',
         url: 'https://www.airbnb.com/s/Richmond--Virginia',
         description: 'Unique stays and local experiences in Richmond neighborhoods.',
-        mla: '"Richmond, Virginia Stays." Airbnb, www.airbnb.com/s/Richmond--Virginia. Accessed 17 Mar. 2026.'
+        mla: '"Richmond, Virginia Stays." Airbnb, www.airbnb.com/s/Richmond--Virginia. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Yelp – Richmond',
         url: 'https://www.yelp.com/search?find_loc=Richmond%2C+VA',
         description: 'Community reviews for restaurants, bars, and local shops in Richmond.',
-        mla: '"Richmond, VA Businesses." Yelp, www.yelp.com/search?find_loc=Richmond%2C+VA. Accessed 17 Mar. 2026.'
+        mla: '"Richmond, VA Businesses." Yelp, www.yelp.com/search?find_loc=Richmond%2C+VA. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Google Maps – Richmond',
         url: 'https://maps.google.com/?q=Richmond,Virginia',
         description: 'Navigate Richmond and get real-time directions to attractions.',
-        mla: '"Richmond, Virginia." Google Maps, maps.google.com/?q=Richmond,Virginia. Accessed 17 Mar. 2026.'
+        mla: '"Richmond, Virginia." Google Maps, maps.google.com/?q=Richmond,Virginia. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Richmond.com',
         url: 'https://www.richmond.com',
         description: 'Local news, events calendar, and community information for Richmond.',
-        mla: '"Richmond.com." Richmond Times-Dispatch, www.richmond.com. Accessed 17 Mar. 2026.'
+        mla: '"Richmond.com." Richmond Times-Dispatch, www.richmond.com. Accessed 16 Mar. 2026.'
       },
       {
         title: 'GRTC Transit – Bus Routes',
         url: 'https://www.ridegrtc.com',
         description: 'Public transit route planning for Richmond city buses.',
-        mla: '"GRTC Transit System." GRTC, www.ridegrtc.com. Accessed 17 Mar. 2026.'
+        mla: '"GRTC Transit System." GRTC, www.ridegrtc.com. Accessed 16 Mar. 2026.'
       }
     ]
   },
@@ -525,13 +551,13 @@ const textCitations = [
         title: 'Virginia Museum of Fine Arts',
         url: 'https://www.vmfa.museum',
         description: 'Art and cultural information',
-        mla: '"Virginia Museum of Fine Arts." Virginia Museum of Fine Arts, www.vmfa.museum. Accessed 17 Mar. 2026.'
+        mla: '"Virginia Museum of Fine Arts." Virginia Museum of Fine Arts, www.vmfa.museum. Accessed 16 Mar. 2026.'
       },
       {
         title: 'Richmond Symphony',
         url: 'https://richmondsymphony.com',
         description: 'Music and cultural events',
-        mla: '"Richmond Symphony." Richmond Symphony, richmondsymphony.com. Accessed 17 Mar. 2026.'
+        mla: '"Richmond Symphony." Richmond Symphony, richmondsymphony.com. Accessed 16 Mar. 2026.'
       }
     ]
   }
