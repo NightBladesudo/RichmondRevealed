@@ -326,7 +326,7 @@ const imageCitations = [
       {
         number: 36,
         location: 'Education – Community Centers',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/41105a7ef_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Community Centers Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
