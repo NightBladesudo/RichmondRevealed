@@ -33,9 +33,9 @@ const imageCitations = [
         number: 3,
         location: 'History Page – Colonial Era',
         url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0a58aadd4_image.png',
-        source: 'Base44 Media',
-        photographer: 'Uploaded Image',
-        mla: 'Colonial Era Image. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0a58aadd4_image.png. Accessed 16 Mar. 2026.'
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Colonial Era Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 4,
