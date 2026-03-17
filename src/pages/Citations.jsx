@@ -294,7 +294,7 @@ const imageCitations = [
       {
         number: 32,
         location: 'Education – University of Richmond',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/4f2be7a0e_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. University of Richmond Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
