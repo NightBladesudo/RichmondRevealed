@@ -125,9 +125,9 @@ const imageCitations = [
         number: 13,
         location: 'Attractions – Hollywood Cemetery',
         url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/7ca0f9d49_image.png',
-        source: 'Base44 Media',
-        photographer: 'Uploaded Image',
-        mla: 'Hollywood Cemetery Image. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/7ca0f9d49_image.png. Accessed 16 Mar. 2026.'
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Hollywood Cemetery Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       }
     ]
   },
