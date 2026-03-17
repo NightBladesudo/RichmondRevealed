@@ -200,7 +200,7 @@ const imageCitations = [
       {
         number: 21,
         location: 'Neighborhoods – Oregon Hill',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/5e7d9dc14_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Oregon Hill Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
