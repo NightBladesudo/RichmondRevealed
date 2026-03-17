@@ -389,9 +389,9 @@ const imageCitations = [
         number: 43,
         location: 'Virtual Reality – James River Park Card',
         url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/818bcc2e2_image.png',
-        source: 'Base44 Media',
-        photographer: 'Uploaded Image',
-        mla: 'James River Park VR Card. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/818bcc2e2_image.png. Accessed 16 Mar. 2026.'
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. James River Park VR Card. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       },
       {
         number: 44,
