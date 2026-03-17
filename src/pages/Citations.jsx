@@ -334,7 +334,7 @@ const imageCitations = [
       {
         number: 37,
         location: 'Education – Youth Programs',
-        url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/9132a02fe_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Youth Programs Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
