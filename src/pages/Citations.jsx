@@ -318,7 +318,7 @@ const imageCitations = [
       {
         number: 35,
         location: 'Education – Chop Suey Books',
-        url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69642c930690d6cb4d4ad04d/33d599d2a_image.png',
+        url: 'https://pixabay.com',
         source: 'Pixabay',
         photographer: 'Pixabay Contributor',
         mla: 'Pixabay Contributor. Chop Suey Books Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
