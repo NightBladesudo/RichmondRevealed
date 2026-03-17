@@ -226,6 +226,7 @@ export default function VirtualReality() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title={`Virtual tour of ${selectedWorld.name}`}
+                  allow="accelerometer; gyroscope"
                 />
               </div>
 
