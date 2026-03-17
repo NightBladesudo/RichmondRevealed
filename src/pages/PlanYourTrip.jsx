@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Hotel, Utensils, Car, Sun, CheckSquare, Square, ExternalLink, Globe, Plane, ArrowRight } from 'lucide-react';
+import { MapPin, Calendar, Hotel, Utensils, Car, Sun, CheckSquare, Square, ExternalLink, Globe, Plane } from 'lucide-react';
+import FlightSearchForm from '@/components/trip/FlightSearchForm';
 
 const usefulWebsites = [
   {
