@@ -9,8 +9,7 @@ const virtualWorlds = [
     name: 'Monument Avenue',
     description: 'Walk through Richmond\'s historic boulevard lined with stunning architecture',
     image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/0bd593351_image.png',
-    embedUrl: 'https://www.google.com/maps/embed?pb=!4v1700000001!6m8!1m7!1sRlMpRlMpRlMp!2m2!1d37.5556!2d-77.4796!3f270!4f0!5f0.7820865974627469&q=Monument+Avenue,+Richmond,+VA',
-    mapsUrl: 'https://maps.google.com/maps?q=Monument+Avenue,+Richmond,+VA&output=embed',
+    embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948123456!6m8!1m7!1sCAoSLEFGMVFpcE9JdU1rRzFDUC1HZGQ1NXFJZktxYmNiUlB5aHN3SXFacExFRmZh!2m2!1d37.55564!2d-77.47956!3f0!4f0!5f0.7820865974627469',
     category: 'Historic'
   },
   {
@@ -18,7 +17,7 @@ const virtualWorlds = [
     name: 'Belle Isle',
     description: 'Explore the natural beauty and trails of this James River island',
     image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/99a87209e_image.png',
-    embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1576.2!2d-77.4587!3d37.5313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b1113a7ac04f37%3A0x4a40ea25f9a9a7a6!2sBelle%20Isle%2C%20Richmond%2C%20VA%2023224!5e1!3m2!1sen!2sus!4v1700000002',
+    embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5!2d-77.45869!3d37.53127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b1113a7ac04f37%3A0x4a40ea25f9a9a7a6!2sBelle%20Isle%2C%20Richmond%2C%20VA!5e0!3m2!1sen!2sus!4v1705948223456',
     category: 'Nature'
   },
   {
@@ -26,7 +25,7 @@ const virtualWorlds = [
     name: 'Virginia State Capitol',
     description: 'Tour the historic seat of Virginia\'s government designed by Thomas Jefferson',
     image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/300ec980f_image.png',
-    embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1576.2!2d-77.4340!3d37.5386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b111736a7dc2a9%3A0x5c0f96e4d0a0e3c0!2sVirginia%20State%20Capitol%2C%201000%20Bank%20St%2C%20Richmond%2C%20VA%2023219!5e1!3m2!1sen!2sus!4v1700000003',
+    embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948323456!6m8!1m7!1sCAoSLEFGMVFpcE1wTWY0WmpfZEh0ckc0LURlNnBGWGFRNmlhQXZpaGhNYUxwNXdV!2m2!1d37.53858!2d-77.43403!3f0!4f0!5f0.7820865974627469',
     category: 'Landmark'
   },
   {
@@ -34,7 +33,7 @@ const virtualWorlds = [
     name: 'Carytown',
     description: 'Experience Richmond\'s eclectic shopping and dining district',
     image: 'https://cdn.pixabay.com/photo/2018/08/01/17/15/city-3577655_1280.jpg',
-    embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1576.2!2d-77.4883!3d37.5556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b1116b1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sCarytown%2C%20Richmond%2C%20VA!5e1!3m2!1sen!2sus!4v1700000004',
+    embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948423456!6m8!1m7!1sCAoSLEFGMVFpcE5XckFFcE9BMU5LT2JGRUpPYXJHTkVqSW0zX3hhRUxsRE1aRldE!2m2!1d37.55564!2d-77.48829!3f0!4f0!5f0.7820865974627469',
     category: 'Neighborhood'
   },
   {
@@ -42,7 +41,7 @@ const virtualWorlds = [
     name: 'James River Park',
     description: 'Discover trails, rapids, and scenic views along the James River',
     image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/818bcc2e2_image.png',
-    embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.0!2d-77.4658!3d37.5370!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b11145b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sJames%20River%20Park%2C%20Richmond%2C%20VA!5e1!3m2!1sen!2sus!4v1700000005',
+    embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948523456!6m8!1m7!1sCAoSLEFGMVFpcE9aWHBrUk5qWTBTVzB5UVBKWndTb1NsMVJPa3J2MG0yOVQ4TFN4!2m2!1d37.53696!2d-77.46576!3f0!4f0!5f0.7820865974627469',
     category: 'Nature'
   },
   {
@@ -50,7 +49,7 @@ const virtualWorlds = [
     name: 'Scott\'s Addition',
     description: 'Visit Richmond\'s trendy neighborhood with breweries and murals',
     image: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/61a794f27_image.png',
-    embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1576.2!2d-77.4539!3d37.5686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b110e3e3e3e3e3%3A0x3e3e3e3e3e3e3e3e!2sScott\'s%20Addition%2C%20Richmond%2C%20VA!5e1!3m2!1sen!2sus!4v1700000006',
+    embedUrl: 'https://www.google.com/maps/embed?pb=!4v1705948623456!6m8!1m7!1sCAoSLEFGMVFpcE5mT1oyRXh0ckJzUlN2eGNOTGZnMnlFRzY0QzI0dU42TTU4WFJC!2m2!1d37.56864!2d-77.45394!3f0!4f0!5f0.7820865974627469',
     category: 'Neighborhood'
   }
 ];
@@ -226,7 +225,6 @@ export default function VirtualReality() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title={`Virtual tour of ${selectedWorld.name}`}
-                  allow="accelerometer; gyroscope"
                 />
               </div>
 
