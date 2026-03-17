@@ -49,9 +49,9 @@ const imageCitations = [
         number: 5,
         location: 'History Page – Modern Renaissance',
         url: 'https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/434cd461f_image.png',
-        source: 'Base44 Media',
-        photographer: 'Uploaded Image',
-        mla: 'Modern Renaissance Image. Base44 Media, https://media.base44.com/images/public/69642c930690d6cb4d4ad04d/434cd461f_image.png. Accessed 16 Mar. 2026.'
+        source: 'Pixabay',
+        photographer: 'Pixabay Contributor',
+        mla: 'Pixabay Contributor. Modern Renaissance Image. Pixabay, https://pixabay.com. Accessed 16 Mar. 2026.'
       }
     ]
   },
