@@ -415,19 +415,19 @@ const textCitations = [
         title: 'Valentine Richmond History Center',
         url: 'https://valentinemuseum.com',
         description: 'Primary source for Richmond history and archives',
-        mla: '"Valentine Richmond History Center." Valentine, www.valentinemuseum.com. Accessed 16 Mar. 2026.'
+        mla: '"Valentine Richmond History Center." Valentine, www.valentinemuseum.com. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Library of Virginia',
         url: 'https://www.lva.virginia.gov',
         description: 'State archives and historical records',
-        mla: '"Library of Virginia." Library of Virginia, www.lva.virginia.gov. Accessed 16 Mar. 2026.'
+        mla: '"Library of Virginia." Library of Virginia, www.lva.virginia.gov. Accessed 17 Mar. 2026.'
       },
       {
         title: 'American Civil War Museum',
         url: 'https://acwm.org',
         description: 'Civil War history and documentation',
-        mla: '"American Civil War Museum." American Civil War Museum, acwm.org. Accessed 16 Mar. 2026.'
+        mla: '"American Civil War Museum." American Civil War Museum, acwm.org. Accessed 17 Mar. 2026.'
       }
     ]
   },
@@ -438,13 +438,13 @@ const textCitations = [
         title: 'Visit Richmond',
         url: 'https://www.visitrichmondva.com',
         description: 'Official tourism board for Richmond, Virginia',
-        mla: '"Visit Richmond." Richmond Region Tourism, www.visitrichmondva.com. Accessed 16 Mar. 2026.'
+        mla: '"Visit Richmond." Richmond Region Tourism, www.visitrichmondva.com. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Richmond Region Tourism',
         url: 'https://www.visitrichmond.com',
         description: 'Regional tourism information and guides',
-        mla: '"Richmond Region Tourism." Richmond Region Tourism, www.visitrichmond.com. Accessed 16 Mar. 2026.'
+        mla: '"Richmond Region Tourism." Richmond Region Tourism, www.visitrichmond.com. Accessed 17 Mar. 2026.'
       }
     ]
   },
@@ -455,13 +455,13 @@ const textCitations = [
         title: 'City of Richmond',
         url: 'https://www.rva.gov',
         description: 'Official city government website',
-        mla: '"City of Richmond." City of Richmond, Virginia, www.rva.gov. Accessed 16 Mar. 2026.'
+        mla: '"City of Richmond." City of Richmond, Virginia, www.rva.gov. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Richmond Public Schools',
         url: 'https://www.rvaschools.net',
         description: 'Official school district information',
-        mla: '"Richmond Public Schools." Richmond Public Schools, www.rvaschools.net. Accessed 16 Mar. 2026.'
+        mla: '"Richmond Public Schools." Richmond Public Schools, www.rvaschools.net. Accessed 17 Mar. 2026.'
       }
     ]
   },
@@ -472,49 +472,49 @@ const textCitations = [
         title: 'TripAdvisor – Richmond',
         url: 'https://www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html',
         description: 'Traveler reviews for hotels, restaurants, and attractions in Richmond.',
-        mla: '"TripAdvisor – Richmond, Virginia." TripAdvisor, www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html. Accessed 16 Mar. 2026.'
+        mla: '"TripAdvisor – Richmond, Virginia." TripAdvisor, www.tripadvisor.com/Tourism-g60893-Richmond_Virginia-Vacations.html. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Visit Richmond VA (Official Tourism)',
         url: 'https://www.visitrichmondva.com',
         description: 'Official tourism website for Richmond with events, guides, and trip planning tools.',
-        mla: '"Visit Richmond VA." Richmond Region Tourism, www.visitrichmondva.com. Accessed 16 Mar. 2026.'
+        mla: '"Visit Richmond VA." Richmond Region Tourism, www.visitrichmondva.com. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Expedia – Richmond Hotels',
         url: 'https://www.expedia.com/Richmond.d178293.Destination-Travel-Guides',
         description: 'Search and book hotels, flights, and rental cars for Richmond.',
-        mla: '"Richmond Travel Guide." Expedia, www.expedia.com/Richmond.d178293.Destination-Travel-Guides. Accessed 16 Mar. 2026.'
+        mla: '"Richmond Travel Guide." Expedia, www.expedia.com/Richmond.d178293.Destination-Travel-Guides. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Airbnb – Richmond',
         url: 'https://www.airbnb.com/s/Richmond--Virginia',
         description: 'Unique stays and local experiences in Richmond neighborhoods.',
-        mla: '"Richmond, Virginia Stays." Airbnb, www.airbnb.com/s/Richmond--Virginia. Accessed 16 Mar. 2026.'
+        mla: '"Richmond, Virginia Stays." Airbnb, www.airbnb.com/s/Richmond--Virginia. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Yelp – Richmond',
         url: 'https://www.yelp.com/search?find_loc=Richmond%2C+VA',
         description: 'Community reviews for restaurants, bars, and local shops in Richmond.',
-        mla: '"Richmond, VA Businesses." Yelp, www.yelp.com/search?find_loc=Richmond%2C+VA. Accessed 16 Mar. 2026.'
+        mla: '"Richmond, VA Businesses." Yelp, www.yelp.com/search?find_loc=Richmond%2C+VA. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Google Maps – Richmond',
         url: 'https://maps.google.com/?q=Richmond,Virginia',
         description: 'Navigate Richmond and get real-time directions to attractions.',
-        mla: '"Richmond, Virginia." Google Maps, maps.google.com/?q=Richmond,Virginia. Accessed 16 Mar. 2026.'
+        mla: '"Richmond, Virginia." Google Maps, maps.google.com/?q=Richmond,Virginia. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Richmond.com',
         url: 'https://www.richmond.com',
         description: 'Local news, events calendar, and community information for Richmond.',
-        mla: '"Richmond.com." Richmond Times-Dispatch, www.richmond.com. Accessed 16 Mar. 2026.'
+        mla: '"Richmond.com." Richmond Times-Dispatch, www.richmond.com. Accessed 17 Mar. 2026.'
       },
       {
         title: 'GRTC Transit – Bus Routes',
         url: 'https://www.ridegrtc.com',
         description: 'Public transit route planning for Richmond city buses.',
-        mla: '"GRTC Transit System." GRTC, www.ridegrtc.com. Accessed 16 Mar. 2026.'
+        mla: '"GRTC Transit System." GRTC, www.ridegrtc.com. Accessed 17 Mar. 2026.'
       }
     ]
   },
@@ -525,13 +525,13 @@ const textCitations = [
         title: 'Virginia Museum of Fine Arts',
         url: 'https://www.vmfa.museum',
         description: 'Art and cultural information',
-        mla: '"Virginia Museum of Fine Arts." Virginia Museum of Fine Arts, www.vmfa.museum. Accessed 16 Mar. 2026.'
+        mla: '"Virginia Museum of Fine Arts." Virginia Museum of Fine Arts, www.vmfa.museum. Accessed 17 Mar. 2026.'
       },
       {
         title: 'Richmond Symphony',
         url: 'https://richmondsymphony.com',
         description: 'Music and cultural events',
-        mla: '"Richmond Symphony." Richmond Symphony, richmondsymphony.com. Accessed 16 Mar. 2026.'
+        mla: '"Richmond Symphony." Richmond Symphony, richmondsymphony.com. Accessed 17 Mar. 2026.'
       }
     ]
   }
