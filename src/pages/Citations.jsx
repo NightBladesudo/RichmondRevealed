@@ -545,6 +545,17 @@ const textCitations = [
     ]
   },
   {
+    category: 'Weather Data',
+    sources: [
+      {
+        title: 'Open-Meteo Weather API',
+        url: 'https://open-meteo.com',
+        description: 'Free, open-source weather API used to display the 5-day Richmond forecast on the Plan Your Trip page. No API key required.',
+        mla: '"Open-Meteo Weather API." Open-Meteo, open-meteo.com. Accessed 18 Mar. 2026.'
+      }
+    ]
+  },
+  {
     category: 'Cultural Resources',
     sources: [
       {
