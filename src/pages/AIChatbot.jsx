@@ -187,10 +187,10 @@ export default function AIChatbot() {
             <p className="text-sm text-gray-500 mb-3">Try asking:</p>
             <div className="flex flex-wrap gap-2">
               {[
-                'What\'s happening in the world today?',
-                'Explain quantum computing',
-                'Generate an image of a sunset over mountains',
-                'What are the latest AI developments?'
+                'What are the best attractions in Richmond?',
+                'Tell me about the history of Richmond, Virginia',
+                'Generate an image of the James River in Richmond',
+                'What restaurants are popular in Richmond?'
               ].map((suggestion) => (
                 <button
                   key={suggestion}
