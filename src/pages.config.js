@@ -78,6 +78,7 @@ export const PAGES = {
     "Store": Store,
     "VirtualReality": VirtualReality,
     "PlanYourTrip": PlanYourTrip,
+    "Trivia": Trivia,
 }
 
 export const pagesConfig = {
