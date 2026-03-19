@@ -60,6 +60,7 @@ import Neighborhoods from './pages/Neighborhoods';
 import Store from './pages/Store';
 import VirtualReality from './pages/VirtualReality';
 import PlanYourTrip from './pages/PlanYourTrip';
+import Trivia from './pages/Trivia';
 import __Layout from './Layout.jsx';
 
 
