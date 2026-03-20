@@ -194,7 +194,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1e3a5f]">Email</h4>
-                      <p className="text-gray-600">richmondrevealed@outlook.com</p>
+                      <p className="text-gray-600">contactrichmondrevealed@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
