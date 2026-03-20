@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-// Fix default marker icons
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
@@ -11,34 +10,18 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-const SHADOW_URL = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png';
-
-function makeNumberedIcon(number, isActive) {
-  const bg = isActive ? '#a63d2f' : '#1e3a5f';
+function createPinIcon(isActive, number) {
+  const color = isActive ? '#a63d2f' : '#1e3a5f';
   return L.divIcon({
     className: '',
     iconSize: [30, 42],
     iconAnchor: [15, 42],
     popupAnchor: [0, -44],
-    html: `<div style="
-        width:30px; height:42px; position:relative; display:flex;
-        flex-direction:column; align-items:center;
-      ">
-      <div style="
-        width:30px; height:30px; background:${bg}; border-radius:50% 50% 50% 0;
-        transform:rotate(-45deg); border:2px solid white;
-        box-shadow:0 2px 8px rgba(0,0,0,0.4);
-        display:flex; align-items:center; justify-content:center;
-      ">
-        <span style="
-          transform:rotate(45deg); color:white; font-weight:800;
-          font-size:11px; font-family:sans-serif; line-height:1;
-        ">${number}</span>
-      </div>
-      <div style="
-        width:2px; height:10px; background:${bg}; margin-top:-1px;
-      "></div>
-    </div>`,
+    html: `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42">
+      <path d="M15 0C6.716 0 0 6.716 0 15c0 10.5 15 27 15 27S30 25.5 30 15C30 6.716 23.284 0 15 0z" fill="${color}" />
+      <circle cx="15" cy="15" r="8" fill="white" opacity="0.9"/>
+      <text x="15" y="19" text-anchor="middle" font-size="9" font-weight="800" fill="${color}" font-family="sans-serif">${number}</text>
+    </svg>`,
   });
 }
 
@@ -103,17 +86,40 @@ export default function LocationMap({ items, activeId, onMarkerClick }) {
           <Marker
             key={item.id}
             position={coords[item.id]}
-            icon={makeNumberedIcon(index + 1, activeId === item.id)}
+            icon={createPinIcon(activeId === item.id, index + 1)}
             eventHandlers={{ click: () => onMarkerClick && onMarkerClick(item.id) }}
           >
-            <Popup>
-              <div style={{ minWidth: '160px' }}>
+            <Popup maxWidth={300} minWidth={280}>
+              <div style={{ fontFamily: 'Inter, sans-serif', padding: '4px' }}>
                 {(item.image_url || item.image) && (
-                  <img src={item.image_url || item.image} alt={item.name} style={{ width: '100%', height: '80px', objectFit: 'cover', borderRadius: '4px', marginBottom: '6px' }} />
+                  <div style={{ marginBottom: '10px', borderRadius: '8px', overflow: 'hidden', height: '150px' }}>
+                    <img
+                      src={item.image_url || item.image}
+                      alt={item.name}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      onError={(e) => { e.target.style.display = 'none'; }}
+                    />
+                  </div>
                 )}
-                <p style={{ fontWeight: 700, color: '#1e3a5f', fontSize: '13px', margin: '0 0 2px' }}>{item.name}</p>
-                {item.category && <p style={{ fontSize: '11px', color: '#888', margin: '0 0 2px' }}>{item.category}</p>}
-                {item.address && <p style={{ fontSize: '11px', color: '#aaa', margin: 0 }}>📍 {item.address}</p>}
+                {item.category && (
+                  <span style={{ display: 'inline-block', background: '#EEF2FF', color: '#4338CA', fontSize: '11px', fontWeight: '600', padding: '2px 10px', borderRadius: '999px', marginBottom: '6px' }}>
+                    {item.category}
+                  </span>
+                )}
+                <h3 style={{ fontSize: '16px', fontWeight: '700', color: '#1e3a5f', margin: '4px 0 6px' }}>
+                  {item.name}
+                </h3>
+                {item.description && (
+                  <p style={{ fontSize: '13px', color: '#4B5563', lineHeight: '1.5', marginBottom: '8px' }}>
+                    {item.description}
+                  </p>
+                )}
+                {item.address && (
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '5px' }}>
+                    <span style={{ fontSize: '13px' }}>📍</span>
+                    <span style={{ fontSize: '12px', color: '#6B7280', lineHeight: '1.4' }}>{item.address}</span>
+                  </div>
+                )}
               </div>
             </Popup>
           </Marker>
