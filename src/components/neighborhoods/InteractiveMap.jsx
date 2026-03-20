@@ -167,13 +167,13 @@ const categories = [
         >
           {!isFullscreen && (
             <div 
-              className="absolute inset-0 z-10 bg-transparent flex items-center justify-center cursor-pointer"
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 z-[1000] cursor-pointer"
               onClick={() => setIsFullscreen(true)}
             >
-              <div className="bg-white/95 backdrop-blur px-6 py-4 rounded-lg shadow-xl border-2 border-slate-200">
+              <div className="bg-white/95 backdrop-blur px-6 py-3 rounded-lg shadow-xl border-2 border-slate-200">
                 <p className="text-gray-700 font-semibold flex items-center gap-2">
                   <Maximize2 className="w-5 h-5 text-[#a63d2f]" />
-                  Click to view
+                  Click to expand
                 </p>
               </div>
             </div>
