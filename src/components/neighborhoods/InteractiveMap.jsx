@@ -186,13 +186,9 @@ const categories = [
             </div>
           )}
           <MapContainer
-            center={[37.8, -78.5]}
-            zoom={7}
+            center={[37.5407, -77.4360]}
+            zoom={12}
             style={{ height: '100%', width: '100%' }}
-            maxBounds={[[36.5, -83.7], [39.5, -75.2]]}
-            maxBoundsViscosity={1.0}
-            minZoom={6}
-            maxZoom={13}
             dragging={true}
             scrollWheelZoom={isFullscreen}
             zoomControl={false}
