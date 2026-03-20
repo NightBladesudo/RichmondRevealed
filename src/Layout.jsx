@@ -21,9 +21,9 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Neighborhoods', page: 'Neighborhoods' },
     { name: 'Education & Resources', page: 'Education' },
     { name: 'Virtual Reality', page: 'VirtualReality' },
+    { name: 'Richmond Trivia', page: 'Trivia' },
     { name: 'Plan Your Trip', page: 'PlanYourTrip' },
     { name: 'Richmond ChatBot', page: 'AIChatbot' },
-    { name: 'Richmond Trivia', page: 'Trivia' },
     { name: 'Contact Us', page: 'Contact' },
     { name: 'Citations', page: 'Citations' },
   ];
