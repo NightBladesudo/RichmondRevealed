@@ -61,8 +61,11 @@ export default function Layout({ children, currentPageName }) {
                 <MapPin className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="font-display text-xl text-white font-semibold tracking-wide">Richmond</span>
-                <span className="text-[#c9a227] font-display text-xl ml-1">Revealed</span>
+                <div>
+                  <span className="font-display text-xl text-white font-semibold tracking-wide">Richmond</span>
+                  <span className="text-[#c9a227] font-display text-xl ml-1">Revealed</span>
+                </div>
+                <div className="text-gray-300 text-xs tracking-widest uppercase">Est. 2026</div>
               </div>
             </Link>
 
