@@ -202,13 +202,14 @@ const categories = [
           {filteredPoints.map((point) => {
             const colors = categoryColors[point.category] || { marker: '#6B7280', text: 'gray' };
             const markerIcon = L.divIcon({
-              html: `<div style="background-color: ${colors.marker}; width: 32px; height: 40px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); display: flex; align-items: center; justify-content: center; border: 3px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-                <div style="transform: rotate(45deg); color: white; font-weight: bold; font-size: 16px;">📍</div>
+              html: `<div style="width:28px;height:36px;position:relative;">
+                <div style="width:28px;height:28px;background:${colors.marker};border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.35);"></div>
+                <div style="width:4px;height:10px;background:${colors.marker};margin:0 auto;margin-top:-2px;border-radius:0 0 2px 2px;"></div>
               </div>`,
-              iconSize: [32, 40],
-              iconAnchor: [16, 40],
+              iconSize: [28, 38],
+              iconAnchor: [14, 38],
               popupAnchor: [0, -40],
-              className: 'custom-marker'
+              className: ''
             });
 
             return (
