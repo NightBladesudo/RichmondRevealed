@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/button';
 const allQuestions = [
   {
     question: "What year was Richmond, Virginia founded?",
-    options: ["1727", "1742", "1607", "1781"],
+    options: ["1707", "1737", "1607", "1781"],
     answer: "1737",
-    correctIndex: 0,
+    correctIndex: 1,
     fact: "Richmond was founded in 1737 by William Byrd II, who named it after Richmond upon Thames in England."
   },
   {
