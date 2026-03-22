@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Check } from 'lucide-react';
+import { Mail, MapPin, Send, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -195,15 +195,6 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-[#1e3a5f]">Email</h4>
                       <p className="text-gray-600">contactrichmondrevealed@gmail.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#2d7d7d]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-[#2d7d7d]" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-[#1e3a5f]">Phone</h4>
-                      <p className="text-gray-600">804-728-9265</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
