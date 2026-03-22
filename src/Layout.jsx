@@ -24,6 +24,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Richmond Trivia', page: 'Trivia' },
     { name: 'Plan Your Trip', page: 'PlanYourTrip' },
     { name: 'Richmond ChatBot', page: 'AIChatbot' },
+
     { name: 'Citations', page: 'Citations' },
     { name: 'Contact Us', page: 'Contact' },
   ];
