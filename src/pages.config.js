@@ -57,7 +57,6 @@ import Events from './pages/Events';
 import History from './pages/History';
 import Home from './pages/Home';
 import Neighborhoods from './pages/Neighborhoods';
-import Store from './pages/Store';
 import VirtualReality from './pages/VirtualReality';
 import PlanYourTrip from './pages/PlanYourTrip';
 import Trivia from './pages/Trivia';
