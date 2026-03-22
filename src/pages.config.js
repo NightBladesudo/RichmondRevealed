@@ -74,7 +74,6 @@ export const PAGES = {
     "History": History,
     "Home": Home,
     "Neighborhoods": Neighborhoods,
-    "Store": Store,
     "VirtualReality": VirtualReality,
     "PlanYourTrip": PlanYourTrip,
     "Trivia": Trivia,
